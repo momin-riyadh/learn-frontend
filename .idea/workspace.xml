@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="a6d261d2-4388-4047-9cc2-ad5f801e967c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+=======
+    <list default="true" id="e67c5de4-72fd-4b3b-a60c-1c655fa5e602" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+>>>>>>> bc59bd1e83e5022321ce71fabc0dc99b2fd57016
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,18 +22,18 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="MacroExpansionManager">
-    <option name="directoryName" value="hspqe73z" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2NH7ltZJsqokXijHlwErIGAjNEh" />
+  <component name="ProjectId" id="2NJhdh0i6GbgvCTX7YgHoTR2sea" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
-    <option name="showMembers" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -59,18 +64,39 @@
       <command value="git push origin main" />
     </option>
   </component>
+=======
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+>>>>>>> bc59bd1e83e5022321ce71fabc0dc99b2fd57016
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a6d261d2-4388-4047-9cc2-ad5f801e967c" name="Changes" comment="" />
-      <created>1679309307505</created>
+      <changelist id="e67c5de4-72fd-4b3b-a60c-1c655fa5e602" name="Changes" comment="" />
+      <created>1679388189833</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1679309307505</updated>
       <workItem from="1679309308714" duration="1254000" />
       <workItem from="1679378913564" duration="4266000" />
       <workItem from="1679387489605" duration="1705000" />
       <workItem from="1679457814216" duration="2842000" />
+=======
+      <updated>1679388189833</updated>
+      <workItem from="1679388194165" duration="1142000" />
+      <workItem from="1679458229556" duration="63000" />
+>>>>>>> bc59bd1e83e5022321ce71fabc0dc99b2fd57016
     </task>
     <servers />
   </component>
