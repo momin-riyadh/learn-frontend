@@ -59,24 +59,11 @@ p {
 }
 
 @media screen and (max-width: 375px) {
-    .card {
-        width: 200px;
-        height: 300px;
-    }
-
-    .card-img {
-        width: 170px;
-        height: 150px;
-    }
-
     .card h3 {
         color: hsl(218, 44%, 22%);
-        font-size: 15px;
-
     }
 
     .card p {
-        font-size: 11px;
         margin-bottom: 20px;
 
     }
