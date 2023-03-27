@@ -1,7 +1,8 @@
-body{
-    background-color:#F2EAE2 ;
+body {
+    background-color: #F2EAE2;
 }
-.container{
+
+.container {
     display: flex;
     justify-content: center;
     margin: auto;
@@ -9,34 +10,32 @@ body{
     width: 100%;
     align-items: center;
     max-width: 1440px;
-
 }
-.card{
+
+.card {
     display: flex;
     flex-direction: row;
-    height:450px ;
+    height: 450px;
     width: 600px;
-
-
-
-
 }
-.img-fluid{
+.card-image{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.img-fluid {
     max-width: 100%;
     width: 100%;
     height: auto;
 }
-.card-section{
 
+.card-section {
     background-color: #FFFFFF;
     padding-left: 0.9rem;
-
-
-
-
-
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
 }
-.card-section h6{
+
+.card-section h6 {
     color: #6C7289;
     font-family: 'Montserrat';
     font-style: normal;
@@ -46,15 +45,17 @@ body{
     letter-spacing: 5PX;
 
 }
-.card-section h2{
-    color:#1C232B ;
+
+.card-section h2 {
+    color: #1C232B;
     font-family: 'Fraunces';
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 32px;
 }
-.card-section p{
+
+.card-section p {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -62,7 +63,8 @@ body{
     line-height: 23px;
     color: #6C7289;
 }
-.card-section h4{
+
+.card-section h4 {
     font-family: 'Fraunces';
     font-style: normal;
     font-weight: 700;
@@ -70,7 +72,8 @@ body{
     line-height: 32px;
     color: #3D8168;
 }
-.card-section h5{
+
+.card-section h5 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -78,19 +81,22 @@ body{
     line-height: 23px;
     color: #6C7289;
 }
-.card-section h4,h5{
+
+.card-section h4, h5 {
     display: inline-block;
 }
-.card-section button{
+
+.card-section button {
     height: 48px;
     width: 236px;
-    background-color:#3D8168 ;
+    background-color: #3D8168;
     color: #fff;
     border: none;
     border-radius: 4px;
     padding-bottom: 10px;
 
 }
-.icon{
-   padding-right:10px ;
+
+.icon {
+    padding-right: 10px;
 }
