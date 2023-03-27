@@ -4,10 +4,10 @@ body {
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin: auto;
     height: calc(100vh - 40px);
-    width: 100%;
     align-items: center;
     max-width: 1440px;
 }
@@ -41,13 +41,23 @@ body {
     }
 }
 
+.image-box {
+    width: 300px;
+}
+
+@media all and (max-width: 768px) {
+    .image-box {
+        width: 100%;
+    }
+}
+
 .card-image {
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
 }
 
 @media all and (max-width: 768px) {
-    .card > .card-image {
+    .image-box > .card-image {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         border-bottom-left-radius: 0;
@@ -130,9 +140,10 @@ body {
     align-items: center;
     transition: all 0.4s ease-in-out;
 }
-@media all and (max-width: 768px){
+
+@media all and (max-width: 768px) {
     .card-section button {
-        width:100%;
+        width: 100%;
     }
 }
 
