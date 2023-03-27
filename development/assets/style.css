@@ -18,10 +18,12 @@ body {
     height: 450px;
     width: 600px;
 }
-.card-image{
+
+.card-image {
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
 }
+
 .img-fluid {
     max-width: 100%;
     width: 100%;
@@ -51,40 +53,29 @@ body {
     font-family: 'Fraunces', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
-    line-height: 32px;
+    font-size: 32px;
+    line-height: 1;
 }
 
 .card-section p {
     font-family: 'Montserrat', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 23px;
     color: #6C7289;
+    margin-top: 24px;
+    margin-bottom: 29px;
 }
 
 .card-section h4 {
     font-family: 'Fraunces', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 32px;
     color: #3D8168;
+    margin-bottom: 0;
 }
 
-.card-section h5 {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 23px;
-    color: #6C7289;
-}
-
-.card-section h4, h5 {
-    display: inline-block;
-}
 
 .card-section button {
     height: 48px;
@@ -95,6 +86,24 @@ body {
     border-radius: 4px;
     padding-bottom: 10px;
 
+}
+
+.price {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 30px;
+}
+
+.price small {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 23px;
+    color: #6C7289;
+    text-decoration:line-through;
+    vertical-align: middle;
 }
 
 .icon {
