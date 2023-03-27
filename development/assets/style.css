@@ -76,7 +76,6 @@ body {
     margin-bottom: 0;
 }
 
-
 .card-section button {
     height: 48px;
     width: 236px;
@@ -84,8 +83,13 @@ body {
     color: #fff;
     border: none;
     border-radius: 4px;
-    padding-bottom: 10px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+}
+.card-section button:hover {
+    background-color: #264f40;
 }
 
 .price {
@@ -102,7 +106,7 @@ body {
     font-size: 13px;
     line-height: 23px;
     color: #6C7289;
-    text-decoration:line-through;
+    text-decoration: line-through;
     vertical-align: middle;
 }
 
