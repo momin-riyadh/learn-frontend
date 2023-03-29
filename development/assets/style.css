@@ -36,9 +36,10 @@
     align-items: flex-start;
     height: 100%;
     padding-left: 165px;
-    background-image: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%), url("../images/bg-pattern-desktop.svg");
+    /*background-color: #FFF4F4;*/
+    background-image: url("../images/bg-pattern-desktop.svg"),linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
     background-size: cover;
-    background-position: top left;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
