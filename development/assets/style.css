@@ -18,6 +18,7 @@
 }
 
 .main-area {
+    flex-basis: 60%;
 }
 
 .logo {
