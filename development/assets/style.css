@@ -13,24 +13,21 @@
     justify-content: center;
     align-items: center;
     width: 1440px;
-    height: 70vh;
+    height: 80vh;
+    overflow: hidden;
 }
 
-.main {
-
+.main-area {
 }
 
 .logo {
     width: 158px;
     height: 33px;
-    margin-left: 165px;
-    margin-top: 65px;
 }
 
-.main-section {
+.main-content {
     width: 445px;
     height: 404px;
-    margin: 234px 221px 173px 165px;
 }
 
 .color {
@@ -93,7 +90,8 @@
 
 
 }
-.img-fluid{
+
+.img-fluid {
     max-width: 100%;
     width: 100%;
     height: auto;
