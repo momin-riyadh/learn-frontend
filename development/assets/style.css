@@ -5,17 +5,18 @@
     min-height: calc(100vh - 20px);
     width: 100%;
     margin: auto;
+    overflow: hidden;
 }
 
 .homepage {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 1440px;
-
+    height: 70vh;
 }
 
 .main {
-    width: 830px;
 
 }
 
@@ -92,10 +93,13 @@
 
 
 }
+.img-fluid{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
 
 .img-section {
-    width: 610px;
-
 }
 
 @media all and (max-width: 375px) {
