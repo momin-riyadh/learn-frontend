@@ -1,3 +1,13 @@
+/*body{*/
+/*    background-image: url("../images/bg-pattern-desktop.svg");*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-attachment: fixed;*/
+/*    width: 100%;*/
+/*    min-height: 100vh;*/
+/*}*/
+
 .container {
     display: flex;
     justify-content: center;
@@ -5,7 +15,6 @@
     width: 1440px;
     min-height: calc(100vh - 20px);
     margin: auto;
-    overflow: hidden;
 }
 
 .homepage {
@@ -15,16 +24,23 @@
     height: 80vh;
     width: 100%;
     overflow: hidden;
+    -webkit-box-shadow: 0 0 10px #d3d3d3;
+    box-shadow: 0 0 10px #d3d3d3;
 }
 
 .main-area {
     flex-basis: 60%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     height: 100%;
-    margin-left: 165px;
+    padding-left: 165px;
+    background-image: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%), url("../images/bg-pattern-desktop.svg");
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .logo {
@@ -110,6 +126,13 @@
 
 .img-section {
     flex-basis: 40%;
+    height: 100%;
+}
+
+.img-section img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 @media all and (max-width: 375px) {
