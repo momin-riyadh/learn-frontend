@@ -1,0 +1,145 @@
+.container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height:calc(100vh - 20px);
+    width:100%;
+    margin:auto;
+}
+.homepage{
+    display: flex;
+    justify-content:center;
+    width: 1440px;
+
+}
+.main{
+    width: 830px;
+
+}
+.logo{
+   width: 158px;
+    height:33px;
+    margin-left: 165px;
+    margin-top: 65px;
+}
+.main-section{
+    width: 445px;
+    height: 404px;
+    margin: 234px 221px 173px 165px;
+}
+.color{
+    color: #CE9898;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+}
+.text{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 71px;
+    letter-spacing: 17px;
+    color: #423A3A;
+}
+.main-section P{
+    width: 444px;
+    height: 84px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #CE9898;
+    margin-top: 32px;
+    margin-bottom:40px;
+}
+.form-element{
+    display: flex;
+
+}
+.form-element input{
+    border: 1px solid #F96464;
+    padding: 0.9rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius:2rem;
+    font-size: 1rem;
+    position: relative;
+    width:445px;
+
+
+}
+.form-element button{
+    border-radius: 28px;
+    background: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
+    width: 100px;
+    height: 56px;
+    position: relative;
+    border: none;
+    padding: 1rem 2rem;
+    right: 40px;
+    bottom:3px;
+
+
+
+
+}
+.img-section{
+    width: 610px;
+
+}
+@media all and (max-width: 375px){
+   .container{
+       height: 100%;
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       margin:auto;
+   }
+    .homepage{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        width:375px;
+
+    }
+    .logo{
+       height: 20px;
+        width: 100px;
+        margin-top: 32px ;
+        margin-left: 32px;
+        margin-right:241px ;
+    }
+    .img-section{
+        width: 375px;
+        height: 250px;
+    }
+    .main-section{
+        width: 311px;
+        height: 310px;
+        margin-left:33px;
+        margin-right:31px;
+
+    }
+    .color{
+        font-size: 40px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 10px;
+    }
+    .text{
+        font-size: 40px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 10px;
+    }
+    .main-section P{
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        width: 311px;
+    }
+
+
+}
+
