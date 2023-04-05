@@ -11,22 +11,25 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Linear Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%)
-
-### Neutral
-
-- Very Light Grayish Blue: hsl(240, 78%, 98%)
-- Light Grayish Blue: hsl(234, 14%, 74%)
-- Grayish Blue: hsl(233, 13%, 49%)
-- Dark Grayish Blue: hsl(232, 13%, 33%)
+- Violet: hsl(257, 40%, 49%)
+- Soft Magenta: hsl(300, 69%, 71%)
 
 ## Typography
 
-### Body Copy
+### Headings
 
-- Font size: 15px
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400, 600
 
-### Font
+### Body
 
-- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
-- Weight: 700
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400
+
+## Icons
+
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com/)
+- [IcoMoon](https://icomoon.io/)
+- [Ionicons](https://ionicons.com/)
