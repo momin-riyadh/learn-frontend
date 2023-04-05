@@ -36,7 +36,15 @@ main {
 .card1 {
     display: grid;
     justify-items: flex-start;
-    margin: 60px 30px 0 30px;
+    margin: 40px 40px auto 40px;
+}
+
+@media all and (max-width: 600px) {
+    .card1 {
+        display: grid;
+        justify-items: flex-start;
+        margin: 24px 24px;
+    }
 }
 
 .card1 h2 {
@@ -76,7 +84,16 @@ main {
     display: grid;
     justify-items: flex-start;
     align-self: center;
-    margin: 30px 30px 10px 30px;
+    margin: 40px 40px;
+}
+
+@media all and (max-width: 600px) {
+    .card2 {
+        display: grid;
+        justify-items: flex-start;
+        align-self: center;
+        margin: 24px 24px;
+    }
 }
 
 
@@ -104,6 +121,8 @@ main {
     Line-height: 26px;
     color: var(--white);
     margin-left: 15px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
 }
 
 .block {
@@ -144,8 +163,17 @@ main {
     justify-items: flex-start;
     align-self: center;
     padding: 40px;
-
 }
+
+@media all and (max-width: 600px) {
+    .card3 {
+        display: grid;
+        justify-items: flex-start;
+        align-self: center;
+        padding: 24px;
+    }
+}
+
 
 .card3 h3 {
     font-family: 'Karla', sans-serif;
@@ -176,9 +204,9 @@ main {
 
     .card {
         display: grid;
-        grid-template-columns:300px;
+        grid-template-columns:auto;
         grid-template-rows:1.3fr 1fr 1fr;
-        margin: 15px;
+        margin: 32px;
     }
 
     .section1 {
