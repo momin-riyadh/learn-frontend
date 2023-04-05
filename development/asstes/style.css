@@ -4,6 +4,7 @@
     --lightgreen: #C0DF33;
     --gray: #9AA7BE;
     --white: #FFFFFF;
+    --mainbg: #f2f2f2;
 }
 
 main {
@@ -12,13 +13,13 @@ main {
     display: grid;
     place-items: center;
     border-radius: 10px;
-    background-color: aquamarine;
+    background-color: var(--mainbg);
 }
 
 .card {
     display: grid;
-    grid-template-columns:319px 315px;
-    grid-template-rows:259px 259px;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:minmax(216px, 100%) minmax(259px, 100%);
     min-height: 475px;
     max-width: 635px;
 }
