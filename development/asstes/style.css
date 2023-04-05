@@ -19,8 +19,9 @@ main {
     display: grid;
     grid-template-columns:319px 315px;
     grid-template-rows:259px 259px;
+    min-height: 475px;
+    max-width: 635px;
 }
-
 
 
 .section1 {
@@ -142,7 +143,7 @@ main {
     display: grid;
     justify-items: flex-start;
     align-self: center;
-    margin:30px 40px 20px 40px;
+    padding: 40px;
 
 }
 
@@ -152,8 +153,6 @@ main {
     font-size: 18px;
     line-height: 21px;
     color: var(--white);
-
-
 }
 
 .card3 p {
@@ -162,8 +161,11 @@ main {
     font-size: 14px;
     Line-height: 20px;
     color: var(--white);
-    margin-top: 10px;
+    margin-top: 18px;
+    mix-blend-mode: normal;
+    opacity: 0.75;
 }
+
 @media all and (max-width: 375px) {
     main {
         max-width: 375px;
@@ -183,13 +185,16 @@ main {
         grid-column: 1/-1;
         grid-row: 1/2;
     }
-    .card1 h2{
+
+    .card1 h2 {
         font-size: 20px;
     }
-    .card1 h3{
+
+    .card1 h3 {
         font-size: 15px;
     }
-    .card1 p{
+
+    .card1 p {
         font-size: 14px;
     }
 
@@ -197,13 +202,16 @@ main {
         grid-column: 1/-1;
         grid-row: 2/3;
     }
-    .card2 h3{
-        font-size:18px;
+
+    .card2 h3 {
+        font-size: 18px;
     }
-    .card h1{
+
+    .card h1 {
 
     }
-    .card2 p{
+
+    .card2 p {
 
     }
 
