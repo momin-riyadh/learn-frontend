@@ -1,0 +1,215 @@
+:root {
+    --darkcyan: #2AB3B1;
+    --lightcyan: #54c2c0;
+    --lightgreen: #C0DF33;
+    --gray: #9AA7BE;
+    --white: #FFFFFF;
+}
+
+main {
+    height: calc(100vh - 20px);
+    width: 100%;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    background-color: aquamarine;
+}
+
+.card {
+    display: grid;
+    grid-template-columns:319px 315px;
+    grid-template-rows:259px 259px;
+}
+
+
+
+.section1 {
+    width: 100%;
+    height: auto;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    background-color: var(--white);
+
+}
+
+.card1 {
+    display: grid;
+    justify-items: flex-start;
+    margin: 60px 30px 0 30px;
+}
+
+.card1 h2 {
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    Font-size: 24px;
+    Line-height: 28px;
+    color: var(--darkcyan);
+
+}
+
+.card1 h3 {
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    color: var(--lightgreen);
+    font-size: 18px;
+    Line-height: 21px;
+    margin-top: 18px;
+}
+
+.card1 p {
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    Line-height: 26px;
+    color: var(--gray);
+    margin-top: 13px;
+}
+
+.section2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: var(--darkcyan);
+}
+
+.card2 {
+    display: grid;
+    justify-items: flex-start;
+    align-self: center;
+    margin: 30px 30px 10px 30px;
+}
+
+
+.card2 h3 {
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--white);
+}
+
+.block h1 {
+    color: var(--white);
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+
+}
+
+.block p {
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    Line-height: 26px;
+    color: var(--white);
+    margin-left: 15px;
+}
+
+.block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15px;
+
+}
+
+.card2 p {
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    Line-height: 26px;
+    color: var(--white);
+    margin-top: 10px;
+}
+
+.card2 button {
+    height: 49px;
+    width: 240px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--lightgreen);
+    color: var(--white);
+    margin-top: 30px;
+}
+
+.section3 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: var(--lightcyan);
+}
+
+.card3 {
+    display: grid;
+    justify-items: flex-start;
+    align-self: center;
+    margin:30px 40px 20px 40px;
+
+}
+
+.card3 h3 {
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--white);
+
+
+}
+
+.card3 p {
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    Line-height: 20px;
+    color: var(--white);
+    margin-top: 10px;
+}
+@media all and (max-width: 375px) {
+    main {
+        max-width: 375px;
+        width: 100%;
+        height: auto;
+
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns:300px;
+        grid-template-rows:1.3fr 1fr 1fr;
+        margin: 15px;
+    }
+
+    .section1 {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+    }
+    .card1 h2{
+        font-size: 20px;
+    }
+    .card1 h3{
+        font-size: 15px;
+    }
+    .card1 p{
+        font-size: 14px;
+    }
+
+    .section2 {
+        grid-column: 1/-1;
+        grid-row: 2/3;
+    }
+    .card2 h3{
+        font-size:18px;
+    }
+    .card h1{
+
+    }
+    .card2 p{
+
+    }
+
+    .section3 {
+        grid-column: 1/-1;
+        grid-row: 3/4;
+    }
+
+}
