@@ -194,9 +194,9 @@ main {
     opacity: 0.75;
 }
 
-@media all and (max-width: 375px) {
+@media all and (max-width: 600px) {
     main {
-        max-width: 375px;
+        max-width: 100%;
         width: 100%;
         height: auto;
 
