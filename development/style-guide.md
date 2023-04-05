@@ -11,21 +11,22 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Cyan: hsl(179, 62%, 43%)
-- Bright Yellow: hsl(71, 73%, 54%)
+- Linear Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%)
 
 ### Neutral
 
-- Light Gray: hsl(204, 43%, 93%)
-- Grayish Blue: hsl(218, 22%, 67%)
+- Very Light Grayish Blue: hsl(240, 78%, 98%)
+- Light Grayish Blue: hsl(234, 14%, 74%)
+- Grayish Blue: hsl(233, 13%, 49%)
+- Dark Grayish Blue: hsl(232, 13%, 33%)
 
 ## Typography
 
 ### Body Copy
 
-- Font size: 16px
+- Font size: 15px
 
 ### Font
 
-- Family: [Karla](https://fonts.google.com/specimen/Karla)
-- Weights: 400, 700
+- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Weight: 700

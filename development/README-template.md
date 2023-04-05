@@ -1,6 +1,6 @@
-# Frontend Mentor - Single price grid component solution
+# Frontend Mentor - Pricing component with toggle solution
 
-This is a solution to the [Single price grid component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Pricing component with toggle challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -25,7 +25,8 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 Users should be able to:
 
 - View the optimal layout for the component depending on their device's screen size
-- See a hover state on desktop for the Sign Up call-to-action
+- Control the toggle with both their mouse/trackpad and their keyboard
+- **Bonus**: Complete the challenge with just HTML and CSS
 
 ### Screenshot
 
