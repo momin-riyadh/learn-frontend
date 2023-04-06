@@ -8,7 +8,7 @@
 }
 
 main.main {
-    height: calc(100vh - 20px);
+    min-height: calc(100vh - 20px);
     width: 100%;
     display: grid;
     place-items: center;
@@ -222,14 +222,15 @@ main.main {
     main {
         max-width: 100%;
         width: 100%;
-        height: auto;
+        min-height: calc(100vh - 20px);
     }
 
     .card {
         display: grid;
         grid-template-columns:auto;
-        grid-template-rows:1.3fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         margin: 15px;
+        height: 100%;
     }
 
     .section1 {
