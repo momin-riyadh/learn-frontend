@@ -131,9 +131,13 @@ body {
     background-color: #e980e7;
     color: white;
     font-size: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease-in-out;
     border: none;
     cursor: pointer;
+}
+
+.send-info:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (max-width: 600px) {
