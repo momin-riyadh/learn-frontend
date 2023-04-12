@@ -3,13 +3,20 @@
     padding: 0;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.contain{
+.contain {
     overflow: hidden;
 }
+
 .container {
     background-color: #674bb1;
     background-image: url('../development/images/bg-desktop.svg');
@@ -18,6 +25,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
+    padding: 0 5%;
 }
 
 @media screen and (max-width: 600px) {
