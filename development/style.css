@@ -19,7 +19,7 @@ body {
 
 .container {
     background-color: #674bb1;
-    background-image: url('../development/images/bg-desktop.svg');
+    background-image: url('images/bg-desktop.svg');
     width: auto;
     min-height: 100vh;
     background-repeat: no-repeat;
