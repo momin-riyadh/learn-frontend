@@ -145,23 +145,21 @@ body {
     }
 }
 
-
-.socialmedia img {
-    width: 80px;
-    height: 48px;
-
+.socialmedia{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    gap: 1rem;
+    gap:1rem;
 }
 
 .socialmedia img {
     width: 80px;
     height: 80px;
+    display: flex;
     margin-top: 181px;
     padding: 0 16px;
 }
+
 
 @media screen and (max-width: 600px) {
     .socialmedia img {
