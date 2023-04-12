@@ -164,10 +164,9 @@ body {
 @media screen and (max-width: 600px) {
     .socialmedia img {
         width: 80px;
-        height: 48px;
+        height: 80px;
         margin-top: 102px;
-        padding: 0px 16px;
-        margin-left: 0px;
-        margin-left: 11px;
+        padding: 0 16px;
+
     }
 }
