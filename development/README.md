@@ -1,20 +1,18 @@
-# Frontend Mentor - Minimalist portfolio website
+# Frontend Mentor - Art gallery website
 
-![Design preview for the Minimalist portfolio website coding challenge](./preview.jpg)
+![Design preview for the Art gallery website coding challenge](./preview.jpg)
 
 ## Welcome! 👋
 
 Thanks for purchasing this premium Frontend Mentor coding challenge.
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects. This challenge is for a portfolio website, so please do feel free to use it as your own portfolio site once you complete the challenge.
+[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects. These premium challenges are perfect portfolio pieces, so please feel free to use what you create in your portfolio to show others.
 
-The content is just dummy content for a fictional developer, so please do experiment with the content and your own images if you like.
-
-**To do this challenge, you need a solid understanding of HTML and CSS and a basic understanding of JavaScript.**
+**To do this challenge, you need a good understanding of HTML and CSS.**
 
 ## The challenge
 
-Your challenge is to build out this multi-page portfolio website and get it looking as close to the design as possible.
+Your challenge is to build out this art gallery website and get it looking as close to the design as possible.
 
 You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
@@ -22,12 +20,7 @@ Your users should be able to:
 
 - View the optimal layout for each page depending on their device's screen size
 - See hover states for all interactive elements throughout the site
-- Click the "About Me" call-to-action on the homepage and have the screen scroll down to the next section
-- Receive an error message when the contact form is submitted if:
-  - The `Name`, `Email Address` or `Message` fields are empty should show "This field is required"
-  - The `Email Address` is not formatted correctly should show "Please use a valid email address"
-
-If you would like to make your contact form actually send you the data, you could use a service like [Formspree](https://formspree.io/) to hook it up.
+- **Bonus**: Use [Leaflet JS](https://leafletjs.com/) to create an interactive location map with custom location pin
 
 Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
 
@@ -35,9 +28,9 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 
 Your task is to build out the project to the design file provided. We provide both Sketch and Figma versions of the design, so you can choose which tool you prefer to use. You can download the design file on the platform. **Please be sure not to share them with anyone else.** The design download comes with a `README.md` file as well to help you get set up.
 
-All the required assets for this project are in the `/assets` folder. The assets are already exported for the correct screen size and optimized. Some images are reusable at multiple screen sizes. So if you don't see an image in a specific folder, it will typically be in another folder for that page.
+All the required assets for this project are in the `/assets` folder. The assets are already exported for the correct screen size and optimized. We provide 1x and 2x sizes for each image. You can choose how to use them based on different screen sizes and resolutions. We've provided an image of the map with the location pin, but you can use the `icon-location.svg` asset if you're doing the bonus challenge.
 
-The design system in the design file will give you more information about the various colors, fonts, and styles used in this project.
+The design system in the design file will give you more information about the various colors, fonts, and styles used in this project. Our fonts always come from [Google Fonts](https://fonts.google.com/).
 
 ## Building your project
 
