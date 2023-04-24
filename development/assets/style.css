@@ -254,7 +254,7 @@ input:checked + .slider:before{
 .card-2 button:hover{
     background-image: linear-gradient(hsl(236, 72%, 79%) ,hsl(237, 63%, 64%));
     color: var(--white);
-    border-radius: #ffffff;
+
 }
 .card-3{
     width:300px;
