@@ -264,19 +264,19 @@ input:checked + .slider:before {
     margin-top: 10px;
 }
 
-.card-professional button {
+.card-professional>.card-property button {
     height: 35px;
     width: 250px;
     border-radius: 8px;
     color: var(--mediumpurple);
     margin-top: 20px;
-    background-image: var(--white);
+    background-image: linear-gradient(hsl(0, 0%, 100%), hsl(0, 0%, 100%));
     border: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
 
-.card-professional button:hover {
+.card-professional > .card-property button:hover {
     background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     color: var(--white);
     border-radius: 5px;
