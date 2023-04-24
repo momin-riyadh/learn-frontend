@@ -15,8 +15,6 @@ body {
     background-repeat: no-repeat;
     background-position: bottom left, top right;
     background-color: #E7E7E7;
-
-
 }
 
 @media all and (max-width: 600px) {
@@ -50,8 +48,9 @@ body {
     font-size: 15px;
     color: var(--light-grayish-blue);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 2.5%
 }
 
 .switch {
@@ -179,14 +178,25 @@ input:checked + .slider:before {
     align-items: center;
     gap: 5px;
     font-size: 50px;
+    margin: 25px 0;
 }
 
 .card-price span {
     font-size: 30px;
 }
 
+.card-professional > .card-property > .card-price {
+    color: var(--white);
+}
+
 .card h3 {
     color: var(--grayish-blue);
+    font-size: 15px;
+    margin: 20px 0;
+}
+
+.card.card-professional h3 {
+    color: var(--white);
     font-size: 15px;
     margin-top: 30px;
     margin-bottom: 25px;
