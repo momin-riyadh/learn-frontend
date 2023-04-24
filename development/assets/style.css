@@ -238,7 +238,7 @@ input:checked + .slider:before {
     background-color: cornflowerblue;
 }
 
-.card-2 {
+.card-professional {
     width: 300px;
     height: 400px;
     display: flex;
@@ -249,12 +249,12 @@ input:checked + .slider:before {
 }
 
 @media all and (max-width: 600px) {
-    .card-2 {
+    .card-professional {
         margin-bottom: 20px;
     }
 }
 
-.card-2 h3 {
+.card-professional h3 {
     color: var(--white);
     font-size: 15px;
     margin-top: 51px;
@@ -266,7 +266,7 @@ input:checked + .slider:before {
     color: var(--white);
 }
 
-.card-2 h4 {
+.card-professional h4 {
     color: var(--white);
     font-size: 15px;
     border-bottom: 1px solid hsl(234, 14%, 74%);
@@ -274,7 +274,7 @@ input:checked + .slider:before {
     margin-top: 10px;
 }
 
-.card-2 button {
+.card-professional button {
     height: 35px;
     width: 250px;
     border-radius: 8px;
@@ -286,7 +286,7 @@ input:checked + .slider:before {
     font-weight: 700;
 }
 
-.card-2 button:hover {
+.card-professional button:hover {
     background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     color: var(--white);
     border-radius: #ffffff;
