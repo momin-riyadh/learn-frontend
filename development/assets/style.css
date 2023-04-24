@@ -127,8 +127,7 @@ input:checked + .slider:before {
 }
 
 .section-1 {
-    margin-top: 30px;
-
+    margin: 35px 0;
 }
 
 .section-2 {
@@ -162,7 +161,6 @@ input:checked + .slider:before {
     border-bottom-left-radius: 8px;
     background-color: var(--white);
     padding: 1.5rem;
-
 }
 
 @media all and (max-width: 600px) {
@@ -256,9 +254,8 @@ input:checked + .slider:before {
 .card-professional h3 {
     color: var(--white);
     font-size: 15px;
-    margin-top: 51px;
+    margin-top: 50px;
     margin-bottom: 25px;
-
 }
 
 .card-color {
