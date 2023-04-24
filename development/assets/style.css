@@ -213,21 +213,21 @@ input:checked + .slider:before {
     text-align: center;
 }
 
-.card button {
+.card > .card-property button {
     height: 35px;
     width: 250px;
-    border-radius: 8px;
+    border-radius: 4px;
     color: var(--white);
     margin-top: 20px;
     background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     border: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-
+    transition: all 0.4s ease-in-out;
 }
 
-.card button:hover {
-    background-color: cornflowerblue;
+.card > .card-property button:hover {
+    background-color: #ffffff;
 }
 
 .card-professional {
@@ -240,11 +240,6 @@ input:checked + .slider:before {
     background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
 }
 
-@media all and (max-width: 600px) {
-    .card-professional {
-        margin-bottom: 20px;
-    }
-}
 
 .card-professional h3 {
     color: var(--white);
