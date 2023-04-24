@@ -161,6 +161,7 @@ input:checked + .slider:before {
     border-bottom-left-radius: 8px;
     background-color: var(--white);
     padding: 1.5rem;
+    transition: all 0.4s ease-in-out;
 }
 
 @media all and (max-width: 600px) {
@@ -177,6 +178,10 @@ input:checked + .slider:before {
     gap: 5px;
     font-size: 50px;
     margin: 25px 0;
+}
+
+.card-price.monthly {
+    display: none;
 }
 
 .card-price span {
