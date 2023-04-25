@@ -187,7 +187,7 @@ input:checked + .slider:before {
 }
 
 .card h3 {
-    color: var(--Grayish-blue);
+    color: var(--grayish-blue);
     font-size: 15px;
     margin-top: 30px;
     margin-bottom: 25px;
@@ -203,7 +203,7 @@ input:checked + .slider:before {
 
 
 .card h4 {
-    color: var(--Grayish-blue);
+    color: var(--grayish-blue);
     font-size: 15px;
     border-bottom: 1px solid hsl(234, 14%, 74%);
     padding-bottom: 15px;
@@ -262,6 +262,9 @@ input:checked + .slider:before {
     border-bottom: 1px solid hsl(234, 14%, 74%);
     padding-bottom: 15px;
     margin-top: 10px;
+    display:block;
+    width: 100%;
+    text-align: center;
 }
 
 .card-professional>.card-property button {
@@ -274,6 +277,8 @@ input:checked + .slider:before {
     border: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
 }
 
 .card-professional > .card-property button:hover {
