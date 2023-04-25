@@ -46,49 +46,55 @@
 
         </div>
 
-            <div class="main-cards">
+        <div class="main-cards">
 
-                <div class="card card-basic">
-                    <h3> Basic</h3>
-                    <div class="card-property">
-                        <div class="card-price annually">
-                            <span>$</span>199.99
-                        </div>
-                        <div class="card-price monthly">
-                            <span>$</span>199.99
-                        </div>
-                        <h4 class="card-storage"> 500 GB Storage</h4>
-                        <h4> 2 Users Allowed</h4>
-                        <h4> Send up to 3 GB</h4>
-                        <button>LEARN MORE</button>
+            <div class="card card-basic">
+                <h3> Basic</h3>
+                <div class="card-property">
+                    <div class="card-price annually">
+                        <span>$</span>199.99
                     </div>
-                </div>
-
-                <div class="card card-professional">
-                    <h3> Professional</h3>
-                    <div class="card-property">
-                        <div class="card-price"><span>$</span>249.99</div>
-                        <h4 class="card-storage">1 TB Storage</h4>
-                        <h4>5 Users Allowed</h4>
-                        <h4> Send up to 10 GB</h4>
-                        <button> LEARN MORE</button>
+                    <div class="card-price monthly">
+                        <span>$</span>19.99
                     </div>
+                    <h4 class="card-storage"> 500 GB Storage</h4>
+                    <h4> 2 Users Allowed</h4>
+                    <h4> Send up to 3 GB</h4>
+                    <button>LEARN MORE</button>
                 </div>
-
-                <div class="card card-master">
-                    <h3>Master</h3>
-                    <div class="card-property">
-                        <div class="card-price">
-                            <span>$</span>399.99
-                        </div>
-                        <h4 class="card-storage">2 TB Storage</h4>
-                        <h4>10 Users Allowed</h4>
-                        <h4>Send up to 20 GB</h4>
-                        <button> LEARN MORE</button>
-                    </div>
-                </div>
-
             </div>
+
+            <div class="card card-professional">
+                <h3> Professional</h3>
+                <div class="card-property">
+                    <div class="card-price annually"><span>$</span>249.99</div>
+                    <div class="card-price monthly">
+                        <span>$</span>24.99
+                    </div>
+                    <h4 class="card-storage">1 TB Storage</h4>
+                    <h4>5 Users Allowed</h4>
+                    <h4> Send up to 10 GB</h4>
+                    <button> LEARN MORE</button>
+                </div>
+            </div>
+
+            <div class="card card-master">
+                <h3>Master</h3>
+                <div class="card-property">
+                    <div class="card-price annually">
+                        <span>$</span>399.99
+                    </div>
+                    <div class="card-price monthly">
+                        <span>$</span>39.99
+                    </div>
+                    <h4 class="card-storage">2 TB Storage</h4>
+                    <h4>10 Users Allowed</h4>
+                    <h4>Send up to 20 GB</h4>
+                    <button> LEARN MORE</button>
+                </div>
+            </div>
+
+        </div>
 
     </div>
 
@@ -99,5 +105,20 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
 </div>
+<script>
+    const toggleSwitch = document.getElementById('price-toggle');
+    const yearlyPrices = document.querySelectorAll('.annually');
+    const monthlyPrices = document.querySelectorAll('.monthly');
+
+    toggleSwitch.addEventListener('change', function () {
+        if (this.checked) {
+            yearlyPrices.forEach(price => price.style.display = 'none');
+            monthlyPrices.forEach(price => price.style.display = 'flex');
+        } else {
+            yearlyPrices.forEach(price => price.style.display = 'flex');
+            monthlyPrices.forEach(price => price.style.display = 'none');
+        }
+    });
+</script>
 </body>
 </html>
