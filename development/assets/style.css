@@ -197,7 +197,12 @@ input:checked + .slider:before {
     font-size: 15px;
     margin: 20px 0;
 }
+@media all and (max-width: 600px){
+    .card-basic{
+        border-radius: 8px;
+    }
 
+}
 .card.card-professional h3 {
     color: var(--white);
     font-size: 15px;
