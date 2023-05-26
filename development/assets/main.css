@@ -49,6 +49,7 @@ body, html {
   font-weight: 700;
   font-size: 56px;
   line-height: 100%;
+  margin-bottom: 24px;
 }
 .card-left-part p {
   font-family: "Roboto-Regular", sans-serif;
@@ -57,11 +58,13 @@ body, html {
   font-size: 16px;
   line-height: 150%;
   color: #242742;
+  margin-bottom: 24px;
 }
 .card-left-part ul {
   display: block;
   list-style-image: url("../assets/images/icon-list.svg");
-  padding-left: 30px;
+  padding-left: 27px;
+  margin-bottom: 40px;
 }
 .card-left-part ul li {
   font-weight: 400;
@@ -85,6 +88,7 @@ body, html {
   font-size: 12px;
   line-height: 150%;
   color: #242742;
+  margin-bottom: 14px;
 }
 .form form input {
   border: 1px solid rgba(25, 24, 43, 0.25);
@@ -94,6 +98,17 @@ body, html {
   width: 100%;
   color: rgba(25, 24, 43, 0.25);
   opacity: 0.5;
+  margin-bottom: 24px;
+}
+.form form button[type=submit] {
+  background: #242742;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  padding: 18px;
+  line-height: 1em;
+  text-align: center;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=main.css.map */
