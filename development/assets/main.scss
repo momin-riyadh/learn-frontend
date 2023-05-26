@@ -23,6 +23,7 @@
 body, html {
   background-color: #1E1E1E;
   height: 100%;
+  font-family: 'Roboto-Regular', sans-serif;
 }
 
 .card {
@@ -42,6 +43,8 @@ body, html {
 }
 
 .card-left-part {
+  padding: 0 64px;
+
   h1 {
     color: #242742;
     font-family: 'Roboto-Bold', sans-serif;
@@ -50,4 +53,34 @@ body, html {
     font-size: 56px;
     line-height: 100%;
   }
+
+  p {
+    font-family: 'Roboto-Regular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #242742;
+  }
+
+  ul {
+    display: block;
+    list-style-image: url("../assets/images/icon-list.svg");
+    padding-left: 30px;
+
+    li {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1;
+      color: #242742;
+      margin-bottom: 10px;
+      span{
+        position: relative;
+        bottom: 4px;
+        display: inline-block;
+      }
+    }
+  }
 }
+
+
