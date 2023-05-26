@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+body, html {
+  background-color: #1E1E1E;
+}
+
+/*# sourceMappingURL=main.css.map */
