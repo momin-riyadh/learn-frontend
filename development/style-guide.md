@@ -11,22 +11,22 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Linear Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%)
+- Tomato: hsl(4, 100%, 67%)
 
 ### Neutral
 
-- Very Light Grayish Blue: hsl(240, 78%, 98%)
-- Light Grayish Blue: hsl(234, 14%, 74%)
-- Grayish Blue: hsl(233, 13%, 49%)
-- Dark Grayish Blue: hsl(232, 13%, 33%)
+- Dark Slate Grey: hsl(234, 29%, 20%)
+- Charcoal Grey: hsl(235, 18%, 26%)
+- Grey: hsl(231, 7%, 60%)
+- White: hsl(0, 0%, 100%)
 
 ## Typography
 
 ### Body Copy
 
-- Font size: 15px
+- Font size (paragraph): 16px
 
 ### Font
 
-- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
-- Weight: 700
+- Family: [Roboto](https://fonts.google.com/specimen/Roboto)
+- Weights: 400, 700

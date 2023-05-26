@@ -1,124 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- displays site properly based on user's device -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
-    <title>Frontend Mentor | [Challenge Name Here]</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Karla:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@700&family=Outfit:wght@400;700&display=swap"
-          rel="stylesheet">
-    <link rel="stylesheet" href="assets/reset.css">
-    <link rel="stylesheet" href="assets/style.css">
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-        .attribution {
-            font-size: 11px;
-            text-align: center;
-        }
-
-        .attribution a {
-            color: hsl(228, 45%, 44%);
-        }
-    </style>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
 </head>
 <body>
-<div class="container">
-    <div class="main">
 
-        <div class="cards-header">
-            <div class="cards-header-title">
-                <h2>Our Pricing</h2>
-            </div>
-            <div class="cards-header-meta">
-                <h4>Annually</h4>
-                <label class="switch">
-                    <input type="checkbox" id="price-toggle">
-                    <span class="slider round"></span>
-                </label>
-                <h4> Monthly</h4>
-            </div>
+  <!-- Sign-up form start -->
 
-        </div>
+  Stay updated!
 
-        <div class="main-cards">
+  Join 60,000+ product managers receiving monthly updates on:
 
-            <div class="card card-basic">
-                <h3> Basic</h3>
-                <div class="card-property">
-                    <div class="card-price annually">
-                        <span>$</span>199.99
-                    </div>
-                    <div class="card-price monthly">
-                        <span>$</span>19.99
-                    </div>
-                    <h4 class="card-storage"> 500 GB Storage</h4>
-                    <h4> 2 Users Allowed</h4>
-                    <h4> Send up to 3 GB</h4>
-                    <button>LEARN MORE</button>
-                </div>
-            </div>
+  Product discovery and building what matters
+  Measuring to ensure updates are a success
+  And much more!
 
-            <div class="card card-professional">
-                <h3> Professional</h3>
-                <div class="card-property">
-                    <div class="card-price annually"><span>$</span>249.99</div>
-                    <div class="card-price monthly">
-                        <span>$</span>24.99
-                    </div>
-                    <h4 class="card-storage">1 TB Storage</h4>
-                    <h4>5 Users Allowed</h4>
-                    <h4> Send up to 10 GB</h4>
-                    <button> LEARN MORE</button>
-                </div>
-            </div>
+  Email address
+  email@company.com
 
-            <div class="card card-master">
-                <h3>Master</h3>
-                <div class="card-property">
-                    <div class="card-price annually">
-                        <span>$</span>399.99
-                    </div>
-                    <div class="card-price monthly">
-                        <span>$</span>39.99
-                    </div>
-                    <h4 class="card-storage">2 TB Storage</h4>
-                    <h4>10 Users Allowed</h4>
-                    <h4>Send up to 20 GB</h4>
-                    <button> LEARN MORE</button>
-                </div>
-            </div>
+  Subscribe to monthly newsletter
 
-        </div>
+  <!-- Sign-up form end -->
 
-    </div>
+  <!-- Success message start -->
 
+  Thanks for subscribing!
 
-</div>
+  A confirmation email has been sent to ash@loremcompany.com. 
+  Please open it and click the button inside to confirm your subscription.
 
-<div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://mominriyadh.me">Momin Riyadh</a>.
-</div>
-<script>
-    const toggleSwitch = document.getElementById('price-toggle');
-    const yearlyPrices = document.querySelectorAll('.annually');
-    const monthlyPrices = document.querySelectorAll('.monthly');
+  Dismiss message
 
-    toggleSwitch.addEventListener('change', function () {
-        if (this.checked) {
-            yearlyPrices.forEach(price => price.style.display = 'none');
-            monthlyPrices.forEach(price => price.style.display = 'flex');
-        } else {
-            yearlyPrices.forEach(price => price.style.display = 'flex');
-            monthlyPrices.forEach(price => price.style.display = 'none');
-        }
-    });
-</script>
+  <!-- Success message end -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
 </body>
 </html>
