@@ -1,24 +1,25 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  &::before, &::after{
+
+  &::before, &::after {
     box-sizing: border-box;
   }
 }
 
-body, html{
-  background-color:#1E1E1E;
+body, html {
+  background-color: #1E1E1E;
   height: 100%;
 }
 
-.card{
-  display:grid;
+.card {
+  display: grid;
   place-items: center;
   height: 100%;
 }
 
-.card-body{
+.card-body {
   display: flex;
   justify-content: space-between;
   align-items: center;
