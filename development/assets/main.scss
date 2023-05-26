@@ -74,7 +74,8 @@ body, html {
       line-height: 1;
       color: #242742;
       margin-bottom: 10px;
-      span{
+
+      span {
         position: relative;
         bottom: 4px;
         display: inline-block;
@@ -84,3 +85,27 @@ body, html {
 }
 
 
+.form {
+  form {
+    width: 100%;
+
+    label {
+      display: block;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 150%;
+      color: #242742;
+    }
+
+    input {
+      border: 1px solid rgba(25, 24, 43, 0.25);
+      border-radius: 8px;
+      padding: 16px 16px 16px 24px;
+      display: block;
+      width: 100%;
+      color: rgba(25, 24, 43, 0.25);
+      opacity: 0.5;
+
+    }
+  }
+}
