@@ -26,20 +26,22 @@ body, html {
   font-family: 'Roboto-Regular', sans-serif;
 }
 
+
 .card {
   display: grid;
   place-items: center;
-  height: 100%;
+  //height: calc(100vh - 15px);
 }
 
 .card-body {
-  display: flex;
+  //display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 928px;
   background-color: #ffffff;
   padding: 24px;
   border-radius: 36px;
+  display: none;
 }
 
 .card-left-part {
@@ -115,12 +117,80 @@ body, html {
     button[type=submit] {
       background: #242742;
       border-radius: 8px;
+      border-color: transparent;
+      box-shadow: none;
       display: block;
       width: 100%;
       padding: 18px;
       line-height: 1em;
       text-align: center;
       color: #ffffff;
+      cursor: pointer;
+      transition: all 0.4s ease-in-out;
+
+      &:hover {
+        background: linear-gradient(204.47deg, #FF6A3A 0%, #FF527B 100%);
+        box-shadow: 0 16px 32px rgba(255, 97, 85, 0.5);
+        border-radius: 8px;
+        border-color: transparent;
+      }
+    }
+  }
+}
+
+
+/*==================================
+         Confirmation Message
+  ==================================*/
+
+.confirmation {
+  background-color: #ffffff;
+  max-width: 504px;
+  width: 100%;
+  border-radius: 36px;
+  padding: 64px;
+
+  h1 {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 100%;
+    color: #242742;
+    margin-top: 40px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #242742;
+    margin-top: 24px;
+    margin-bottom: 40px;
+
+    strong {
+      font-weight: bold;
+    }
+  }
+
+
+  button[type=button] {
+    background: #242742;
+    border-radius: 8px;
+    border-color: transparent;
+    box-shadow: none;
+    display: block;
+    width: 100%;
+    padding: 18px;
+    line-height: 1em;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      background: linear-gradient(204.47deg, #FF6A3A 0%, #FF527B 100%);
+      box-shadow: 0 16px 32px rgba(255, 97, 85, 0.5);
+      border-radius: 8px;
+      border-color: transparent;
     }
   }
 }
