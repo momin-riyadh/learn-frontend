@@ -26,20 +26,33 @@ body, html {
 .card {
   display: grid;
   place-items: center;
+  min-height: calc(100vh - 15px);
 }
 
 .card-body {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 928px;
   background-color: #ffffff;
   padding: 24px;
   border-radius: 36px;
-  display: none;
+}
+@media all and (max-width: 768px) {
+  .card-body {
+    flex-direction: column-reverse;
+    padding: 0;
+    border-radius: 0;
+  }
 }
 
 .card-left-part {
   padding: 0 64px;
+}
+@media all and (max-width: 768px) {
+  .card-left-part {
+    padding: 24px;
+  }
 }
 .card-left-part h1 {
   color: #242742;
@@ -89,7 +102,10 @@ body, html {
   color: #242742;
   margin-bottom: 14px;
 }
-.form form input {
+.form form label small {
+  float: right;
+}
+.form form input[type=email] {
   border: 1px solid rgba(25, 24, 43, 0.25);
   border-radius: 8px;
   padding: 16px 16px 16px 24px;
@@ -99,7 +115,11 @@ body, html {
   opacity: 0.5;
   margin-bottom: 24px;
 }
-.form form button[type=submit] {
+.form form input[type=email].invalid {
+  border: 1px solid rgb(255, 97, 85);
+  background: rgba(255, 97, 85, 0.15);
+}
+.form form input[type=submit] {
   background: #242742;
   border-radius: 8px;
   border-color: transparent;
@@ -113,7 +133,7 @@ body, html {
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
-.form form button[type=submit]:hover {
+.form form input[type=submit]:hover {
   background: linear-gradient(204.47deg, #FF6A3A 0%, #FF527B 100%);
   box-shadow: 0 16px 32px rgba(255, 97, 85, 0.5);
   border-radius: 8px;
@@ -129,6 +149,7 @@ body, html {
   width: 100%;
   border-radius: 36px;
   padding: 64px;
+  display: none;
 }
 .confirmation h1 {
   font-weight: 700;
@@ -167,6 +188,19 @@ body, html {
   box-shadow: 0 16px 32px rgba(255, 97, 85, 0.5);
   border-radius: 8px;
   border-color: transparent;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+#emailError {
+  color: #FF6155;
 }
 
 /*# sourceMappingURL=main.css.map */

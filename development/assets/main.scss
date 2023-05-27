@@ -30,22 +30,30 @@ body, html {
 .card {
   display: grid;
   place-items: center;
-  //height: calc(100vh - 15px);
+  min-height: calc(100vh - 15px);
 }
 
 .card-body {
-  //display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 928px;
   background-color: #ffffff;
   padding: 24px;
   border-radius: 36px;
-  display: none;
+  @media all and (max-width: 768px) {
+    flex-direction: column-reverse;
+    padding: 0;
+    border-radius: 0;
+  }
 }
 
 .card-left-part {
   padding: 0 64px;
+  @media all and (max-width: 768px) {
+    padding: 24px;
+  }
+
 
   h1 {
     color: #242742;
@@ -101,9 +109,12 @@ body, html {
       line-height: 150%;
       color: #242742;
       margin-bottom: 14px;
+      small{
+        float: right;
+      }
     }
 
-    input {
+    input[type=email] {
       border: 1px solid rgba(25, 24, 43, 0.25);
       border-radius: 8px;
       padding: 16px 16px 16px 24px;
@@ -112,9 +123,13 @@ body, html {
       color: rgba(25, 24, 43, 0.25);
       opacity: 0.5;
       margin-bottom: 24px;
+      &.invalid{
+        border: 1px solid rgb(255, 97, 85);
+        background: rgba(255, 97, 85, 0.15);
+      }
     }
 
-    button[type=submit] {
+    input[type=submit] {
       background: #242742;
       border-radius: 8px;
       border-color: transparent;
@@ -149,6 +164,7 @@ body, html {
   width: 100%;
   border-radius: 36px;
   padding: 64px;
+  display: none;
 
   h1 {
     font-weight: 700;
@@ -193,4 +209,18 @@ body, html {
       border-color: transparent;
     }
   }
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+#emailError{
+  color: #FF6155;
 }

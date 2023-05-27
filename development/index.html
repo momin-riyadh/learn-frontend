@@ -11,16 +11,6 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <link rel="stylesheet" href="assets/main.css">
-    <style>
-        .attribution {
-            font-size: 11px;
-            text-align: center;
-        }
-
-        .attribution a {
-            color: hsl(228, 45%, 44%);
-        }
-    </style>
 </head>
 <body>
 
@@ -38,16 +28,18 @@
                 </ul>
 
                 <div class="form">
-                    <form action="">
-                        <label for="g-email">Email Address</label>
+                    <form onsubmit="validateForm(event)">
+                        <label for="g-email">Email Address <small id="emailError"></small></label>
                         <input type="email" name="" id="g-email" placeholder="email@company.com">
-                        <button type="submit">Subscribe to monthly newsletter</button>
+
+                        <input type="submit" value="Submit">
                     </form>
                 </div>
             </div>
             <div class="card-right-part">
                 <picture>
-                    <img src="assets/images/illustration-sign-up-desktop.svg" alt="frontend-mentor">
+                    <source media="(max-width:768px)" srcset="assets/images/illustration-sign-up-mobile.svg">
+                    <img class="my-image" src="assets/images/illustration-sign-up-desktop.svg" alt="frontend-mentor">
                 </picture>
             </div>
         </div>
@@ -56,7 +48,8 @@
     <div class="confirmation">
         <img src="assets/images/icon-success.svg" alt="frontend mentor">
         <h1>Thanks for subscribing!</h1>
-        <p>A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. Please open it and click the button inside to confirm your subscription.</p>
+        <p>A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. Please open it and click the
+            button inside to confirm your subscription.</p>
         <button type="button">Dismiss message</button>
     </div>
 </div>
@@ -65,5 +58,27 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://mominriyadh.me">mominriyadh</a>.
 </div>
+
+<script>
+    function validateForm(event) {
+        event.preventDefault(); // Prevent form submission
+
+        let emailInput = document.getElementById('g-email');
+        let emailError = document.getElementById('emailError');
+
+        let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        let emailValue = emailInput.value;
+
+        if (!emailPattern.test(emailValue)) {
+            emailError.textContent = 'Oops, wrong format';
+            emailInput.classList.add('invalid');
+        } else {
+            emailError.textContent = '';
+            emailInput.classList.remove('invalid');
+            // Proceed with form submission
+            event.target.submit();
+        }
+    }
+</script>
 </body>
 </html>
