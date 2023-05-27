@@ -17,7 +17,7 @@
 <div class="main-wrap">
     <div class="card">
         <div class="card-body">
-            
+
 
             <div class="card-left-part">
                 <h1>Stay Update</h1>
@@ -72,7 +72,6 @@
 <script>
     function validateForm(event) {
         event.preventDefault(); // Prevent form submission
-
         let cardArea = document.querySelector('.card-body');
         let successMessage = document.querySelector('.confirmation');
         let submitEmail = document.querySelector('.submit-email');
@@ -89,13 +88,13 @@
         } else {
             emailError.textContent = '';
             emailInput.classList.remove('invalid');
-            cardArea.style.opacity = "0";
+            cardArea.style.display = "none";
             successMessage.classList.add('fade-in');
             cardArea.style.pointerEvents = 'none';
             submitEmail.textContent = emailValue;
 
             setTimeout(function () {
-                cardArea.style.display = 'none';
+                cardArea.style.opacity = '0';
             }, 500);
         }
 
