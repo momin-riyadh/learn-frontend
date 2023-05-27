@@ -43,6 +43,8 @@
                 </picture>
             </div>
         </div>
+
+
         <div class="confirmation">
             <img src="assets/images/icon-success.svg" alt="frontend mentor">
             <h1>Thanks for subscribing!</h1>
@@ -79,16 +81,21 @@
         } else {
             emailError.textContent = '';
             emailInput.classList.remove('invalid');
-            cardArea.style.display = "none";
-            successMessage.style.display = "block";
-            successMessage.style.opacity = "1";
-            successMessage.style.visibility = "visible";
-            submitEmail.textContent = emailValue
+            cardArea.style.opacity = "0";
+            successMessage.classList.add('fade-in');
+            cardArea.style.pointerEvents = 'none';
+            submitEmail.textContent = emailValue;
+
+            setTimeout(function () {
+                cardArea.style.display = 'none';
+            }, 500);
         }
 
         dismissMessage.addEventListener('click', function () {
             successMessage.style.display = 'none';
             cardArea.style.display = 'flex';
+            cardArea.style.opacity = '1';
+            successMessage.classList.remove('fade-in');
         })
 
     }

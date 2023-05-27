@@ -169,7 +169,7 @@ body, html {
   padding: 64px;
   display: none;
   opacity: 0;
-  visibility: hidden;
+  transition: opacity 5s ease-in-out;
 
   h1 {
     font-weight: 700;
@@ -190,6 +190,7 @@ body, html {
     strong {
       font-weight: bold;
     }
+
   }
 
 
@@ -213,6 +214,12 @@ body, html {
       border-radius: 8px;
       border-color: transparent;
     }
+  }
+
+
+  &.fade-in {
+    display: block;
+    opacity: 1;
   }
 }
 
