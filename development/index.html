@@ -43,14 +43,14 @@
                 </picture>
             </div>
         </div>
-    </div>
-
-    <div class="confirmation">
-        <img src="assets/images/icon-success.svg" alt="frontend mentor">
-        <h1>Thanks for subscribing!</h1>
-        <p>A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. Please open it and click the
-            button inside to confirm your subscription.</p>
-        <button type="button">Dismiss message</button>
+        <div class="confirmation">
+            <img src="assets/images/icon-success.svg" alt="frontend mentor">
+            <h1>Thanks for subscribing!</h1>
+            <p>A confirmation email has been sent to <strong class="submit-email">ash@loremcompany.com</strong>. Please
+                open it and click the
+                button inside to confirm your subscription.</p>
+            <button type="button" class="dismiss-message">Dismiss message</button>
+        </div>
     </div>
 </div>
 
@@ -63,6 +63,10 @@
     function validateForm(event) {
         event.preventDefault(); // Prevent form submission
 
+        let cardArea = document.querySelector('.card-body');
+        let successMessage = document.querySelector('.confirmation');
+        let submitEmail = document.querySelector('.submit-email');
+        const dismissMessage = document.querySelector('.dismiss-message');
         let emailInput = document.getElementById('g-email');
         let emailError = document.getElementById('emailError');
 
@@ -75,9 +79,18 @@
         } else {
             emailError.textContent = '';
             emailInput.classList.remove('invalid');
-            // Proceed with form submission
-            event.target.submit();
+            cardArea.style.display = "none";
+            successMessage.style.display = "block";
+            successMessage.style.opacity = "1";
+            successMessage.style.visibility = "visible";
+            submitEmail.textContent = emailValue
         }
+
+        dismissMessage.addEventListener('click', function () {
+            successMessage.style.display = 'none';
+            cardArea.style.display = 'flex';
+        })
+
     }
 </script>
 </body>
