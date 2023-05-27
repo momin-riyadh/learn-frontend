@@ -110,7 +110,8 @@ body, html {
       line-height: 150%;
       color: #242742;
       margin-bottom: 14px;
-      small{
+
+      small {
         float: right;
       }
     }
@@ -123,10 +124,11 @@ body, html {
       width: 100%;
       color: rgba(25, 24, 43);
       margin-bottom: 24px;
-      &.invalid{
+
+      &.invalid {
         border: 1px solid rgb(255, 97, 85);
         background: rgba(255, 97, 85, 0.15);
-        color:rgb(255, 97, 85);
+        color: rgb(255, 97, 85);
       }
     }
 
@@ -160,7 +162,6 @@ body, html {
   ==================================*/
 
 .confirmation {
-
   background-color: #ffffff;
   max-width: 504px;
   width: 100%;
@@ -225,6 +226,6 @@ body, html {
   color: hsl(228, 45%, 44%);
 }
 
-#emailError{
+#emailError {
   color: #FF6155;
 }
