@@ -210,8 +210,8 @@ img {
   border-color: transparent;
 }
 .confirmation.fade-in {
-  display: block;
   opacity: 1;
+  display: block;
 }
 
 .attribution {
@@ -220,7 +220,7 @@ img {
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(228deg, 45%, 44%);
 }
 
 #emailError {

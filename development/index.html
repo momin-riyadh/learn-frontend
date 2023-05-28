@@ -90,7 +90,7 @@
             emailInput.classList.remove('invalid');
             cardArea.style.display = "none";
             successMessage.classList.add('fade-in');
-            cardArea.style.pointerEvents = 'none';
+            cardArea.style.pointerEvents = 'auto';
             submitEmail.textContent = emailValue;
 
             setTimeout(function () {
@@ -103,6 +103,7 @@
             cardArea.style.display = 'flex';
             cardArea.style.opacity = '1';
             successMessage.classList.remove('fade-in');
+            emailInput.value = '';
         })
 
     }
