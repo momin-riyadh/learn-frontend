@@ -1,33 +1,36 @@
-# Frontend Mentor - Minimalist portfolio website
+# Frontend Mentor - Audiophile e-commerce website
 
-![Design preview for the Minimalist portfolio website coding challenge](./preview.jpg)
+![Design preview for the Audiophile e-commerce website coding challenge](./preview.jpg)
 
 ## Welcome! 👋
 
 Thanks for purchasing this premium Frontend Mentor coding challenge.
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects. This challenge is for a portfolio website, so please do feel free to use it as your own portfolio site once you complete the challenge.
+[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects. These premium challenges are perfect portfolio pieces, so please feel free to use what you create in your portfolio to show others.
 
-The content is just dummy content for a fictional developer, so please do experiment with the content and your own images if you like.
-
-**To do this challenge, you need a solid understanding of HTML and CSS and a basic understanding of JavaScript.**
+**To do this challenge, you need a strong understanding of HTML, CSS, and JavaScript.**
 
 ## The challenge
 
-Your challenge is to build out this multi-page portfolio website and get it looking as close to the design as possible.
+Your challenge is to build out this multi-page e-commerce website and get it looking as close to the design as possible.
 
 You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
+If you choose to use a JS-heavy approach, we provide a local `data.json` file for the products. If you want to take it up a notch, feel free to build this as a full-stack application or use a headless CMS!
+
 Your users should be able to:
 
-- View the optimal layout for each page depending on their device's screen size
-- See hover states for all interactive elements throughout the site
-- Click the "About Me" call-to-action on the homepage and have the screen scroll down to the next section
-- Receive an error message when the contact form is submitted if:
-  - The `Name`, `Email Address` or `Message` fields are empty should show "This field is required"
-  - The `Email Address` is not formatted correctly should show "Please use a valid email address"
-
-If you would like to make your contact form actually send you the data, you could use a service like [Formspree](https://formspree.io/) to hook it up.
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Add/Remove products from the cart
+- Edit product quantities in the cart
+- Fill in all fields in the checkout
+- Receive form validations if fields are missed or incorrect during checkout
+- See correct checkout totals depending on the products in the cart
+  - Shipping always adds $50 to the order
+  - VAT is calculated as 20% of the product total, excluding shipping
+- See an order confirmation modal after checking out with an order summary
+- **Bonus**: Keep track of what's in the cart, even after refreshing the browser (`localStorage` could be used for this if you're not building out a full-stack app)
 
 Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
 
@@ -38,6 +41,10 @@ Your task is to build out the project to the design file provided. We provide bo
 All the required assets for this project are in the `/assets` folder. The assets are already exported for the correct screen size and optimized. Some images are reusable at multiple screen sizes. So if you don't see an image in a specific folder, it will typically be in another folder for that page.
 
 The design system in the design file will give you more information about the various colors, fonts, and styles used in this project.
+
+We've prepared the challenge to let you choose your approach. We have separate `.html` files for all pages and products that include the content. However, if you prefer to practice a more JS-heavy approach, you could choose to use the local `data.json` and a library/framework like React, Vue, Angular, etc.
+
+Feel free to edit the JSON structure however you like. If you want to practice working with a professional image hosting service, you could upload the images to a free [Cloudinary](https://cloudinary.com/) account and use their URLs instead of relative paths.
 
 ## Building your project
 
