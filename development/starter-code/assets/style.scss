@@ -42,6 +42,7 @@ main.main {
   position: relative;
   max-width: 1275px;
   min-height: 640px;
+  height: 100%;
   margin: auto;
   width: 100%;
   //min-height: calc(100dvh - 260px);
@@ -271,7 +272,7 @@ main.main {
 .dot-bg {
   position: absolute;
   right: 0;
-  bottom: -20px;
+  bottom: -52px;
   @media all and (max-width: 768px) {
     right: auto;
     left: 2rem;
