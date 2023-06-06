@@ -36,9 +36,9 @@ main.main {
 .container {
   position: relative;
   max-width: 1275px;
+  min-height: 640px;
   margin: auto;
   width: 100%;
-  min-height: calc(100dvh - 260px);
   background-image: url("desktop/image-host.jpg");
   background-position: right top;
   background-repeat: no-repeat;
