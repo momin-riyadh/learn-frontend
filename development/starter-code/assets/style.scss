@@ -104,15 +104,31 @@ main.main {
       height: 56px;
       border-radius: 2rem;
       border: 1px solid transparent;
-      color: var(--white-color);
-      flex: 5;
+      color: #ffffff;
+      //mix-blend-mode: normal;
 
       &:focus {
         outline: none;
       }
 
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      &::-moz-placeholder { /* Firefox 19+ */
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      &:-ms-input-placeholder { /* IE 10+ */
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      &:-moz-placeholder { /* Firefox 18- */
+        color: rgba(255, 255, 255, 0.5);
+      }
+
     }
-    
+
   }
 }
 
@@ -129,11 +145,14 @@ main.main {
     border: 1px solid var(--primary-color);
     color: var(--black-color);
     border-radius: 2rem;
-    font-weight: bold;
     display: block;
     height: 46px;
     padding: 9px 27px;
     cursor: pointer;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
   }
 
 }
