@@ -58,11 +58,19 @@ main.main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    background-color: rgb(18, 23, 37);
+    background-blend-mode: screen;
   }
 }
 
 .top-header {
   flex: 1;
+  background-color: rgba(18, 23, 37, 0.9);
+}
+@media all and (max-width: 576px) {
+  .top-header {
+    text-align: center;
+  }
 }
 .top-header img {
   position: relative;
@@ -92,6 +100,12 @@ main.main {
     padding-left: 2rem;
     flex: 1;
     justify-content: flex-start;
+  }
+}
+@media all and (max-width: 576px) {
+  .promo-middle-part {
+    background-color: rgba(18, 23, 37, 0.9);
+    background-blend-mode: screen;
   }
 }
 
