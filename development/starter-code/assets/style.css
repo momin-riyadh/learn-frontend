@@ -11,6 +11,9 @@
 html, body {
   background-color: #121725;
   height: 100%;
+}
+
+body {
   font-family: "Chivo", sans-serif;
 }
 
@@ -31,6 +34,7 @@ main.main {
 }
 
 .container {
+  position: relative;
   max-width: 1275px;
   margin: auto;
   width: 100%;
@@ -46,12 +50,20 @@ main.main {
 .top-header {
   flex: 1;
 }
+.top-header img {
+  position: relative;
+  bottom: 28px;
+  cursor: pointer;
+}
 
 .promo-middle-part {
   max-width: 723px;
   width: 100%;
   flex: 5;
   background-color: var(--black-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .promo-middle-part-content {
@@ -123,6 +135,7 @@ main.main {
   width: 100%;
 }
 .email-form button {
+  font-family: "Chivo", sans-serif;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -136,9 +149,33 @@ main.main {
   padding: 9px 27px;
   cursor: pointer;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   line-height: 28px;
+}
+
+.podcast-profile-area {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.dot-bg {
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+}
+
+small#email_error {
+  color: #FB3E3E;
+  position: absolute;
+  left: 20px;
+  bottom: -15px;
+  width: 100%;
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */

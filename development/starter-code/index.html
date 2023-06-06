@@ -26,11 +26,11 @@
                 <p>Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, Apple
                     Podcasts,
                     Google Podcasts, Pocket Casts and more!</p>
-                <form action="">
+                <form onsubmit="validateForm(event)">
                     <div class="email-form">
-
                         <label for="email_address">
-                            <input type="email" placeholder="Email Address" id="email_address" required>
+                            <input type="email" placeholder="Email Address" id="email_address">
+                            <small id="email_error"></small>
                         </label>
                         <button type="submit">Request Access</button>
 
@@ -56,10 +56,27 @@
             </div>
         </div>
 
-
+        <div class="dot-bg">
+            <img src="assets/desktop/bg-pattern-dots.svg" alt="">
+        </div>
     </div>
 
 </main>
 
+<script>
+    function validateForm(event) {
+        event.preventDefault();
+        let emailError = document.getElementById('email_error');
+        let emailInput = document.getElementById('email_address');
+        let emailValue = emailInput.value;
+        let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+        if (!emailPattern.test(emailValue)) {
+            emailError.textContent = 'Oops! Please check your email';
+
+        }
+
+    }
+</script>
 </body>
 </html>
