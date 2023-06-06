@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  &::after, &::before {
+    box-sizing: border-box;
+  }
+}
+
+//Importing Font Family
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@400;500;700&display=swap');
+
+
+//All Color list
+:root {
+  --primary-color: #54E6AF;
+  --secondary-color: #2C344B;
+  --black-color: #121725;
+  --white-color: #fffffff;
+  --text-color: #C2CBE5;
+  --text-bold-color: #5A668A;
+}
+
+
