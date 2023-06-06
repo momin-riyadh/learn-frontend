@@ -8,7 +8,13 @@
   }
 }
 
-//Importing Font Family
+html, body {
+  background-color: #121725;
+  height: 100%;
+  font-family: 'Chivo', sans-serif;
+}
+
+//Importing Font Family | font-family: 'Chivo', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@400;500;700&display=swap');
 
 
