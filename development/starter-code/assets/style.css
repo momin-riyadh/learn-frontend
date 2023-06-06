@@ -157,6 +157,7 @@ main.main {
     font-size: 26px;
     line-height: 38px;
     text-align: center;
+    margin: auto;
   }
 }
 .promo-middle-part-content h1 span {
@@ -202,20 +203,16 @@ main.main {
 .promo-middle-part-content form input[type=email]:focus {
   outline: none;
 }
-.promo-middle-part-content form input[type=email]::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
+.promo-middle-part-content form input[type=email]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: rgba(255, 255, 255, 0.5);
 }
-.promo-middle-part-content form input[type=email]::-moz-placeholder {
-  /* Firefox 19+ */
+.promo-middle-part-content form input[type=email]::-moz-placeholder { /* Firefox 19+ */
   color: rgba(255, 255, 255, 0.5);
 }
-.promo-middle-part-content form input[type=email]:-ms-input-placeholder {
-  /* IE 10+ */
+.promo-middle-part-content form input[type=email]:-ms-input-placeholder { /* IE 10+ */
   color: rgba(255, 255, 255, 0.5);
 }
-.promo-middle-part-content form input[type=email]:-moz-placeholder {
-  /* Firefox 18- */
+.promo-middle-part-content form input[type=email]:-moz-placeholder { /* Firefox 18- */
   color: rgba(255, 255, 255, 0.5);
 }
 
