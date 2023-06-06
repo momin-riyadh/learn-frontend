@@ -15,7 +15,7 @@ html, body {
 }
 
 //Importing Font Family | font-family: 'Chivo', sans-serif;
-@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;500;700&display=swap');
 
 
 //All Color list
@@ -23,7 +23,7 @@ html, body {
   --primary-color: #54E6AF;
   --secondary-color: #2C344B;
   --black-color: #121725;
-  --white-color: #fffffff;
+  --white-color: #ffffff;
   --text-color: #C2CBE5;
   --text-bold-color: #5A668A;
 }
@@ -59,5 +59,41 @@ main.main {
   background-color: var(--black-color);
 }
 
+.promo-middle-part-content {
+  margin-top: 88px;
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+
+  h1 {
+    font-family: "Chivo", sans-serif;
+    color: var(--white-color);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 52px;
+    line-height: 62px;
+    text-transform: uppercase;
+
+    span {
+      font-family: "Chivo", sans-serif;
+      color: var(--primary-color);
+      font-weight: 300;
+      display: inline-block;
+    }
+  }
+
+  p {
+    max-width: 445px;
+    color: var(--text-color);
+    font-style: normal;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
 .podcast-profile-area {
+  
 }

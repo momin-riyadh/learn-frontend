@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@ html, body {
   --primary-color: #54E6AF;
   --secondary-color: #2C344B;
   --black-color: #121725;
-  --white-color: #fffffff;
+  --white-color: #ffffff;
   --text-color: #C2CBE5;
   --text-bold-color: #5A668A;
 }
@@ -52,6 +52,38 @@ main.main {
   width: 100%;
   flex: 5;
   background-color: var(--black-color);
+}
+
+.promo-middle-part-content {
+  margin-top: 88px;
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+.promo-middle-part-content h1 {
+  font-family: "Chivo", sans-serif;
+  color: var(--white-color);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 52px;
+  line-height: 62px;
+  text-transform: uppercase;
+}
+.promo-middle-part-content h1 span {
+  font-family: "Chivo", sans-serif;
+  color: var(--primary-color);
+  font-weight: 300;
+  display: inline-block;
+}
+.promo-middle-part-content p {
+  max-width: 445px;
+  color: var(--text-color);
+  font-style: normal;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 /*# sourceMappingURL=style.css.map */
