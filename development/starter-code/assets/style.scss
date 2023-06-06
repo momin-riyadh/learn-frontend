@@ -66,9 +66,9 @@ main.main {
 
 .top-header {
   flex: 1;
-  background-color: rgba(18, 23, 37, 0.90);
   @media all and (max-width: 576px) {
     text-align: center;
+    background-color: rgba(18, 23, 37, 0.90);
   }
 
   img {
@@ -270,14 +270,14 @@ small#email_error {
   line-height: 18px;
 }
 
-@media all and (min-width: 575px){
-  .d-none{
+@media all and (min-width: 575px) {
+  .d-none {
     display: none;
   }
 }
 
-@media all and (max-width: 576px){
-  .d-block{
+@media all and (max-width: 576px) {
+  .d-block {
     display: none;
   }
 }

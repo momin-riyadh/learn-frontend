@@ -65,11 +65,11 @@ main.main {
 
 .top-header {
   flex: 1;
-  background-color: rgba(18, 23, 37, 0.9);
 }
 @media all and (max-width: 576px) {
   .top-header {
     text-align: center;
+    background-color: rgba(18, 23, 37, 0.9);
   }
 }
 .top-header img {
