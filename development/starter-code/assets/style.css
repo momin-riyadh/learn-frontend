@@ -23,4 +23,35 @@ html, body {
   --text-bold-color: #5A668A;
 }
 
+main.main {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 100svh;
+}
+
+.container {
+  max-width: 1275px;
+  margin: auto;
+  width: 100%;
+  min-height: calc(100dvh - 260px);
+  background-image: url("desktop/image-host.jpg");
+  background-position: right top;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top-header {
+  flex: 1;
+}
+
+.promo-middle-part {
+  max-width: 723px;
+  width: 100%;
+  flex: 5;
+  background-color: var(--black-color);
+}
+
 /*# sourceMappingURL=style.css.map */
