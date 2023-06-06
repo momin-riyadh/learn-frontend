@@ -46,6 +46,12 @@ main.main {
   flex-direction: column;
   justify-content: space-between;
 }
+@media all and (max-width: 768px) {
+  .container {
+    min-height: 100vh;
+    background-image: url("tablet/image-host.jpg");
+  }
+}
 
 .top-header {
   flex: 1;
@@ -54,6 +60,12 @@ main.main {
   position: relative;
   bottom: 28px;
   cursor: pointer;
+}
+@media all and (max-width: 768px) {
+  .top-header img {
+    bottom: 0;
+    padding: 2rem;
+  }
 }
 
 .promo-middle-part {
@@ -65,6 +77,15 @@ main.main {
   flex-direction: column;
   justify-content: space-between;
 }
+@media all and (max-width: 768px) {
+  .promo-middle-part {
+    max-width: 635px;
+    width: 100%;
+    padding-left: 2rem;
+    flex: 1;
+    justify-content: flex-start;
+  }
+}
 
 .promo-middle-part-content {
   margin-top: 88px;
@@ -75,6 +96,11 @@ main.main {
   justify-content: space-between;
   gap: 24px;
 }
+@media all and (max-width: 768px) {
+  .promo-middle-part-content {
+    margin-bottom: 64px;
+  }
+}
 .promo-middle-part-content h1 {
   font-family: "Chivo", sans-serif;
   color: var(--white-color);
@@ -83,6 +109,12 @@ main.main {
   font-size: 52px;
   line-height: 62px;
   text-transform: uppercase;
+}
+@media all and (max-width: 768px) {
+  .promo-middle-part-content h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
 }
 .promo-middle-part-content h1 span {
   font-family: "Chivo", sans-serif;
@@ -104,7 +136,7 @@ main.main {
 .promo-middle-part-content form input[type=email] {
   width: 100%;
   background-color: var(--text-bold-color);
-  padding: 1rem;
+  padding: 1rem 11rem 1rem 1rem;
   height: 56px;
   border-radius: 2rem;
   border: 1px solid transparent;
@@ -160,18 +192,30 @@ main.main {
   align-items: center;
   margin-bottom: 30px;
 }
+@media all and (max-width: 768px) {
+  .podcast-profile-area {
+    margin-bottom: 0;
+  }
+}
 
 .dot-bg {
   position: absolute;
   right: 0;
   bottom: -20px;
 }
+@media all and (max-width: 768px) {
+  .dot-bg {
+    right: auto;
+    left: 2rem;
+    bottom: 0;
+  }
+}
 
 small#email_error {
   color: #FB3E3E;
   position: absolute;
   left: 20px;
-  bottom: -15px;
+  margin-top: 5px;
   width: 100%;
   display: block;
   font-size: 12px;
