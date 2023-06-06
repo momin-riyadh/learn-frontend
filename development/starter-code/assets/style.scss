@@ -54,6 +54,12 @@ main.main {
     min-height: 100vh;
     background-image: url("tablet/image-host.jpg");
   }
+  @media all and (max-width: 576px) {
+    background-image: url("mobile/image-host.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
 }
 
 .top-header {
@@ -95,8 +101,8 @@ main.main {
   align-items: flex-start;
   justify-content: space-between;
   gap: 24px;
-  @media all and (max-width: 768px){
-   margin-bottom: 64px;
+  @media all and (max-width: 768px) {
+    margin-bottom: 64px;
   }
 
   h1 {
@@ -210,6 +216,9 @@ main.main {
     right: auto;
     left: 2rem;
     bottom: 0;
+  }
+  @media all and (max-width: 576px) {
+    display: none;
   }
 }
 

@@ -52,6 +52,14 @@ main.main {
     background-image: url("tablet/image-host.jpg");
   }
 }
+@media all and (max-width: 576px) {
+  .container {
+    background-image: url("mobile/image-host.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
 
 .top-header {
   flex: 1;
@@ -208,6 +216,11 @@ main.main {
     right: auto;
     left: 2rem;
     bottom: 0;
+  }
+}
+@media all and (max-width: 576px) {
+  .dot-bg {
+    display: none;
   }
 }
 
