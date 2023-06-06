@@ -83,6 +83,11 @@ main.main {
     padding: 2rem;
   }
 }
+@media all and (max-width: 576px) {
+  .top-header img {
+    padding: 2rem 2rem 0.5rem;
+  }
+}
 
 .promo-middle-part {
   max-width: 723px;
@@ -205,6 +210,13 @@ main.main {
   position: relative;
   width: 100%;
 }
+@media all and (max-width: 576px) {
+  .email-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
 .email-form button {
   font-family: "Chivo", sans-serif;
   position: absolute;
@@ -223,6 +235,11 @@ main.main {
   font-weight: 500;
   font-size: 14px;
   line-height: 28px;
+}
+@media all and (max-width: 576px) {
+  .email-form button {
+    position: initial;
+  }
 }
 
 .podcast-profile-area {
