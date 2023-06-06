@@ -70,6 +70,7 @@ main.main {
   .top-header {
     text-align: center;
     background-color: rgba(18, 23, 37, 0.9);
+    flex: initial;
   }
 }
 .top-header img {
@@ -129,6 +130,12 @@ main.main {
     margin-bottom: 64px;
   }
 }
+@media all and (max-width: 576px) {
+  .promo-middle-part-content {
+    margin-top: 0;
+    margin-bottom: auto;
+  }
+}
 .promo-middle-part-content h1 {
   font-family: "Chivo", sans-serif;
   color: var(--white-color);
@@ -186,6 +193,11 @@ main.main {
   border: 1px solid transparent;
   color: #ffffff;
 }
+@media all and (max-width: 576px) {
+  .promo-middle-part-content form input[type=email] {
+    height: auto;
+  }
+}
 .promo-middle-part-content form input[type=email]:focus {
   outline: none;
 }
@@ -214,7 +226,7 @@ main.main {
   .email-form {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 42px;
   }
 }
 .email-form button {
@@ -258,6 +270,7 @@ main.main {
     gap: 10px;
     justify-content: space-between;
     width: 100%;
+    padding: 33px 0 48px;
   }
 }
 @media all and (max-width: 576px) {
@@ -293,6 +306,11 @@ small#email_error {
   display: block;
   font-size: 12px;
   line-height: 18px;
+}
+@media all and (max-width: 576px) {
+  small#email_error {
+    margin-top: 0;
+  }
 }
 
 @media all and (min-width: 575px) {

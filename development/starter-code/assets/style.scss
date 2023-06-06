@@ -69,6 +69,7 @@ main.main {
   @media all and (max-width: 576px) {
     text-align: center;
     background-color: rgba(18, 23, 37, 0.90);
+    flex: initial;
   }
 
   img {
@@ -117,6 +118,10 @@ main.main {
   gap: 24px;
   @media all and (max-width: 768px) {
     margin-bottom: 64px;
+  }
+  @media all and (max-width: 576px) {
+    margin-top: 0;
+    margin-bottom: auto;
   }
 
   h1 {
@@ -172,6 +177,10 @@ main.main {
       border-radius: 2rem;
       border: 1px solid transparent;
       color: #ffffff;
+      @media all and (max-width: 576px) {
+        height: auto;
+      }
+
 
       &:focus {
         outline: none;
@@ -204,7 +213,7 @@ main.main {
   @media all and (max-width: 576px) {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 42px;
   }
 
   button {
@@ -245,6 +254,7 @@ main.main {
     gap: 10px;
     justify-content: space-between;
     width: 100%;
+    padding: 33px 0 48px;
   }
 
   a {
@@ -280,6 +290,10 @@ small#email_error {
   display: block;
   font-size: 12px;
   line-height: 18px;
+  @media all and (max-width: 576px) {
+    margin-top: 0;
+  }
+
 }
 
 @media all and (min-width: 575px) {
