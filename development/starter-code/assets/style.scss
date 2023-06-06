@@ -100,6 +100,7 @@ main.main {
   @media all and (max-width: 576px) {
     background-color: rgba(18, 23, 37, 0.90);
     background-blend-mode: screen;
+    padding: 24px
   }
 }
 
@@ -127,6 +128,11 @@ main.main {
       font-size: 48px;
       line-height: 56px;
     }
+    @media all and (max-width: 576px) {
+      font-size: 26px;
+      line-height: 38px;
+      text-align: center;
+    }
 
     span {
       font-family: "Chivo", sans-serif;
@@ -142,6 +148,13 @@ main.main {
     font-style: normal;
     font-size: 18px;
     line-height: 28px;
+    @media all and (max-width: 576px) {
+      text-align: center;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+    }
   }
 
   form {
@@ -216,6 +229,20 @@ main.main {
   @media all and (max-width: 768px) {
     margin-bottom: 0;
   }
+  @media all and (max-width: 576px) {
+    gap: 10px;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  a {
+    img {
+      @media all and (max-width: 576px) {
+        height: 15px;
+      }
+    }
+
+  }
 }
 
 .dot-bg {
@@ -241,4 +268,16 @@ small#email_error {
   display: block;
   font-size: 12px;
   line-height: 18px;
+}
+
+@media all and (min-width: 575px){
+  .d-none{
+    display: none;
+  }
+}
+
+@media all and (max-width: 576px){
+  .d-block{
+    display: none;
+  }
 }
