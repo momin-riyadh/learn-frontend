@@ -85,5 +85,42 @@ main.main {
   font-size: 18px;
   line-height: 28px;
 }
+.promo-middle-part-content form {
+  max-width: 427px;
+  width: 100%;
+}
+.promo-middle-part-content form input[type=email] {
+  width: 100%;
+  background-color: var(--text-bold-color);
+  padding: 1rem;
+  height: 56px;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  color: var(--white-color);
+  flex: 5;
+}
+.promo-middle-part-content form input[type=email]:focus {
+  outline: none;
+}
+
+.email-form {
+  position: relative;
+  width: 100%;
+}
+.email-form button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: var(--black-color);
+  border-radius: 2rem;
+  font-weight: bold;
+  display: block;
+  height: 46px;
+  padding: 9px 27px;
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=style.css.map */
