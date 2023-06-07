@@ -16,38 +16,55 @@
               TOP HEADER
  ***********************************-->
 
-<header class="g-header">
-    <div class="g-logo">
-        <a href="/">
-            <img src="assets/images/logo.svg" alt="">
-        </a>
+<header class="g-header-area">
+    <div class="container">
+        <div class="row">
+            <div class="g-header-main">
+                <div class="g-logo">
+                    <a href="/">
+                        <img src="assets/images/logo.svg" alt="">
+                    </a>
+                </div>
+                <nav class="g-top-navigation">
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">PORTFOLIO</a></li>
+                        <li><a href="">CONTACT ME</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </div>
-    <nav class="g-top-navigation">
-        <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">PORTFOLIO</a></li>
-            <li><a href="">CONTACT ME</a></li>
-        </ul>
-    </nav>
 </header>
 
 
 <!--**********************************
               HOME BANNER
  ***********************************-->
-<div class="g-banner">
-    <figure>
-        <picture>
-            <source media="(min-width:1440px)" srcset="assets/images/homepage/desktop/image-homepage-hero@2x.jpg">
-            <img src="assets/images/homepage/mobile/image-homepage-hero.jpg" alt="home_banner">
-        </picture>
-        <figcaption>
-            <h3>Hey, I’m Alex Spencer and I love building beautiful websites</h3>
-            <button>
-                <img src="assets/images/icons/down-arrows.svg" alt="mominriyadh"> ABOUT ME
-            </button>
-        </figcaption>
-    </figure>
+<div class="g-banner-area">
+    <div class="container">
+        <div class="row">
+
+            <div class="g-banner-main">
+                <figure>
+                    <picture>
+                        <source media="(min-width:1440px)"
+                                srcset="assets/images/homepage/desktop/image-homepage-hero@2x.jpg">
+                        <img class="img-fluid" src="assets/images/homepage/mobile/image-homepage-hero.jpg"
+                             alt="home_banner">
+                    </picture>
+                    <figcaption>
+                        <h3>Hey, I’m Alex Spencer and I love building beautiful websites</h3>
+                        <button>
+                            <img src="assets/images/icons/down-arrows.svg" alt="mominriyadh"> ABOUT ME
+                        </button>
+                    </figcaption>
+                </figure>
+            </div>
+
+
+        </div>
+    </div>
 </div>
 
 
@@ -55,26 +72,38 @@
       Home ==> About Me Sections
  ***********************************-->
 <div class="g-about-me-area">
-    <div class="g-about-me-main">
+    <div class="container">
+        <div class="row">
 
-        <div class="g-about-me-leftpart">
-            <picture>
-                <source media="(min-width:1440px)" srcset="assets/images/homepage/tablet/image-homepage-profile@2x.jpg">
-                <img src="assets/images/homepage/desktop/image-homepage-profile.jpg" alt="">
-            </picture>
+            <div class="g-about-me-main">
+
+
+                <div class="g-about-me-leftpart">
+                    <picture>
+                        <source media="(min-width:1440px)"
+                                srcset="assets/images/homepage/tablet/image-homepage-profile@2x.jpg">
+                        <img class="img-fluid" src="assets/images/homepage/desktop/image-homepage-profile.jpg" alt="">
+                    </picture>
+                </div>
+
+                <div class="g-about-me-rightpart">
+                    <h1>About Me</h1>
+                    <p>I’m a junior front-end developer looking for a new role in an exciting company. I focus on
+                        writing
+                        accessible HTML, using modern CSS practices and writing clean JavaScript. When writing
+                        JavaScript code,
+                        I mostly use React, but I can adapt to whatever tools are required. I’m based in London, UK, but
+                        I’m
+                        happy working remotely and have experience in remote teams. When I’m not coding, you’ll find me
+                        outdoors. I love being out in nature whether that’s going for a walk, run or cycling. I’d love
+                        you to
+                        check out my work.</p>
+                    <button>GO TO PORTFOLIO</button>
+                </div>
+
+            </div>
+
         </div>
-
-        <div class="g-about-me-rightpart">
-            <h1>About Me</h1>
-            <p>I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing
-                accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code,
-                I mostly use React, but I can adapt to whatever tools are required. I’m based in London, UK, but I’m
-                happy working remotely and have experience in remote teams. When I’m not coding, you’ll find me
-                outdoors. I love being out in nature whether that’s going for a walk, run or cycling. I’d love you to
-                check out my work.</p>
-            <button>GO TO PORTFOLIO</button>
-        </div>
-
     </div>
 </div>
 
@@ -83,12 +112,16 @@
            Home ==> Footer CTA
  ***********************************-->
 <div class="g-home-footer-cta">
-    <div class="g-home-footer-main">
+    <div class="container">
+        <div class="row">
+            <div class="g-home-footer-main">
 
-        <h3>Interested in doing a project together?</h3>
-        <hr/>
-        <button>CONTACT ME</button>
+                <h3>Interested in doing a project together?</h3>
+                <hr/>
+                <button>CONTACT ME</button>
 
+            </div>
+        </div>
     </div>
 </div>
 
@@ -97,34 +130,39 @@
          Home ==> Main Footer
  ***********************************-->
 <footer class="g-footer-area">
-    <div class="g-footer-main">
+    <div class="container">
+        <div class="row">
+            <div class="g-footer-main">
 
-        <div class="g-footer-left-part">
-            <a href="">
-                <img src="assets/images/logo.svg" alt="">
-            </a>
 
-            <div class="g-footer-menu">
-                <a href="">HOME</a>
-                <a href="">PORTFOLIO</a>
-                <a href="">CONTACT ME</a>
+                <div class="g-footer-left-part">
+                    <a href="">
+                        <img src="assets/images/logo.svg" alt="">
+                    </a>
+
+                    <div class="g-footer-menu">
+                        <a href="">HOME</a>
+                        <a href="">PORTFOLIO</a>
+                        <a href="">CONTACT ME</a>
+                    </div>
+                </div>
+
+                <div class="g-footer-right-part">
+                    <div class="g-footer-social">
+                        <a href="">
+                            <img src="assets/images/icons/github.svg" alt="mominriyadh">
+                        </a>
+                        <a href="">
+                            <img src="assets/images/icons/twitter.svg" alt="mominriyadh">
+                        </a>
+                        <a href="">
+                            <img src="assets/images/icons/linkedin.svg" alt="mominriyadh">
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
-
-        <div class="g-footer-right-part">
-            <div class="g-footer-social">
-                <a href="">
-                    <img src="assets/images/icons/github.svg" alt="mominriyadh">
-                </a>
-                <a href="">
-                    <img src="assets/images/icons/twitter.svg" alt="mominriyadh">
-                </a>
-                <a href="">
-                    <img src="assets/images/icons/linkedin.svg" alt="mominriyadh">
-                </a>
-            </div>
-        </div>
-
     </div>
 </footer>
 
