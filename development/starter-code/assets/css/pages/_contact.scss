@@ -45,6 +45,7 @@
 .g-contact-area {
   display: flex;
   padding: 3rem 0;
+  width: 100%;
 
   h1 {
     flex: 2;
@@ -52,6 +53,28 @@
 
   form {
     flex: 3;
+
+    p {
+      margin-bottom: 1.5rem;
+      label {
+        display: block;
+        margin-bottom: 1rem;
+      }
+
+      input {
+        background-color: rgba(51, 50, 61, 0.1);
+        display: block;
+        width: 100%;
+        border: 1px solid transparent;
+        height: 48px;
+      }
+      textarea{
+        background-color: rgba(51, 50, 61, 0.1);
+        display: block;
+        width: 100%;
+        border: 1px solid transparent;
+      }
+    }
   }
 
 }

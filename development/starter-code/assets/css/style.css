@@ -383,12 +383,33 @@ button.btn-outline {
 .g-contact-area {
   display: flex;
   padding: 3rem 0;
+  width: 100%;
 }
 .g-contact-area h1 {
   flex: 2;
 }
 .g-contact-area form {
   flex: 3;
+}
+.g-contact-area form p {
+  margin-bottom: 1.5rem;
+}
+.g-contact-area form p label {
+  display: block;
+  margin-bottom: 1rem;
+}
+.g-contact-area form p input {
+  background-color: rgba(51, 50, 61, 0.1);
+  display: block;
+  width: 100%;
+  border: 1px solid transparent;
+  height: 48px;
+}
+.g-contact-area form p textarea {
+  background-color: rgba(51, 50, 61, 0.1);
+  display: block;
+  width: 100%;
+  border: 1px solid transparent;
 }
 
 /*# sourceMappingURL=style.css.map */
