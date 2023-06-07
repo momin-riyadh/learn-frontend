@@ -79,6 +79,12 @@ button.btn-outline {
   white-space: nowrap;
 }
 
+.g-horizontal-line {
+  height: 1px;
+  background-color: rgba(51, 50, 61, 0.15);
+  width: 100%;
+}
+
 /*============================
     All Variables For Project
   ============================*/
@@ -226,11 +232,6 @@ button.btn-outline {
   letter-spacing: -0.357143px;
   color: #33323D;
 }
-.g-home-footer-main .g-horizontal-line {
-  height: 1px;
-  background-color: rgba(51, 50, 61, 0.15);
-  width: 100%;
-}
 
 .g-footer-area {
   background-color: var(--grayish-dark-blue);
@@ -284,8 +285,14 @@ button.btn-outline {
          PORTFOLIO
   ============================*/
 .g-portfolio-area:not(:first-of-type) {
-  padding: 150px 0;
+  padding: 40px 0;
   overflow: hidden;
+}
+
+.g-portfolio-area:nth-of-type(even) .g-portfolio-main {
+  flex-direction: row-reverse;
+  width: 100%;
+  justify-content: flex-start;
 }
 
 .g-portfolio-main {
@@ -293,18 +300,22 @@ button.btn-outline {
   display: flex;
   align-items: center;
   gap: 125px;
-  max-height: 600px;
-  height: 100%;
+  min-height: 500px;
 }
 
 .g-portfolio-rightpart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.g-portfolio-rightpart-content {
   max-width: 350px;
   width: 100%;
-  border-top: 1px solid rgba(51, 50, 61, 0.15);
-  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
-  padding: 2.5rem 0;
 }
-.g-portfolio-rightpart h1 {
+.g-portfolio-rightpart-content h1 {
   font-family: "Ibarra Real Nova", serif;
   font-style: normal;
   font-weight: 700;
@@ -314,7 +325,7 @@ button.btn-outline {
   color: #33323D;
   margin-bottom: 30px;
 }
-.g-portfolio-rightpart p {
+.g-portfolio-rightpart-content p {
   font-family: "Public Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
