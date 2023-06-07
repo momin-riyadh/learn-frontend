@@ -177,7 +177,7 @@ button.btn-outline {
   width: 100%;
   border-top: 1px solid rgba(51, 50, 61, 0.15);
   border-bottom: 1px solid rgba(51, 50, 61, 0.15);
-  padding: 4.5rem 0;
+  padding: 2.5rem 0;
 }
 .g-about-me-rightpart h1 {
   font-family: "Ibarra Real Nova", serif;
@@ -198,6 +198,37 @@ button.btn-outline {
   color: #33323D;
   mix-blend-mode: normal;
   opacity: 0.8;
+  margin-bottom: 24px;
+}
+
+/*============================
+      Home ==> Footer CTA
+  ============================*/
+.g-home-footer-cta {
+  margin: 150px 0;
+  width: 100%;
+}
+
+.g-home-footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+}
+.g-home-footer-main h3 {
+  font-family: "Ibarra Real Nova", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  color: #33323D;
+}
+.g-home-footer-main .g-horizontal-line {
+  height: 1px;
+  background-color: rgba(51, 50, 61, 0.15);
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
