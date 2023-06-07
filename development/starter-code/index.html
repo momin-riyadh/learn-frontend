@@ -1,98 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-    <link rel="stylesheet" href="assets/style.css">
-
-    <title>Frontend Mentor | Pod request access landing page</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Minimalist Portfolio</title>
 </head>
 <body>
+  
+  Home
+  Portfolio
+  Contact Me
 
-<main class="main">
+  Hey, I’m Alex Spencer and I love building beautiful websites
 
-    <div class="container">
-        <div class="top-header">
-            <img src="assets/desktop/logo.svg" alt="">
-        </div>
+  About Me
 
-        <div class="promo-middle-part">
-            <div class="promo-middle-part-content">
+  About Me
 
-                <h1><span>Publish your podcasts</span> <br/>
-                    everywhere.</h1>
-                <p>Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, Apple
-                    Podcasts,
-                    Google Podcasts, Pocket Casts and more!</p>
+  I’m a junior front-end developer looking for a new role in an exciting company. 
+  I focus on writing accessible HTML, using modern CSS practices and writing clean 
+  JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to 
+  whatever tools are required. I’m based in London, UK, but I’m happy working remotely 
+  and have experience in remote teams. When I’m not coding, you’ll find me outdoors. 
+  I love being out in nature whether that’s going for a walk, run or cycling. I’d love 
+  you to check out my work.
 
-                <div class="podcast-profile-area d-none">
-                    <a href="#">
-                        <img src="assets/desktop/spotify.svg" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="assets/desktop/apple-podcast.svg" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="assets/desktop/google-podcasts.svg" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="assets/desktop/pocket-casts.svg" alt="">
-                    </a>
-                </div>
+  Go to Portfolio
 
-                <form onsubmit="validateForm(event)">
-                    <div class="email-form">
-                        <label for="email_address">
-                            <input type="email" placeholder="Email Address" id="email_address">
-                            <small id="email_error"></small>
-                        </label>
-                        <button type="submit">Request Access</button>
-                    </div>
-                </form>
+  Interested in doing a project together?
 
-            </div>
+  Contact Me
 
-
-            <div class="podcast-profile-area d-block">
-                <a href="#">
-                    <img src="assets/desktop/spotify.svg" alt="">
-                </a>
-                <a href="#">
-                    <img src="assets/desktop/apple-podcast.svg" alt="">
-                </a>
-                <a href="#">
-                    <img src="assets/desktop/google-podcasts.svg" alt="">
-                </a>
-                <a href="#">
-                    <img src="assets/desktop/pocket-casts.svg" alt="">
-                </a>
-            </div>
-        </div>
-
-        <div class="dot-bg">
-            <img src="assets/desktop/bg-pattern-dots.svg" alt="">
-        </div>
-    </div>
-
-</main>
-
-<script>
-    function validateForm(event) {
-        event.preventDefault();
-        let emailError = document.getElementById('email_error');
-        let emailInput = document.getElementById('email_address');
-        let emailValue = emailInput.value;
-        let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-
-        if (!emailPattern.test(emailValue)) {
-            emailError.textContent = 'Oops! Please check your email';
-
-        }
-
-    }
-</script>
 </body>
 </html>
