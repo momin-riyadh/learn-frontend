@@ -1,8 +1,20 @@
 /*============================
-         All Fonts Family
+    All Variables For Project
   ============================*/
 @import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;500;700&family=Ibarra+Real+Nova:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;500;700&family=Ibarra+Real+Nova:wght@400;500&display=swap");
+:root {
+  --primary-color: #5FB4A2;
+  --dark-blue: #203A4C;
+  --grayish-dark-blue: #33323D;
+  --very-light-gray: #FAFAFA;
+  --light-gray: #EAEAEB;
+  --bright-red: #F43030;
+}
+
+/*============================
+         All Fonts Family
+  ============================*/
 /*============================
          All Reset Code
 ============================*/
@@ -75,7 +87,19 @@ button.btn-outline {
   align-items: center;
   border: 1px solid #33323D;
   cursor: pointer;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.8rem;
+  white-space: nowrap;
+}
+
+button.btn-solid {
+  text-align: center;
+  background-color: var(--dark-blue);
+  height: 48px;
+  align-items: center;
+  border: 1px solid var(--dark-blue);
+  color: #ffffff;
+  cursor: pointer;
+  padding: 1rem 1.8rem;
   white-space: nowrap;
 }
 
@@ -83,18 +107,6 @@ button.btn-outline {
   height: 1px;
   background-color: rgba(51, 50, 61, 0.15);
   width: 100%;
-}
-
-/*============================
-    All Variables For Project
-  ============================*/
-:root {
-  --primary-color: #5FB4A2;
-  --dark-blue: #203A4C;
-  --grayish-dark-blue: #33323D;
-  --very-light-gray: #FAFAFA;
-  --light-gray: #EAEAEB;
-  --bright-red: #F43030;
 }
 
 /*============================
@@ -396,7 +408,13 @@ button.btn-outline {
 }
 .g-contact-area form p label {
   display: block;
-  margin-bottom: 1rem;
+  font-family: "Public Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 30px;
+  color: rgba(51, 50, 61, 0.8);
+  mix-blend-mode: normal;
 }
 .g-contact-area form p input {
   background-color: rgba(51, 50, 61, 0.1);
@@ -404,12 +422,14 @@ button.btn-outline {
   width: 100%;
   border: 1px solid transparent;
   height: 48px;
+  padding: 1rem;
 }
 .g-contact-area form p textarea {
   background-color: rgba(51, 50, 61, 0.1);
   display: block;
   width: 100%;
   border: 1px solid transparent;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

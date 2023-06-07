@@ -1,4 +1,17 @@
 /*============================
+    All Variables For Project
+  ============================*/
+:root {
+  --primary-color: #5FB4A2;
+  --dark-blue: #203A4C;
+  --grayish-dark-blue: #33323D;
+  --very-light-gray: #FAFAFA;
+  --light-gray: #EAEAEB;
+  --bright-red: #F43030;
+}
+
+
+/*============================
          All Fonts Family
   ============================*/
 @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;500;700&family=Ibarra+Real+Nova:wght@400;500&display=swap');
@@ -81,7 +94,19 @@ button.btn-outline {
   align-items: center;
   border: 1px solid #33323D;
   cursor: pointer;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.8rem;
+  white-space: nowrap;
+}
+
+button.btn-solid {
+  text-align: center;
+  background-color: var(--dark-blue);
+  height: 48px;
+  align-items: center;
+  border: 1px solid var(--dark-blue);
+  color: #ffffff;
+  cursor: pointer;
+  padding: 1rem 1.8rem;
   white-space: nowrap;
 }
 
@@ -91,17 +116,6 @@ button.btn-outline {
   width: 100%;
 }
 
-/*============================
-    All Variables For Project
-  ============================*/
-:root {
-  --primary-color: #5FB4A2;
-  --dark-blue: #203A4C;
-  --grayish-dark-blue: #33323D;
-  --very-light-gray: #FAFAFA;
-  --light-gray: #EAEAEB;
-  --bright-red: #F43030;
-}
 
 /*============================
          Importing Parts
