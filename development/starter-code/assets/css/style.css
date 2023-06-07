@@ -340,4 +340,44 @@ button.btn-outline {
   margin-bottom: 24px;
 }
 
+/*============================
+          Contact
+  ============================*/
+.g-get-in-touch-main {
+  display: flex;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 3rem 0;
+}
+.g-get-in-touch-main .g-lead-text {
+  flex: 2;
+}
+.g-get-in-touch-main .g-lead-text h1 {
+  font-family: "Ibarra Real Nova", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  color: #33323D;
+}
+.g-get-in-touch-main .g-lead-paragraph {
+  flex: 3;
+}
+.g-get-in-touch-main .g-lead-paragraph p {
+  font-family: "Public Sans", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: rgba(51, 50, 61, 0.8);
+}
+
+.g-contact-social {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
 /*# sourceMappingURL=style.css.map */
