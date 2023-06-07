@@ -159,3 +159,53 @@
     width: 100%;
   }
 }
+
+
+.g-footer-area {
+  background-color: var(--grayish-dark-blue);
+  min-height: 80px;
+  display: grid;
+  place-items: center;
+}
+
+.g-footer-main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.g-footer-left-part {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.g-footer-menu {
+  display: flex;
+  gap: 2rem;
+
+  a {
+    text-decoration: none;
+    font-family: 'Public Sans', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+  }
+}
+
+.g-footer-menu{
+  display: flex;
+  gap:2rem;
+  align-items: center;
+}
+.g-footer-social{
+  display: flex;
+  gap:1rem;
+  align-items: center;
+}

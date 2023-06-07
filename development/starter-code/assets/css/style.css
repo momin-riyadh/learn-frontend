@@ -70,12 +70,13 @@ button.btn span {
 
 button.btn-outline {
   text-align: center;
-  width: 200px;
   background-color: transparent;
   height: 48px;
   align-items: center;
   border: 1px solid #33323D;
   cursor: pointer;
+  padding: 1rem 1.5rem;
+  white-space: nowrap;
 }
 
 /*============================
@@ -229,6 +230,54 @@ button.btn-outline {
   height: 1px;
   background-color: rgba(51, 50, 61, 0.15);
   width: 100%;
+}
+
+.g-footer-area {
+  background-color: var(--grayish-dark-blue);
+  min-height: 80px;
+  display: grid;
+  place-items: center;
+}
+
+.g-footer-main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.g-footer-left-part {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.g-footer-menu {
+  display: flex;
+  gap: 2rem;
+}
+.g-footer-menu a {
+  text-decoration: none;
+  font-family: "Public Sans", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.g-footer-menu {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.g-footer-social {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
