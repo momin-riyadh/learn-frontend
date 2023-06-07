@@ -380,4 +380,15 @@ button.btn-outline {
   margin-top: 1.5rem;
 }
 
+.g-contact-area {
+  display: flex;
+  padding: 3rem 0;
+}
+.g-contact-area h1 {
+  flex: 2;
+}
+.g-contact-area form {
+  flex: 3;
+}
+
 /*# sourceMappingURL=style.css.map */

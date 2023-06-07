@@ -41,3 +41,17 @@
   gap: 1rem;
   margin-top: 1.5rem;
 }
+
+.g-contact-area {
+  display: flex;
+  padding: 3rem 0;
+
+  h1 {
+    flex: 2;
+  }
+
+  form {
+    flex: 3;
+  }
+
+}
