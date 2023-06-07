@@ -52,6 +52,38 @@ body {
   height: auto;
 }
 
+button.btn {
+  display: inline-flex;
+  text-align: center;
+  width: 200px;
+  background-color: var(--grayish-dark-blue);
+  border: none;
+  height: 48px;
+  align-items: center;
+
+  img {
+    background-color: var(--dark-blue);
+    padding: 1rem;
+  }
+
+  span {
+    text-align: center;
+    justify-self: center;
+    color: #ffffff;
+    flex-grow: 1;
+  }
+}
+
+button.btn-outline {
+  text-align: center;
+  width: 200px;
+  background-color: transparent;
+  height: 48px;
+  align-items: center;
+  border: 1px solid #33323D;
+  cursor: pointer;
+}
+
 /*============================
     All Variables For Project
   ============================*/

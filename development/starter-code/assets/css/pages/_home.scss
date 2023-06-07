@@ -59,7 +59,68 @@
     max-height: 337px;
     height: 100%;
     background-color: var(--very-light-gray);
+    display: inline-flex;
+    flex-direction: column;
+    gap: 3.3125rem;
+    justify-content: flex-end;
+
+    h3 {
+      font-family: 'Ibarra Real Nova', serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 50px;
+      letter-spacing: -0.446429px;
+      color: #33323D;
+    }
+    
   }
 }
 
 
+/*=================================
+     Home ==> About Me Sections
+  =================================*/
+.g-about-me-area {
+  padding: 150px 0;
+  overflow: hidden;
+}
+
+.g-about-me-main {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 125px;
+  max-height: 600px;
+  height: 100%;
+}
+
+.g-about-me-rightpart {
+  max-width: 350px;
+  width: 100%;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+  padding: 4.5rem 0;
+
+  h1 {
+    font-family: 'Ibarra Real Nova', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+    color: #33323D;
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-family: 'Public Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #33323D;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+}

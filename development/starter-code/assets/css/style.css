@@ -48,6 +48,36 @@ body {
   height: auto;
 }
 
+button.btn {
+  display: inline-flex;
+  text-align: center;
+  width: 200px;
+  background-color: var(--grayish-dark-blue);
+  border: none;
+  height: 48px;
+  align-items: center;
+}
+button.btn img {
+  background-color: var(--dark-blue);
+  padding: 1rem;
+}
+button.btn span {
+  text-align: center;
+  justify-self: center;
+  color: #ffffff;
+  flex-grow: 1;
+}
+
+button.btn-outline {
+  text-align: center;
+  width: 200px;
+  background-color: transparent;
+  height: 48px;
+  align-items: center;
+  border: 1px solid #33323D;
+  cursor: pointer;
+}
+
 /*============================
     All Variables For Project
   ============================*/
@@ -110,6 +140,64 @@ body {
   max-height: 337px;
   height: 100%;
   background-color: var(--very-light-gray);
+  display: inline-flex;
+  flex-direction: column;
+  gap: 3.3125rem;
+  justify-content: flex-end;
+}
+.g-banner-main figcaption h3 {
+  font-family: "Ibarra Real Nova", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: -0.446429px;
+  color: #33323D;
+}
+
+/*=================================
+     Home ==> About Me Sections
+  =================================*/
+.g-about-me-area {
+  padding: 150px 0;
+  overflow: hidden;
+}
+
+.g-about-me-main {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 125px;
+  max-height: 600px;
+  height: 100%;
+}
+
+.g-about-me-rightpart {
+  max-width: 350px;
+  width: 100%;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+  padding: 4.5rem 0;
+}
+.g-about-me-rightpart h1 {
+  font-family: "Ibarra Real Nova", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  color: #33323D;
+  margin-bottom: 30px;
+}
+.g-about-me-rightpart p {
+  font-family: "Public Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #33323D;
+  mix-blend-mode: normal;
+  opacity: 0.8;
 }
 
 /*# sourceMappingURL=style.css.map */
