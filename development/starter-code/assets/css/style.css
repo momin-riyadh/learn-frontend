@@ -302,9 +302,17 @@ body {
 /*============================
          PORTFOLIO
   ============================*/
+.g-portfolio-area:last-of-type {
+  padding-bottom: 0;
+}
+
 .g-portfolio-area:not(:first-of-type) {
   padding: 40px 0;
   overflow: hidden;
+}
+
+.g-portfolio-area:first-of-type {
+  padding-bottom: 40px;
 }
 
 .g-portfolio-area:nth-of-type(even) .g-portfolio-main {
