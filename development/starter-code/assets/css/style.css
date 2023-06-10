@@ -523,4 +523,10 @@ body {
   margin-bottom: 28px;
 }
 
+.preview-area {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 /*# sourceMappingURL=style.css.map */
