@@ -439,4 +439,30 @@ body {
   padding: 1rem;
 }
 
+.g-pf-single-banner {
+  margin-bottom: 115px;
+}
+
+.g-pf-single-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 125px;
+}
+
+.g-left-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.g-left-summary h2 {
+  font-family: "Ibarra Real Nova", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  color: var(--dark-blue);
+}
+
 /*# sourceMappingURL=style.css.map */
