@@ -529,4 +529,38 @@ body {
   gap: 2rem;
 }
 
+.g-pf-navigations-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+  margin: 64px 0;
+  padding: 32px 0;
+}
+
+.left-nav-area a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 1rem;
+}
+.left-nav-area a p {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.left-nav-area a p span {
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: -0.285714px;
+}
+.left-nav-area a p small {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: rgba(51, 50, 61, 0.5);
+  mix-blend-mode: normal;
+}
+
 /*# sourceMappingURL=style.css.map */
