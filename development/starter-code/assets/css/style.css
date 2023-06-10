@@ -12,6 +12,12 @@
   --bright-red: #F43030;
 }
 
+h1, h2, h3, h3, h4, h5, h6 {
+  font-family: "Ibarra Real Nova", serif;
+  font-style: normal;
+  color: var(--dark-blue);
+}
+
 /*============================
          All Fonts Family
   ============================*/
@@ -70,6 +76,13 @@ body {
   height: 48px;
   align-items: center;
   text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+.btn:hover {
+  background-color: var(--primary-color);
+}
+.btn:hover > img {
+  background-color: #479987;
 }
 .btn img {
   background-color: var(--dark-blue);
@@ -93,6 +106,7 @@ body {
   padding: 1rem 1.8rem;
   white-space: nowrap;
   text-decoration: none;
+  line-height: 1;
 }
 
 .btn-solid {
@@ -483,6 +497,30 @@ body {
   line-height: 30px;
   color: var(--primary-color);
   margin-bottom: 16px;
+}
+
+.g-project-description h2 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: -0.285714px;
+  margin-bottom: 28px;
+}
+.g-project-description p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: rgba(51, 50, 61, 0.8);
+  mix-blend-mode: normal;
+  margin-bottom: 25px;
+}
+
+.g-project-preview h2 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: -0.285714px;
+  margin-bottom: 28px;
 }
 
 /*# sourceMappingURL=style.css.map */

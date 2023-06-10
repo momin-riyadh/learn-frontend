@@ -10,6 +10,12 @@
   --bright-red: #F43030;
 }
 
+h1, h2, h3, h3, h4, h5, h6 {
+  font-family: 'Ibarra Real Nova', serif;
+  font-style: normal;
+  color: var(--dark-blue);
+}
+
 
 /*============================
          All Fonts Family
@@ -75,6 +81,15 @@ body {
   height: 48px;
   align-items: center;
   text-decoration: none;
+  transition: all 0.4s ease-in-out;
+
+  &:hover {
+    background-color: var(--primary-color);
+
+    > img {
+      background-color: darken(#5FB4A2, 10%);
+    }
+  }
 
   img {
     background-color: var(--dark-blue);
@@ -100,6 +115,7 @@ body {
   padding: 1rem 1.8rem;
   white-space: nowrap;
   text-decoration: none;
+  line-height: 1;
 }
 
 .btn-solid {

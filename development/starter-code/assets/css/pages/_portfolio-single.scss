@@ -37,10 +37,41 @@
   }
 }
 
-.g-pf-category, .g-portfolio-tags{
+.g-pf-category, .g-portfolio-tags {
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
   color: var(--primary-color);
   margin-bottom: 16px;
+}
+
+
+.g-project-description {
+  h2 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: -0.285714px;
+    margin-bottom: 28px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    color: rgba(51, 50, 61, 0.8);
+    mix-blend-mode: normal;
+    margin-bottom: 25px;
+  }
+}
+
+.g-project-preview {
+  h2 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: -0.285714px;
+    margin-bottom: 28px;
+  }
+
 }
