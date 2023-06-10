@@ -67,6 +67,7 @@ body {
 
 .btn {
   display: inline-flex;
+  overflow: hidden;
   text-align: center;
   width: 200px;
   background-color: var(--grayish-dark-blue);
@@ -89,6 +90,7 @@ body {
 }
 
 .btn-outline {
+  display: inline-block;
   text-align: center;
   background-color: transparent;
   height: 48px;
@@ -101,6 +103,7 @@ body {
 }
 
 .btn-solid {
+  display: inline-block;
   text-align: center;
   background-color: var(--dark-blue);
   height: 48px;
