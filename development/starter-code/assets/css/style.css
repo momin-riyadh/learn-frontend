@@ -490,6 +490,7 @@ a {
 }
 .g-get-in-touch-main .g-lead-text {
   flex: 2;
+  margin-bottom: 1.8rem;
 }
 .g-get-in-touch-main .g-lead-text h1 {
   font-family: "Ibarra Real Nova", serif;
@@ -531,6 +532,7 @@ a {
 }
 .g-contact-area h1 {
   flex: 2;
+  margin-bottom: 1.8rem;
 }
 .g-contact-area form {
   flex: 3;
