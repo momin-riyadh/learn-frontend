@@ -52,6 +52,7 @@
 .g-banner-main {
   figure {
     position: relative;
+
   }
 
   figcaption {
@@ -69,6 +70,7 @@
     justify-content: flex-end;
     @media all and (max-width: 575px) {
       position: initial;
+      padding: 24px 0;
     }
 
     h3 {

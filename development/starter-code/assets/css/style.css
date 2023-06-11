@@ -218,6 +218,7 @@ a {
 @media all and (max-width: 575px) {
   .g-banner-main figcaption {
     position: initial;
+    padding: 24px 0;
   }
 }
 .g-banner-main figcaption h3 {
