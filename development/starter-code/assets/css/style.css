@@ -236,6 +236,11 @@ a {
 .g-about-me-area {
   padding: 150px 0;
 }
+@media all and (max-width: 575px) {
+  .g-about-me-area {
+    padding: 50px 0 0;
+  }
+}
 
 .g-about-me-main {
   display: flex;

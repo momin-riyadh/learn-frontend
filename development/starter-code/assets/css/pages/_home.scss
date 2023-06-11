@@ -90,6 +90,9 @@
   =================================*/
 .g-about-me-area {
   padding: 150px 0;
+  @media all and (max-width: 575px) {
+    padding: 50px 0  0;
+  }
 }
 
 .g-about-me-main {
@@ -213,7 +216,7 @@
   align-items: center;
   @media all and (max-width: 575px) {
     flex-direction: column;
-    gap:40px;
+    gap: 40px;
   }
 }
 
@@ -223,7 +226,7 @@
   align-items: center;
   @media all and (max-width: 575px) {
     flex-direction: column;
-    gap:40px;
+    gap: 40px;
   }
 }
 
