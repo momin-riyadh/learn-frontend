@@ -6,6 +6,9 @@
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   padding: 3rem 0;
+  @media all and (max-width: 767px) {
+    flex-direction: column;
+  }
 
   .g-lead-text {
     flex: 2;
@@ -46,6 +49,9 @@
   display: flex;
   padding: 3rem 0;
   width: 100%;
+  @media all and (max-width: 767px) {
+    flex-direction: column;
+  }
 
   h1 {
     flex: 2;
