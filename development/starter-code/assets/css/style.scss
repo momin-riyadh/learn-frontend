@@ -122,6 +122,12 @@ a{
   white-space: nowrap;
   text-decoration: none;
   line-height: 1;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  &:hover{
+    box-shadow: 0 0 40px 40px var(--primary-color) inset;
+    border: 1px solid var(--primary-color);
+    color: #ffffff;
+  }
 }
 
 .btn-solid {
