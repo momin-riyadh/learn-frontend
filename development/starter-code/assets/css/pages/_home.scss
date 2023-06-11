@@ -201,6 +201,9 @@
   min-height: 80px;
   display: grid;
   place-items: center;
+  @media all and (max-width: 575px) {
+    padding: 56px 0;
+  }
 }
 
 .g-footer-main {
@@ -208,12 +211,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media all and (max-width: 575px) {
+    flex-direction: column;
+    gap:40px;
+  }
 }
 
 .g-footer-left-part {
   display: flex;
   gap: 3rem;
   align-items: center;
+  @media all and (max-width: 575px) {
+    flex-direction: column;
+    gap:40px;
+  }
 }
 
 .g-footer-menu {

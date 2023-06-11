@@ -350,6 +350,11 @@ a {
   display: grid;
   place-items: center;
 }
+@media all and (max-width: 575px) {
+  .g-footer-area {
+    padding: 56px 0;
+  }
+}
 
 .g-footer-main {
   width: 100%;
@@ -357,11 +362,23 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+@media all and (max-width: 575px) {
+  .g-footer-main {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
 
 .g-footer-left-part {
   display: flex;
   gap: 3rem;
   align-items: center;
+}
+@media all and (max-width: 575px) {
+  .g-footer-left-part {
+    flex-direction: column;
+    gap: 40px;
+  }
 }
 
 .g-footer-menu {
