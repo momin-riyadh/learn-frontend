@@ -124,7 +124,6 @@ a {
 .btn-solid {
   display: inline-block;
   text-align: center;
-  background-color: var(--dark-blue);
   height: 48px;
   align-items: center;
   border: 1px solid var(--dark-blue);
@@ -133,6 +132,12 @@ a {
   padding: 1rem 1.8rem;
   white-space: nowrap;
   text-decoration: none;
+  box-shadow: 0 0 40px 40px var(--dark-blue) inset, 0 0 0 0 var(--dark-blue);
+  transition: all 150ms ease-in-out;
+}
+.btn-solid:hover {
+  box-shadow: 0 0 10px 0 var(--dark-blue) inset, 0 0 10px 4px var(--dark-blue);
+  color: var(--dark-blue);
 }
 
 .g-horizontal-line {
@@ -466,6 +471,7 @@ a {
   width: 100%;
   border: 1px solid transparent;
   padding: 1rem;
+  resize: vertical;
 }
 
 .g-pf-single-banner {
