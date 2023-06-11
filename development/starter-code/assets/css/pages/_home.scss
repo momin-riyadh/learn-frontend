@@ -117,7 +117,7 @@
   border-top: 1px solid rgba(51, 50, 61, 0.15);
   border-bottom: 1px solid rgba(51, 50, 61, 0.15);
   padding: 2.5rem 0;
-  @media all and (max-width: 575px){
+  @media all and (max-width: 575px) {
     max-width: 100%;
   }
 
@@ -152,6 +152,9 @@
 .g-home-footer-cta {
   margin: 150px 0;
   width: 100%;
+  @media all and (max-width: 575px) {
+    margin: 80px 0;
+  }
 }
 
 .g-home-footer-main {
@@ -160,6 +163,10 @@
   align-items: center;
   width: 100%;
   gap: 2rem;
+  @media all and (max-width: 575px) {
+    flex-direction: column;
+    gap: 40px;
+  }
 
   h3 {
     font-family: 'Ibarra Real Nova', serif;
@@ -171,10 +178,15 @@
     color: #33323D;
     flex-shrink: 0;
     max-width: 350px;
+    @media all and (max-width: 575px) {
+      text-align: center;
+    }
   }
 
   span.g-horizontal-line {
-
+    @media all and (max-width: 575px) {
+      display: none;
+    }
   }
 
   a {
