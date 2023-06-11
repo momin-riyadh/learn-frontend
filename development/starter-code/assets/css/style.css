@@ -49,7 +49,7 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
-@media all and (max-width: 767px) {
+@media all and (max-width: 991px) {
   .container {
     padding-right: calc(var(--bs-gutter-x) * 1.5);
     padding-left: calc(var(--bs-gutter-x) * 1.5);
@@ -219,6 +219,8 @@ a {
   .g-banner-main figcaption {
     position: initial;
     padding: 24px 0;
+    gap: 1.8rem;
+    max-height: 100%;
   }
 }
 .g-banner-main figcaption h3 {
