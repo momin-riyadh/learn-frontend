@@ -87,12 +87,16 @@
 }
 
 .g-about-me-main {
-  overflow: hidden;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 125px;
   max-height: 600px;
   height: 100%;
+  @media all and (max-width: 767px) {
+    gap: 69px;
+    max-height: 100%;
+  }
 }
 
 .g-about-me-rightpart {
@@ -150,9 +154,17 @@
     line-height: 42px;
     letter-spacing: -0.357143px;
     color: #33323D;
+    flex-shrink: 0;
+    max-width: 350px;
+  }
+
+  span.g-horizontal-line {
 
   }
 
+  a {
+    flex-shrink: 0;
+  }
 
 }
 
@@ -195,13 +207,14 @@
   }
 }
 
-.g-footer-menu{
+.g-footer-menu {
   display: flex;
-  gap:2rem;
+  gap: 2rem;
   align-items: center;
 }
-.g-footer-social{
+
+.g-footer-social {
   display: flex;
-  gap:1rem;
+  gap: 1rem;
   align-items: center;
 }

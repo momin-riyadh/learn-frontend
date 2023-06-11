@@ -49,6 +49,12 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
+@media all and (max-width: 767px) {
+  .container {
+    padding-right: calc(var(--bs-gutter-x) * 1.5);
+    padding-left: calc(var(--bs-gutter-x) * 1.5);
+  }
+}
 
 .row {
   --bs-gutter-x: 1.5rem;
@@ -223,12 +229,18 @@ a {
 }
 
 .g-about-me-main {
-  overflow: hidden;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 125px;
   max-height: 600px;
   height: 100%;
+}
+@media all and (max-width: 767px) {
+  .g-about-me-main {
+    gap: 69px;
+    max-height: 100%;
+  }
 }
 
 .g-about-me-rightpart {
@@ -283,6 +295,11 @@ a {
   line-height: 42px;
   letter-spacing: -0.357143px;
   color: #33323D;
+  flex-shrink: 0;
+  max-width: 350px;
+}
+.g-home-footer-main a {
+  flex-shrink: 0;
 }
 
 .g-footer-area {
@@ -515,6 +532,10 @@ a {
   line-height: 30px;
   color: var(--primary-color);
   margin-bottom: 16px;
+}
+
+.g-right-details {
+  max-width: 635px;
 }
 
 .g-project-description h2 {
