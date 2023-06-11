@@ -172,6 +172,11 @@ a {
   width: 100%;
 }
 
+@media all and (max-width: 575px) {
+  .g-header-main .g-top-navigation {
+    display: none;
+  }
+}
 .g-header-main .g-top-navigation ul {
   margin: 0;
   padding: 0;
@@ -210,6 +215,11 @@ a {
   gap: 3.3125rem;
   justify-content: flex-end;
 }
+@media all and (max-width: 575px) {
+  .g-banner-main figcaption {
+    position: initial;
+  }
+}
 .g-banner-main figcaption h3 {
   font-family: "Ibarra Real Nova", serif;
   font-style: normal;
@@ -225,21 +235,27 @@ a {
   =================================*/
 .g-about-me-area {
   padding: 150px 0;
-  overflow: hidden;
 }
 
 .g-about-me-main {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   gap: 125px;
   max-height: 600px;
   height: 100%;
+  width: 100%;
 }
 @media all and (max-width: 767px) {
   .g-about-me-main {
     gap: 69px;
     max-height: 100%;
+  }
+}
+@media all and (max-width: 575px) {
+  .g-about-me-main {
+    gap: 32px;
+    max-height: 100%;
+    flex-direction: column;
   }
 }
 
@@ -249,6 +265,11 @@ a {
   border-top: 1px solid rgba(51, 50, 61, 0.15);
   border-bottom: 1px solid rgba(51, 50, 61, 0.15);
   padding: 2.5rem 0;
+}
+@media all and (max-width: 575px) {
+  .g-about-me-rightpart {
+    max-width: 100%;
+  }
 }
 .g-about-me-rightpart h1 {
   font-family: "Ibarra Real Nova", serif;
