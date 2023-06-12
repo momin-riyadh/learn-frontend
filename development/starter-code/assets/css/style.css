@@ -49,7 +49,7 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
-@media all and (max-width: 991px) {
+@media all and (max-width: 1170px) {
   .container {
     padding-right: calc(var(--bs-gutter-x) * 1.2);
     padding-left: calc(var(--bs-gutter-x) * 1.2);
@@ -591,6 +591,10 @@ a {
   resize: vertical;
 }
 
+.g-portfolio-single-main {
+  overflow: hidden;
+}
+
 .g-pf-single-banner {
   margin-bottom: 115px;
 }
@@ -599,6 +603,11 @@ a {
   display: flex;
   justify-content: space-between;
   gap: 120px;
+}
+@media all and (max-width: 767px) {
+  .g-pf-single-details {
+    flex-direction: column;
+  }
 }
 
 .g-left-summary {
@@ -625,7 +634,6 @@ a {
   mix-blend-mode: normal;
   margin-bottom: 25px;
 }
-
 .g-pf-category, .g-portfolio-tags {
   font-weight: 700;
   font-size: 16px;
@@ -636,6 +644,13 @@ a {
 
 .g-right-details {
   max-width: 635px;
+  width: 100%;
+}
+@media all and (max-width: 767px) {
+  .g-right-details {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .g-project-description h2 {
@@ -675,11 +690,13 @@ a {
   border-top: 1px solid rgba(51, 50, 61, 0.15);
   border-bottom: 1px solid rgba(51, 50, 61, 0.15);
   margin: 64px 0;
+  flex: 1 0 0;
 }
 
 .left-nav-area {
   padding: 32px 0;
-  flex-basis: 50%;
+  max-width: 50%;
+  width: 100%;
 }
 .left-nav-area a {
   display: flex;
@@ -707,7 +724,8 @@ a {
 
 .right-nav-area {
   border-left: 1px solid rgba(51, 50, 61, 0.15);
-  flex-basis: 50%;
+  max-width: 50%;
+  width: 100%;
   padding: 32px 0;
 }
 .right-nav-area a {
