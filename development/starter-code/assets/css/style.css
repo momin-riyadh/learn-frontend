@@ -181,7 +181,7 @@ a {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 1.5rem;
+  gap: 3.5rem;
 }
 .g-header-main .g-top-navigation li {
   list-style: none;
@@ -434,9 +434,13 @@ a {
   width: 100%;
   justify-content: flex-start;
 }
+@media all and (max-width: 575px) {
+  .g-portfolio-area:nth-of-type(even) .g-portfolio-main {
+    flex-direction: column;
+  }
+}
 
 .g-portfolio-main {
-  overflow: hidden;
   display: flex;
   align-items: center;
   gap: 125px;
@@ -447,6 +451,12 @@ a {
     gap: 69px;
   }
 }
+@media all and (max-width: 575px) {
+  .g-portfolio-main {
+    min-height: 100%;
+    flex-direction: column;
+  }
+}
 
 .g-portfolio-rightpart {
   display: flex;
@@ -454,11 +464,17 @@ a {
   justify-content: space-between;
   align-items: flex-start;
   height: 100%;
+  gap: 24px;
 }
 
 .g-portfolio-rightpart-content {
   max-width: 350px;
   width: 100%;
+}
+@media all and (max-width: 575px) {
+  .g-portfolio-rightpart-content {
+    max-width: 100%;
+  }
 }
 .g-portfolio-rightpart-content h1 {
   font-family: "Ibarra Real Nova", serif;

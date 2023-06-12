@@ -15,17 +15,23 @@
     flex-direction: row-reverse;
     width: 100%;
     justify-content: flex-start;
+    @media all and (max-width: 575px) {
+      flex-direction: column;
+    }
   }
 }
 
 .g-portfolio-main {
-  overflow: hidden;
   display: flex;
   align-items: center;
   gap: 125px;
   min-height: 500px;
   @media all and (max-width: 767px) {
     gap: 69px;
+  }
+  @media all and (max-width: 575px) {
+    min-height: 100%;
+    flex-direction: column;
   }
 }
 
@@ -35,11 +41,15 @@
   justify-content: space-between;
   align-items: flex-start;
   height: 100%;
+  gap:24px;
 }
 
 .g-portfolio-rightpart-content {
   max-width: 350px;
   width: 100%;
+  @media all and (max-width: 575px){
+    max-width: 100%
+  }
 
   h1 {
     font-family: 'Ibarra Real Nova', serif;
