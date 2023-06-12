@@ -229,14 +229,15 @@
 
 <script>
     window.addEventListener("load", function () {
-        if (!sessionStorage.getItem("hasShownLoading")) {
+        let hasShownLoading = sessionStorage.getItem("hasShownLoading");
+        if (!hasShownLoading) {
             setTimeout(function () {
                 let gLoading = document.getElementById("loading");
                 if (gLoading) {
                     gLoading.style.opacity = '0';
                     gLoading.addEventListener("transitionend", function () {
                         gLoading.style.display = "none";
-                        sessionStorage.setItem("hasShownLoading", "false");
+                        sessionStorage.setItem("hasShownLoading", "true");
                     }, { once: true });
                 }
             }, 3000);
