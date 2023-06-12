@@ -164,6 +164,11 @@ a {
   justify-content: center;
   align-items: center;
 }
+@media all and (max-width: 575px) {
+  .g-header-area {
+    min-height: 100px;
+  }
+}
 
 .g-header-main {
   display: flex;
@@ -597,6 +602,11 @@ a {
 
 .g-pf-single-banner {
   margin-bottom: 115px;
+}
+@media all and (max-width: 575px) {
+  .g-pf-single-banner {
+    margin-bottom: 40px;
+  }
 }
 
 .g-pf-single-details {

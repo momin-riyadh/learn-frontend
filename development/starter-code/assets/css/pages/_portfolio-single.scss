@@ -4,6 +4,9 @@
 
 .g-pf-single-banner {
   margin-bottom: 115px;
+  @media all and (max-width: 575px) {
+    margin-bottom: 40px;
+  }
 }
 
 .g-pf-single-details {

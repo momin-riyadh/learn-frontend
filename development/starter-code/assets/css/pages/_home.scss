@@ -6,6 +6,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media all and (max-width: 575px){
+    min-height: 100px;
+  }
 }
 
 .g-header-main {
