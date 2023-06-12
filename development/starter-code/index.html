@@ -236,7 +236,7 @@
                     gLoading.style.opacity = '0';
                     gLoading.addEventListener("transitionend", function () {
                         gLoading.style.display = "none";
-                        sessionStorage.setItem("hasShownLoading", "true");
+                        sessionStorage.setItem("hasShownLoading", "false");
                     }, { once: true });
                 }
             }, 3000);
