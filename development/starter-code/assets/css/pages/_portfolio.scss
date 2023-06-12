@@ -24,6 +24,9 @@
   align-items: center;
   gap: 125px;
   min-height: 500px;
+  @media all and (max-width: 767px) {
+    gap: 69px;
+  }
 }
 
 .g-portfolio-rightpart {

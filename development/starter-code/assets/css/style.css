@@ -442,6 +442,11 @@ a {
   gap: 125px;
   min-height: 500px;
 }
+@media all and (max-width: 767px) {
+  .g-portfolio-main {
+    gap: 69px;
+  }
+}
 
 .g-portfolio-rightpart {
   display: flex;
