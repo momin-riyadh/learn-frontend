@@ -139,6 +139,10 @@
         font-size: 32px;
         line-height: 36px;
         letter-spacing: -0.285714px;
+        @media all and (max-width: 575px){
+          font-size: 20px;
+          line-height: 1em;
+        }
       }
 
       small {
@@ -147,6 +151,10 @@
         line-height: 30px;
         color: rgba(51, 50, 61, 0.5);
         mix-blend-mode: normal;
+        @media all and (max-width: 575px){
+          font-size: 14px;
+          line-height: 1.4em;
+        }
       }
     }
   }
@@ -175,6 +183,10 @@
         font-size: 32px;
         line-height: 36px;
         letter-spacing: -0.285714px;
+        @media all and (max-width: 575px){
+          font-size: 20px;
+          line-height: 1em;
+        }
       }
 
       small {
@@ -183,6 +195,10 @@
         line-height: 30px;
         color: rgba(51, 50, 61, 0.5);
         mix-blend-mode: normal;
+        @media all and (max-width: 575px){
+          font-size: 14px;
+          line-height: 1.4em;
+        }
       }
     }
   }
