@@ -5,9 +5,12 @@
 @import "base/typography";
 @import "base/utilities";
 
-@import "layout/header";
-
 @import "layout/navigation";
 @import "layout/footer";
+@import "layout/catagories_header";
+
+@import "components/product_list";
+@import "components/catagories";
+@import "components/best_audio";
 
 @import "pages/home";
