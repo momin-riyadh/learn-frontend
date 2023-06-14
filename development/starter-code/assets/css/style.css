@@ -177,9 +177,26 @@ a {
   width: 100%;
 }
 
+.g-header-main .g-top-navigation {
+  transition: all 0.4s ease;
+}
 @media all and (max-width: 575px) {
   .g-header-main .g-top-navigation {
     display: none;
+    opacity: 0;
+    transition: all 0.4s ease;
+    position: absolute;
+    top: 60px;
+    right: 17px;
+    z-index: 2;
+    background-color: #33323D;
+    width: 100%;
+    max-width: 225px;
+  }
+  .g-header-main .g-top-navigation.show {
+    transition: all 0.4s ease;
+    display: block;
+    opacity: 1;
   }
 }
 .g-header-main .g-top-navigation ul {
@@ -188,16 +205,54 @@ a {
   display: flex;
   gap: 3.5rem;
 }
+@media all and (max-width: 576px) {
+  .g-header-main .g-top-navigation ul {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    gap: 2rem;
+    padding: 3rem 1rem;
+  }
+}
 .g-header-main .g-top-navigation li {
   list-style: none;
+}
+@media all and (max-width: 576px) {
+  .g-header-main .g-top-navigation li {
+    text-align: center;
+  }
 }
 .g-header-main .g-top-navigation a {
   text-decoration: none;
   transition: all 0.4s ease-in-out;
   color: #33323D;
 }
+@media all and (max-width: 576px) {
+  .g-header-main .g-top-navigation a {
+    color: #ffffff;
+    font-size: 12px;
+  }
+}
 .g-header-main .g-top-navigation a:hover {
   color: var(--primary-color);
+}
+
+/*============================
+      Mobile Navigation
+  ============================*/
+.g-hamburger {
+  border: none;
+  background-color: transparent;
+}
+@media all and (min-width: 576px) {
+  .g-hamburger {
+    display: none;
+  }
+}
+
+.close {
+  display: none;
+  opacity: 1;
 }
 
 /*============================
