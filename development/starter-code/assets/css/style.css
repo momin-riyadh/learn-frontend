@@ -327,6 +327,12 @@ a {
   letter-spacing: -0.446429px;
   color: #33323D;
 }
+@media all and (max-width: 575px) {
+  .g-banner-main figcaption h3 {
+    font-size: 40px;
+    line-height: 42px;
+  }
+}
 
 /*=================================
      Home ==> About Me Sections

@@ -130,6 +130,10 @@
       line-height: 50px;
       letter-spacing: -0.446429px;
       color: #33323D;
+      @media all and (max-width: 575px) {
+        font-size: 40px;
+        line-height: 42px;
+      }
     }
 
   }
