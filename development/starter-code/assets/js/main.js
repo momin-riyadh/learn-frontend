@@ -29,4 +29,26 @@ window.onload = function () {
             closeIcon.style.display = "none";
         }
     });
+
+    {
+        let hasShownLoading = sessionStorage.getItem("hasShownLoading");
+        if (!hasShownLoading) {
+            sessionStorage.setItem("hasShownLoading", "true");
+            setTimeout(function () {
+                let gLoading = document.getElementById("loading");
+                if (gLoading) {
+                    gLoading.style.opacity = '0';
+                    gLoading.addEventListener("transitionend", function () {
+                        gLoading.style.display = "none";
+                    }, { once: true });
+                }
+            }, 3000);
+        } else {
+            let gLoading = document.getElementById("loading");
+            if (gLoading) {
+                gLoading.style.display = "none";
+            }
+        }
+
+    }
 }

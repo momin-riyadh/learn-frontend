@@ -187,7 +187,7 @@
 </footer>
 
 
-<script src="assets/js/main.js"></script>
+
 
 <!--**********************************
               Loader
@@ -233,30 +233,6 @@
 </div>
 
 <!--End Loader-->
-
-
-<script>
-    window.addEventListener("load", function () {
-        let hasShownLoading = sessionStorage.getItem("hasShownLoading");
-        if (!hasShownLoading) {
-            sessionStorage.setItem("hasShownLoading", "true");
-            setTimeout(function () {
-                let gLoading = document.getElementById("loading");
-                if (gLoading) {
-                    gLoading.style.opacity = '0';
-                    gLoading.addEventListener("transitionend", function () {
-                        gLoading.style.display = "none";
-                    }, { once: true });
-                }
-            }, 3000);
-        } else {
-            let gLoading = document.getElementById("loading");
-            if (gLoading) {
-                gLoading.style.display = "none";
-            }
-        }
-    });
-</script>
-
+<script src="assets/js/main.js"></script>
 </body>
 </html>
