@@ -1,6 +1,6 @@
-# Frontend Mentor - Body Mass Index Calculator
+# Frontend Mentor - Coffeeroasters subscription site
 
-![Design preview for the Body Mass Index Calculator coding challenge](./preview.jpg)
+![Design preview for the Coffeeroasters subscription site coding challenge](./preview.jpg)
 
 ## Welcome! 👋
 
@@ -8,44 +8,63 @@ Thanks for purchasing this premium Frontend Mentor coding challenge.
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects. These premium challenges are perfect portfolio pieces, so please feel free to use what you create in your portfolio to show others.
 
-**To do this challenge, you need a strong understanding of HTML, CSS, and JavaScript.**
+**To do this challenge, you need a good understanding of HTML, CSS, and JavaScript.**
 
 ## The challenge
 
-Your challenge is to build out this body mass index calculator page and get it looking as close to the design as possible.
+Your challenge is to build out this multi-page coffee subscription website and get it looking as close to the design as possible.
 
 You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
 Your users should be able to:
 
-- Select whether they want to use metric or imperial units
-- Enter their height and weight
-- See their BMI result, with their weight classification and healthy weight range
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
+- View the optimal layout for each page depending on their device's screen size
+- See hover states for all interactive elements throughout the site
+- Make selections to create a coffee subscription and see an order summary modal of their choices (details provided below)
+
+### Expected bahaviour
+
+The interactive subscription page has a number of specific behaviours, which are listed below:
+
+- If "Capsule" is selected for the first option
+  - The "Want us to grind them?" section should be disabled and not able to be opened
+- Order summary texts updates
+  - If "Capsule" is selected, update the order summary text to:
+    - "I drink my coffee **using** Capsules"
+    - Remove the grind selection text
+  - If "Filter" or "Espresso" are selected, update the order summary text to:
+    - "I drink my coffee **as** Filter||Espresso"
+    - Keep/Add the grind selection text
+  - For all other selections, add the selection title in the blank space where appropriate
+- Updating per shipment price (shown in "How often should we deliver?" section at the bottom) based on weight selected
+  - If 250g weight is selected
+    - Every Week price per shipment is $7.20
+    - Every 2 Weeks price per shipment is $9.60
+    - Every Month price per shipment is $12.00
+  - If 500g weight is selected
+    - Every Week price per shipment is $13.00
+    - Every 2 Weeks price per shipment is $17.50
+    - Every Month price per shipment is $22.00
+  - If 1000g weight is selected
+    - Every Week price per shipment is $22.00
+    - Every 2 Weeks price per shipment is $32.00
+    - Every Month price per shipment is $42.00
+- Calculating per month cost for the Order Summary modal
+  - If Every Week is selected, the Order Summary modal should show the per shipment price multiplied by 4. For example, if 250g weight is selected, the price would be $28.80/month
+  - If Every 2 Weeks is selected, the Order Summary modal should show the per shipment price multiplied by 2. For example, if 250g weight is selected, the price would be $19.20/month
+  - If Every Month is selected, the Order Summary modal should show the per shipment price multiplied by 1. For example, if 250g weight is selected, the price would be $12.00/month
+
+The designs show these differences, so you can refer to them to get an idea of what's needed for the different states.
 
 Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
-
-### Expected behaviour
-
-Below you will find the BMI ranges and their weight classifications. Based on the person's BMI results, add their weight classification onto sentence "Your BMI suggests you’re" within the results component.
-
-- Underweight: BMI less than 18.5
-- Healthy weight: BMI 18.5 to 24.9
-- Overweight: BMI 25 to 29.9
-- Obese: BMI 30 or greater
-
-Add the individual's healthy weight range based on the lower and upper BMI categorisations and the person's height.
 
 ## Where to find everything
 
 Your task is to build out the project to the design file provided. We provide both Sketch and Figma versions of the design, so you can choose which tool you prefer to use. You can download the design file on the platform. **Please be sure not to share them with anyone else.** The design download comes with a `README.md` file as well to help you get set up.
 
-All the required assets for this project are in the `/assets` folder. The images are already exported for the correct screen size and optimized. Some are reusable at multiple screen sizes. So if you don't see an image in a specific folder, it will typically be in another folder for that page.
+All the required assets for this project are in the `/assets` folder. The assets are already exported for the correct screen size and optimized. Some images are reusable at multiple screen sizes. So if you don't see an image in a specific folder, it will typically be in another folder for that page.
 
-We also include variable and static font files for the required fonts for this project. You can choose to either link to Google Fonts or use the local font files to host the fonts yourself. Note that we've removed the static font files for the font weights that aren't needed for this project.
-
-The design system in the design file will give you more information about the various colors, fonts, and styles used in this project. Our fonts always come from [Google Fonts](https://fonts.google.com/).
+The design system in the design file will give you more information about the various colors, fonts, and styles used in this project.
 
 ## Building your project
 
@@ -102,3 +121,4 @@ The more specific you are with your questions the more likely it is that another
 We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
 
 **Have fun building!** 🚀
+
