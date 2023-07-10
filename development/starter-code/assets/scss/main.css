@@ -13243,6 +13243,10 @@ textarea.form-control-lg {
 /*============================
               Plan
   ============================*/
+.g-plan-area {
+  margin-bottom: 210px;
+}
+
 .g-plan-header h4, .g-plan-header .h4 {
   color: #83888F;
   font-family: "Fraunces", sans-serif;
@@ -13253,13 +13257,13 @@ textarea.form-control-lg {
 }
 
 .g-horizontal-line ul {
-  margin: 0;
+  margin: 80px 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   list-style: none;
   position: relative;
+  gap: calc(33.333333% + 30px);
 }
 .g-horizontal-line li {
   width: 30px;
@@ -13270,7 +13274,7 @@ textarea.form-control-lg {
   background-color: #FEFCF7;
   align-self: flex-start;
 }
-.g-horizontal-line li:not(:first-child)::after {
+.g-horizontal-line li:not(:first-child)::before {
   content: "";
   background-color: #FDD6BA;
   height: 2px;
@@ -13286,8 +13290,14 @@ textarea.form-control-lg {
 .g-plan-main {
   display: flex;
   gap: 95px;
+  margin-bottom: 64px;
 }
 
+.g-plan-step {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
 .g-plan-step h1, .g-plan-step .h1 {
   color: #FDD6BA;
   font-family: "Fraunces", sans-serif;
@@ -13303,6 +13313,13 @@ textarea.form-control-lg {
   font-style: normal;
   font-weight: 900;
   line-height: 36px;
+}
+.g-plan-step p {
+  color: #333D4B;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
 }
 
 html, body {

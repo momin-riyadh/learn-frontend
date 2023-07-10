@@ -253,6 +253,9 @@
 /*============================
               Plan
   ============================*/
+.g-plan-area{
+  margin-bottom: 210px;
+}
 .g-plan-header {
   h4 {
     color: #83888F;
@@ -266,13 +269,13 @@
 
 .g-horizontal-line {
   ul {
-    margin: 0;
+    margin: 80px 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     list-style: none;
     position: relative;
+    gap:calc(33.333333% + 30px);
   }
 
   li {
@@ -285,7 +288,7 @@
     align-self: flex-start;
 
     &:not(:first-child) {
-      &::after {
+      &::before {
         content: "";
         background-color: $pink;
         height: 2px;
@@ -305,9 +308,13 @@
 .g-plan-main {
   display: flex;
   gap: 95px;
+  margin-bottom: 64px;
 }
 
 .g-plan-step {
+  display: flex;
+  flex-direction: column;
+  gap:40px;
   h1 {
     color: #FDD6BA;
     font-family: 'Fraunces', sans-serif;
@@ -324,6 +331,13 @@
     font-style: normal;
     font-weight: 900;
     line-height: 36px;
+  }
+  p{
+    color: #333D4B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
   }
 }
 
