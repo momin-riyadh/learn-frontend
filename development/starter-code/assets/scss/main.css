@@ -13186,12 +13186,22 @@ textarea.form-control-lg {
          Benefits
   ============================*/
 .g-choose-benefits {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 30px;
   position: relative;
   bottom: 250px;
+}
+.g-choose-benefits > * {
+  flex: 1;
+}
+
+.g-benefits-box {
+  display: grid;
+  place-items: center;
+  min-height: 100px;
 }
 
 .g-choose-benefits-single {

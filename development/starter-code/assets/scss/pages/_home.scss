@@ -185,17 +185,28 @@
          Benefits
   ============================*/
 .g-choose-benefits {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 30px;
   position: relative;
   bottom: 250px;
+  > * {
+    flex: 1
+  }
+}
+
+.g-benefits-box {
+  display: grid;
+  place-items: center;
+  min-height: 100px;
 }
 
 .g-choose-benefits-single {
   background-color: $primary;
   border-radius: 8px;
+
 
   figure {
     text-align: center;
@@ -205,13 +216,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:2rem;
+    gap: 2rem;
   }
 
   figure {
-    img{
+    img {
       margin-bottom: 2rem;
     }
+
     figcaption {
       h4 {
         color: #FEFCF7;
