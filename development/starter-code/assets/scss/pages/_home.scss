@@ -159,6 +159,7 @@
   flex-direction: column;
   gap: 32px;
   margin: 130px 0;
+  min-height: 390px;
 
   h2 {
     color: #FEFCF7;
@@ -180,7 +181,60 @@
   }
 }
 
+/*============================
+         Benefits
+  ============================*/
+.g-choose-benefits {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+  bottom: 250px;
+}
 
+.g-choose-benefits-single {
+  background-color: $primary;
+  border-radius: 8px;
+
+  figure {
+    text-align: center;
+    min-height: 380px;
+    padding: 0 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+  }
+
+  figure {
+    img{
+      margin-bottom: 2rem;
+    }
+    figcaption {
+      h4 {
+        color: #FEFCF7;
+        text-align: center;
+        font-family: 'Fraunces', sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 32px;
+        margin-bottom: 1.5rem;
+      }
+
+      p {
+        color: #FEFCF7;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+      }
+    }
+  }
+}
 
 
 

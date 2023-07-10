@@ -13162,6 +13162,7 @@ textarea.form-control-lg {
   flex-direction: column;
   gap: 32px;
   margin: 130px 0;
+  min-height: 390px;
 }
 .g-choose-header h2, .g-choose-header .h2 {
   color: #FEFCF7;
@@ -13173,6 +13174,54 @@ textarea.form-control-lg {
   line-height: 48px;
 }
 .g-choose-header p {
+  color: #FEFCF7;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+/*============================
+         Benefits
+  ============================*/
+.g-choose-benefits {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+  bottom: 250px;
+}
+
+.g-choose-benefits-single {
+  background-color: #0E8784;
+  border-radius: 8px;
+}
+.g-choose-benefits-single figure {
+  text-align: center;
+  min-height: 380px;
+  padding: 0 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.g-choose-benefits-single figure img {
+  margin-bottom: 2rem;
+}
+.g-choose-benefits-single figure figcaption h4, .g-choose-benefits-single figure figcaption .h4 {
+  color: #FEFCF7;
+  text-align: center;
+  font-family: "Fraunces", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 32px;
+  margin-bottom: 1.5rem;
+}
+.g-choose-benefits-single figure figcaption p {
   color: #FEFCF7;
   text-align: center;
   font-size: 16px;
