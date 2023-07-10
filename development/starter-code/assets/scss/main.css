@@ -13252,8 +13252,65 @@ textarea.form-control-lg {
   line-height: 32px;
 }
 
+.g-horizontal-line ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  position: relative;
+}
+.g-horizontal-line li {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #0E8784;
+  display: inline-block;
+  background-color: #FEFCF7;
+  align-self: flex-start;
+}
+.g-horizontal-line li:not(:first-child)::after {
+  content: "";
+  background-color: #FDD6BA;
+  height: 2px;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.g-plan-main {
+  display: flex;
+  gap: 95px;
+}
+
+.g-plan-step h1, .g-plan-step .h1 {
+  color: #FDD6BA;
+  font-family: "Fraunces", sans-serif;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 72px;
+}
+.g-plan-step h2, .g-plan-step .h2 {
+  color: #333D4B;
+  font-family: "Fraunces", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 36px;
+}
+
 html, body {
   font-family: "Barlow", sans-serif;
+}
+
+body {
+  background-color: #FEFCF7;
 }
 
 button.btn {
