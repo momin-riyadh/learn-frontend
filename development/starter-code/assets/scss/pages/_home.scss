@@ -32,6 +32,10 @@
     line-height: 15px;
     letter-spacing: 0.923px;
     text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+      color:#333D4B;
+    }
   }
 }
 
@@ -96,9 +100,10 @@
 }
 
 .g-coffee-collection-main {
-  padding-top: 170px;
+  padding-top: 138px;
   display: flex;
   justify-content: space-between;
+  gap:30px;
 }
 
 .g-coffee-collection-single {
@@ -111,7 +116,7 @@
 
 .g-coffee-collection-single {
   figure {
-    min-height: 450px;
+    min-height: 370px;
     height: 100%;
     display: flex;
     flex-direction: column;
