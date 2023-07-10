@@ -250,9 +250,10 @@
 /*============================
               Plan
   ============================*/
-.g-plan-area{
+.g-plan-area {
   margin-bottom: 210px;
 }
+
 .g-plan-header {
   h4 {
     color: #83888F;
@@ -272,7 +273,7 @@
     align-items: center;
     list-style: none;
     position: relative;
-    gap:calc(33.333333% + 30px);
+    gap: calc(33.333333% + 30px);
   }
 
   li {
@@ -311,7 +312,8 @@
 .g-plan-step {
   display: flex;
   flex-direction: column;
-  gap:40px;
+  gap: 40px;
+
   h1 {
     color: #FDD6BA;
     font-family: 'Fraunces', sans-serif;
@@ -329,7 +331,8 @@
     font-weight: 900;
     line-height: 36px;
   }
-  p{
+
+  p {
     color: #333D4B;
     font-size: 16px;
     font-style: normal;
@@ -338,12 +341,50 @@
   }
 }
 
+/*============================
+            Footer
+  ============================*/
+.g-footer-area {
+  margin-bottom: 88px;
+}
+
+.g-footer-main {
+  background-color: #2C343E;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height:80px;
+  padding: 0 70px;
+}
+
+.g-footer-social {
+  display: flex;
+  gap: 2rem;
+}
 
 
+.g-footer-nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
 
-
-
-
+  li {
+    a {
+      color: #83888F;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 15px;
+      letter-spacing: 0.923px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+}
 
 
 
