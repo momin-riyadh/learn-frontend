@@ -1,0 +1,32 @@
+/*============================
+         Main Header
+  ============================*/
+.g-header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 112px;
+}
+
+.g-navigation {
+  nav {
+
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
