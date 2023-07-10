@@ -351,24 +351,37 @@
 .g-footer-main {
   background-color: #2C343E;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  min-height:80px;
+  min-height: 80px;
   padding: 0 70px;
+  gap: 1rem;
+}
+
+.g-footer-logo {
+  flex: 1;
+  flex-shrink: 0;
 }
 
 .g-footer-social {
   display: flex;
-  gap: 2rem;
+  flex: 1.5;
+  gap: 1rem;
+  justify-content: flex-end;
 }
 
 
 .g-footer-nav {
+  flex: 1.5;
+  flex-shrink: 0;
+
   ul {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
+    justify-content: center;
     gap: 2rem;
   }
 
