@@ -13240,6 +13240,18 @@ textarea.form-control-lg {
   line-height: 26px;
 }
 
+/*============================
+              Plan
+  ============================*/
+.g-plan-header h4, .g-plan-header .h4 {
+  color: #83888F;
+  font-family: "Fraunces", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 32px;
+}
+
 html, body {
   font-family: "Barlow", sans-serif;
 }
