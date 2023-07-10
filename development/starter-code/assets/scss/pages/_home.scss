@@ -37,3 +37,44 @@
     text-transform: uppercase;
   }
 }
+
+
+/*============================
+         Banner
+  ============================*/
+.g-h-banner-main {
+  figure {
+    position: relative;
+    border-radius: 10px;
+    img{
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    figcaption {
+      position: absolute;
+      width: min(550px, 650px);
+      left: 85px;
+      top: 50%;
+      transform: translateY(-50%);
+
+      h1 {
+        color: #FEFCF7;
+        font-family: "Fraunces", sans-serif;
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 72px;
+      }
+      p{
+        color: #FEFCF7;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        margin: 32px 0 54px 0;
+      }
+    }
+  }
+
+}
