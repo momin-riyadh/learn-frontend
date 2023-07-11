@@ -13458,7 +13458,7 @@ textarea.form-control-lg {
 }
 
 /*============================
-
+          Quality Promo
   ============================*/
 .g-quality-promo-area {
   margin-bottom: 165px;
@@ -13510,6 +13510,47 @@ textarea.form-control-lg {
 }
 .g-quality-promo.right picture img {
   border-radius: 10px;
+}
+
+/*============================
+         Headquarters
+  ============================*/
+.g-headquarters-header {
+  margin-bottom: 70px;
+}
+.g-headquarters-header h3, .g-headquarters-header .h3 {
+  color: #83888F;
+  font-family: "Fraunces", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 32px;
+}
+
+.g-headquarters-main {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-bottom: 165px;
+}
+
+.g-headquarters-location img {
+  margin-bottom: 45px;
+}
+.g-headquarters-location address {
+  color: #333D4B;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+.g-headquarters-location address h3, .g-headquarters-location address .h3 {
+  color: #333D4B;
+  font-family: "Fraunces", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 36px;
 }
 
 html, body {
