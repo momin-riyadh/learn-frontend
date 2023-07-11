@@ -92,7 +92,7 @@
 /*============================
 
   ============================*/
-.g-quality-promo-area{
+.g-quality-promo-area {
   margin-bottom: 165px;
 }
 
@@ -100,14 +100,38 @@
   background-image: url("../../assets/about/desktop/bg-quality.png");
   background-repeat: repeat;
   background-size: cover;
+  min-height: 475px;
+  border-radius: 10px;
 }
 
-.g-quality-promo-content{
+.g-quality-promo-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 90px;
+  height: 100%;
 }
 
+.g-quality-promo.left {
+
+  h3 {
+    color: #FEFCF7;
+    font-family: 'Fraunces', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px;
+    margin-bottom: 30px;
+  }
+
+  p {
+    color: #FEFCF7;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}
 
 
 
