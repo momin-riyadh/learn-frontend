@@ -1,0 +1,114 @@
+/*============================
+     Common Header Banner
+  ============================*/
+.g-common-banner-main {
+  margin-bottom: 50px;
+
+  figure {
+    position: relative;
+    border-radius: 10px;
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    figcaption {
+      position: absolute;
+      max-width: 445px;
+      width: 100%;
+      left: 85px;
+      top: 50%;
+      transform: translateY(-50%);
+
+      h1 {
+        color: #FEFCF7;
+        font-family: 'Fraunces', sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 48px;
+      }
+
+      p {
+        color: #FEFCF7;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+      }
+    }
+  }
+
+}
+
+
+/*============================
+         Commitment
+  ============================*/
+.g-commitment-area{
+  margin: 115px 0 165px;
+}
+
+.g-commitment-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 520px;
+  height: 100%;
+  gap: 125px;
+  > *{
+    flex:1;
+  }
+}
+.g-left-image{
+  img{
+    border-radius: 10px;
+  }
+}
+.g-right-paragraph{
+  h2{
+    color: #333D4B;
+    font-family: 'Fraunces', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px;
+  }
+  p{
+    color: #333D4B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
