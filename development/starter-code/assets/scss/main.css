@@ -13462,6 +13462,7 @@ textarea.form-control-lg {
   ============================*/
 .g-quality-promo-area {
   margin-bottom: 165px;
+  margin-top: 88px;
 }
 
 .g-quality-promo-main {
@@ -13476,10 +13477,13 @@ textarea.form-control-lg {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 90px;
+  gap: 125px;
   height: 100%;
 }
 
+.g-quality-promo.left {
+  flex: 3;
+}
 .g-quality-promo.left h3, .g-quality-promo.left .h3 {
   color: #FEFCF7;
   font-family: "Fraunces", sans-serif;
@@ -13495,6 +13499,17 @@ textarea.form-control-lg {
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
+}
+
+.g-quality-promo.right {
+  flex: 2;
+}
+.g-quality-promo.right picture {
+  position: relative;
+  bottom: 88px;
+}
+.g-quality-promo.right picture img {
+  border-radius: 10px;
 }
 
 html, body {

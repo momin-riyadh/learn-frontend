@@ -94,6 +94,7 @@
   ============================*/
 .g-quality-promo-area {
   margin-bottom: 165px;
+  margin-top: 88px;
 }
 
 .g-quality-promo-main {
@@ -108,11 +109,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 90px;
+  gap: 125px;
   height: 100%;
 }
 
 .g-quality-promo.left {
+  flex: 3;
 
   h3 {
     color: #FEFCF7;
@@ -133,6 +135,17 @@
   }
 }
 
+.g-quality-promo.right {
+  flex: 2;
+
+  picture {
+    position: relative;
+    bottom: 88px;
+    img {
+      border-radius: 10px;
+    }
+  }
+}
 
 
 
