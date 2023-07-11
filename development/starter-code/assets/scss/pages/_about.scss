@@ -46,7 +46,7 @@
 /*============================
          Commitment
   ============================*/
-.g-commitment-area{
+.g-commitment-area {
   margin: 115px 0 165px;
 }
 
@@ -57,17 +57,20 @@
   min-height: 520px;
   height: 100%;
   gap: 125px;
-  > *{
-    flex:1;
+
+  > * {
+    flex: 1;
   }
 }
-.g-left-image{
-  img{
+
+.g-left-image {
+  img {
     border-radius: 10px;
   }
 }
-.g-right-paragraph{
-  h2{
+
+.g-right-paragraph {
+  h2 {
     color: #333D4B;
     font-family: 'Fraunces', sans-serif;
     font-size: 40px;
@@ -75,7 +78,8 @@
     font-weight: 900;
     line-height: 48px;
   }
-  p{
+
+  p {
     color: #333D4B;
     font-size: 16px;
     font-style: normal;
@@ -85,13 +89,23 @@
 }
 
 
-
 /*============================
 
   ============================*/
+.g-quality-promo-area{
+  margin-bottom: 165px;
+}
 
-.g-quality-promo-main{
-  
+.g-quality-promo-main {
+  background-image: url("../../assets/about/desktop/bg-quality.png");
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.g-quality-promo-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 

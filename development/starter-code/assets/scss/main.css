@@ -13460,6 +13460,22 @@ textarea.form-control-lg {
 /*============================
 
   ============================*/
+.g-quality-promo-area {
+  margin-bottom: 165px;
+}
+
+.g-quality-promo-main {
+  background-image: url("../../assets/about/desktop/bg-quality.png");
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.g-quality-promo-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 html, body {
   font-family: "Barlow", sans-serif;
 }
