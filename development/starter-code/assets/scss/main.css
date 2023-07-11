@@ -13410,6 +13410,14 @@ textarea.form-control-lg {
   font-weight: 900;
   line-height: 48px;
 }
+.g-common-banner-main figure figcaption h1.plan, .g-common-banner-main figure figcaption .plan.h1 {
+  color: #FEFCF7;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 72px;
+  margin-bottom: 30px;
+}
 .g-common-banner-main figure figcaption p {
   color: #FEFCF7;
   font-size: 16px;
