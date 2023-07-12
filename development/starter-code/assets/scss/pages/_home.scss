@@ -33,8 +33,9 @@
     letter-spacing: 0.923px;
     text-transform: uppercase;
     transition: all 0.3s ease-in-out;
-    &:hover{
-      color:#333D4B;
+
+    &:hover {
+      color: #333D4B;
     }
   }
 }
@@ -103,7 +104,7 @@
   padding-top: 138px;
   display: flex;
   justify-content: space-between;
-  gap:30px;
+  gap: 30px;
 }
 
 .g-coffee-collection-single {
@@ -268,6 +269,11 @@
     font-weight: 900;
     line-height: 32px;
   }
+}
+
+.g-plan-bg {
+  background-image: url("../../assets/plan/desktop/bg-steps.png");
+  background-repeat: repeat;
 }
 
 .g-horizontal-line {
