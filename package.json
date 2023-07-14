@@ -1,0 +1,27 @@
+{
+  "name": "learn-node",
+  "version": "1.0.0",
+  "description": "Test and deploy Packt Tutorials",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "start-dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/momin-riyadh/learn-frontend.git"
+  },
+  "author": "@mominriyadh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/momin-riyadh/learn-frontend/issues"
+  },
+  "homepage": "https://github.com/momin-riyadh/learn-frontend#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
