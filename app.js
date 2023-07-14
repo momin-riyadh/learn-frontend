@@ -6,9 +6,6 @@ app.use((req, res, next) => {
     console.log('In the Middleware');
 });
 
-app.use((req, res, next) => {
-    console.log('In the Middleware');
-});
 
 const server = http.createServer(app);
 server.listen(3000);
