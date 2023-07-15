@@ -12492,7 +12492,7 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding: 30px 22px;
+  padding: 30px 20px;
   flex: 1;
 }
 .g-coffee-preferences-item h3, .g-coffee-preferences-item .h3 {
@@ -12509,6 +12509,39 @@ textarea.form-control-lg {
   font-style: normal;
   font-weight: 400;
   line-height: 26px; /* 162.5% */
+}
+
+.g-order-summary {
+  background-image: url("../../assets/plan/desktop/bg-order-summary.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 208px;
+  border-radius: 10px;
+  padding: 32px 64px;
+  margin-bottom: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.g-order-summary p {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  text-transform: uppercase;
+}
+.g-order-summary blockquote {
+  color: #FFF;
+  font-family: "Fraunces", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 40px; /* 166.667% */
 }
 
 html, body {
