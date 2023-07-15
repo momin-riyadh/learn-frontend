@@ -12492,7 +12492,8 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding: 32px 28px;
+  padding: 30px 22px;
+  flex: 1;
 }
 .g-coffee-preferences-item h3, .g-coffee-preferences-item .h3 {
   color: #333D4B;
