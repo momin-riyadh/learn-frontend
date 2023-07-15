@@ -12430,18 +12430,20 @@ textarea.form-control-lg {
   display: flex;
   gap: 28.5px;
   cursor: pointer;
+  text-transform: capitalize;
   color: rgba(131, 136, 143, 0.5);
   font-family: "Fraunces", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 900;
   line-height: 32px; /* 133.333% */
+  padding: 1.2rem 0;
 }
 .g-plan-steps-left li:not(:last-child) {
   border-bottom: 1px solid rgba(131, 136, 143, 0.25);
 }
-.g-plan-steps-left li:not(:first-child), .g-plan-steps-left li:not(:last-child) {
-  padding: 1.5rem 0;
+.g-plan-steps-left li:first-child, .g-plan-steps-left li:last-child {
+  padding: 1.2rem 0;
 }
 .g-plan-steps-left li.active {
   color: #333D4B;
