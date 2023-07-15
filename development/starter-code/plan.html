@@ -148,17 +148,17 @@
                 <div class="g-plan-app-main">
 
                     <div class="g-plan-steps-left">
-                        <ul>
-                            <li class="active"><span class="g-steps-no">01</span>Preferences</li>
-                            <li><span class="g-steps-no">02</span>Bean type</li>
-                            <li><span class="g-steps-no">03</span>Quantity</li>
-                            <li><span class="g-steps-no">04</span>Grind option</li>
-                            <li><span class="g-steps-no">05</span>Deliveries</li>
+                        <ul role="tablist">
+                            <li class="nav-link active" data-bs-toggle="tab" data-bs-target="#coffee-preferences"><span class="g-steps-no">01</span>Preferences</li>
+                            <li class="nav-link" data-bs-toggle="tab" data-bs-target="#bean-type"><span class="g-steps-no">02</span>Bean type</li>
+                            <li class="nav-link" data-bs-toggle="tab" data-bs-target="#quantity"><span class="g-steps-no">03</span>Quantity</li>
+                            <li class="nav-link" data-bs-toggle="tab" data-bs-target="#grind-option"><span class="g-steps-no">04</span>Grind option</li>
+                            <li class="nav-link" data-bs-toggle="tab" data-bs-target="#delivery"><span class="g-steps-no">05</span>Deliveries</li>
                         </ul>
                     </div>
 
 
-                    <div class="g-plan-steps-right">
+                    <div class="g-plan-steps-right tab-content">
 
 
 
@@ -168,7 +168,7 @@
                                aria-expanded="false" aria-controls="collapse-preferences">
                                 How do you drink your coffee?
                             </a>
-                            <div class="collapse" id="coffee-preferences">
+                            <div class="tab-pane show active collapse" id="coffee-preferences">
                                 <div class="g-coffee-preferences">
 
                                     <div class="g-coffee-preferences-item">
@@ -197,7 +197,7 @@
                                aria-expanded="false" aria-controls="collapse-bean-type">
                                 What type of coffee?
                             </a>
-                            <div class="collapse" id="bean-type">
+                            <div class="tab-pane collapse" id="bean-type">
                                 <div class="g-coffee-preferences">
                                     <div class="g-coffee-preferences-item">
                                         <h3>Single origin</h3>
