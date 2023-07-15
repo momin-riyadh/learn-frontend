@@ -1,0 +1,57 @@
+
+.g-plan-app-main {
+  display: flex;
+  gap: 125px;
+  align-items: flex-start;
+}
+
+.g-plan-steps-left {
+  ul {
+    margin: 0;
+    padding: 0;
+    display: list-item;
+    list-style: none;
+  }
+
+  li {
+    list-style: none;
+    display: flex;
+    gap: 28.5px;
+    cursor: pointer;
+
+    color: rgba(131, 136, 143, 0.5);
+    font-family: 'Fraunces', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 32px; /* 133.333% */
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba(131, 136, 143, 0.25);
+    }
+
+    &:not(:first-child), &:not(:last-child) {
+      padding: 1.5rem 0;
+    }
+
+    &.active {
+      color: #333D4B;
+      font-family: 'Fraunces', sans-serif;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 32px; /* 133.333% */
+
+      & > span.g-steps-no {
+        color: #0E8784;
+      }
+    }
+  }
+
+  span.g-steps-no {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 32px; /* 133.333% */
+  }
+}

@@ -12090,6 +12090,7 @@ textarea.form-control-lg {
   ============================*/
 .g-plan-area {
   margin-bottom: 210px;
+  margin-top: 115px;
 }
 
 .g-plan-header h4, .g-plan-header .h4 {
@@ -12104,6 +12105,8 @@ textarea.form-control-lg {
 .g-plan-bg {
   background-image: url("../../assets/plan/desktop/bg-steps.png");
   background-repeat: repeat;
+  background-size: cover;
+  background-position: bottom center;
 }
 
 .g-horizontal-line ul {
@@ -12408,6 +12411,55 @@ textarea.form-control-lg {
   font-style: normal;
   font-weight: 900;
   line-height: 36px;
+}
+
+.g-plan-app-main {
+  display: flex;
+  gap: 125px;
+  align-items: flex-start;
+}
+
+.g-plan-steps-left ul {
+  margin: 0;
+  padding: 0;
+  display: list-item;
+  list-style: none;
+}
+.g-plan-steps-left li {
+  list-style: none;
+  display: flex;
+  gap: 28.5px;
+  cursor: pointer;
+  color: rgba(131, 136, 143, 0.5);
+  font-family: "Fraunces", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 32px; /* 133.333% */
+}
+.g-plan-steps-left li:not(:last-child) {
+  border-bottom: 1px solid rgba(131, 136, 143, 0.25);
+}
+.g-plan-steps-left li:not(:first-child), .g-plan-steps-left li:not(:last-child) {
+  padding: 1.5rem 0;
+}
+.g-plan-steps-left li.active {
+  color: #333D4B;
+  font-family: "Fraunces", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 32px; /* 133.333% */
+}
+.g-plan-steps-left li.active > span.g-steps-no {
+  color: #0E8784;
+}
+.g-plan-steps-left span.g-steps-no {
+  font-family: "Fraunces", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 32px; /* 133.333% */
 }
 
 html, body {
