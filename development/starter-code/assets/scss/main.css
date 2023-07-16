@@ -13765,6 +13765,16 @@ textarea.form-control-lg {
   /* 162.5% */
 }
 
+.checkout-price-area {
+  color: #333D4B;
+  font-family: "Fraunces", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 36px;
+  /* 112.5% */
+}
+
 html, body {
   font-family: "Barlow", sans-serif;
 }
