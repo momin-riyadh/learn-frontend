@@ -11939,6 +11939,10 @@ textarea.form-control-lg {
   margin: 32px 0 54px 0;
 }
 
+.text-banner {
+  opacity: 0;
+}
+
 /*============================
         Coffee Collection
   ============================*/
