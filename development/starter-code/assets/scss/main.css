@@ -13131,6 +13131,7 @@ textarea.form-control-lg {
 .g-coffee-collection-single figure {
   background: transparent;
   display: inline-block;
+  cursor: pointer;
 }
 .g-coffee-collection-single figure > img {
   position: relative;
