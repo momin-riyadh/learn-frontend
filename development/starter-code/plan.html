@@ -102,10 +102,11 @@
 
                 <div class="col-md-10 mx-auto">
                     <div class="g-plan-main">
-                        <div class="g-plan-step">
+                        <div class="g-plan-step plan-inverse">
                             <h1>01</h1>
-                            <h2>Pick your <br/>coffee</h2>
-                            <p>Select from our evolving range of artisan coffees. Our beans are ethically
+                            <h2 class="text-white">Pick your <br/>coffee</h2>
+                            <p class="text-white">Select from our evolving range of artisan coffees. Our beans are
+                                ethically
                                 sourced, and we pay fair prices for them. There are new coffees in all profiles
                                 every month for you to try out.
                             </p>
@@ -113,16 +114,18 @@
 
                         <div class="g-plan-step">
                             <h1>02</h1>
-                            <h2>Choose the frequency</h2>
-                            <p>Customize your order frequency, quantity, even your roast style and grind type.
+                            <h2 class="text-white">Choose the frequency</h2>
+                            <p class="text-white">Customize your order frequency, quantity, even your roast style and
+                                grind type.
                                 Pause, skip or cancel your subscription with no commitment through our online portal.
                             </p>
                         </div>
 
                         <div class="g-plan-step">
                             <h1>03</h1>
-                            <h2>Receive and enjoy!</h2>
-                            <p>We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning
+                            <h2 class="text-white">Receive and enjoy!</h2>
+                            <p class="text-white">We ship your package within 48 hours, freshly roasted. Sit back and
+                                enjoy award-winning
                                 world-class coffees curated to provide a distinct tasting experience.
                             </p>
                         </div>
@@ -135,91 +138,212 @@
     </div>
 </div>
 
+<!--**********************************
+              Plan App
+ ***********************************-->
+<div class="g-plan-app-area" id="plan">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <div class="g-plan-app-main">
 
-01
-Pick your coffee
-Select from our evolving range of artisan coffees. Our beans are ethically
-sourced and we pay fair prices for them. There's new coffees in all profiles
-every month for you to try out.
+                    <div class="g-plan-steps-left">
+                        <ul role="tablist">
+                            <li class="nav-link active" data-bs-toggle="tab" data-bs-target="#coffee-preferences"><span
+                                    class="g-steps-no">01</span>Preferences
+                            </li>
+                            <li class="nav-link" data-bs-toggle="tab" data-bs-target="#bean-type"><span
+                                    class="g-steps-no">02</span>Bean type
+                            </li>
+                            <li class="nav-link" data-bs-toggle="tab" data-bs-target="#quantity"><span
+                                    class="g-steps-no">03</span>Quantity
+                            </li>
+                            <li class="nav-link" data-bs-toggle="tab" data-bs-target="#grind-option"><span
+                                    class="g-steps-no">04</span>Grind option
+                            </li>
+                            <li class="nav-link" data-bs-toggle="tab" data-bs-target="#delivery"><span
+                                    class="g-steps-no">05</span>Deliveries
+                            </li>
+                        </ul>
+                    </div>
 
-02
-Choose the frequency
-Customize your order frequency, quantity, even your roast style and grind type.
-Pause, skip or cancel your subscription with no commitment through our online portal.
 
-03
-Receive and enjoy!
-We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning
-world-class coffees curated to provide a distinct tasting experience.
+                    <div class="g-plan-steps-right tab-content">
 
-01 Preferences
-02 Bean type
-03 Quantity
-04 Grind option
-05 Deliveries
 
-How do you drink your coffee?
+                        <!--Plan One-->
+                        <div class="g-single-plan">
+                            <a class="g-plan-title" data-bs-toggle="collapse" href="#coffee-preferences"
+                               aria-expanded="false" aria-controls="collapse-preferences">
+                                How do you drink your coffee?
+                            </a>
+                            <div class="tab-pane show active collapse" id="coffee-preferences">
+                                <div class="g-coffee-preferences">
 
-Capsule
-Compatible with Nespresso systems and similar brewers
+                                    <div class="g-coffee-preferences-item">
+                                        <h3>Capsule</h3>
+                                        <p>Compatible with Nespresso systems and similar brewers</p>
+                                    </div>
 
-Filter
-For pour over or drip methods like Aeropress, Chemex, and V60
+                                    <div class="g-coffee-preferences-item">
+                                        <h3>Filter</h3>
+                                        <p>For pour over or drip methods like Aeropress, Chemex, and V60</p>
+                                    </div>
 
-Espresso
-Dense and finely ground beans for an intense, flavorful experience
+                                    <div class="g-coffee-preferences-item">
+                                        <h3>Espresso</h3>
+                                        <p>Dense and finely ground beans for an intense, flavorful experience</p>
+                                    </div>
 
-What type of coffee?
+                                </div>
+                            </div>
+                        </div>
 
-Single origin
-Distinct, high quality coffee from a specific family-owned farm
 
-Decaf
-Just like regular coffee, except the caffeine has been removed
+                        <!--Plan Two-->
+                        <div class="g-single-plan">
+                            <a class="g-plan-title" data-bs-toggle="collapse" href="#bean-type"
+                               aria-expanded="false" aria-controls="collapse-bean-type">
+                                What type of coffee?
+                            </a>
+                            <div class="tab-pane collapse" id="bean-type">
+                                <div class="g-coffee-preferences">
+                                    <div class="g-coffee-preferences-item">
+                                        <h3>Single origin</h3>
+                                        <p>Distinct, high quality coffee from a specific family-owned farm</p>
+                                    </div>
 
-Blended
-Combination of two or three dark roasted beans of organic coffees
+                                    <div class="g-coffee-preferences-item">
+                                        <h3>Decaf</h3>
+                                        <p>Just like regular coffee, except the caffeine has been removed</p>
+                                    </div>
 
-How much would you like?
-250g
-Perfect for the solo drinker. Yields about 12 delicious cups.
+                                    <div class="g-coffee-preferences-item">
+                                        <h3>Blended</h3>
+                                        <p>Combination of two or three dark roasted beans of organic coffees</p>
+                                    </div>
 
-500g
-Perfect option for a couple. Yields about 40 delectable cups.
+                                </div>
+                            </div>
+                        </div>
 
-1000g
-Perfect for offices and events. Yields about 90 delightful cups.
 
-Want us to grind them?
+                        <!--Plan Three-->
+                        <div class="g-single-plan">
+                            <a class="g-plan-title" data-bs-toggle="collapse" href="#quantity"
+                               aria-expanded="false" aria-controls="collapse-quantity">
+                                How much would you like?
+                            </a>
 
-Wholebean
-Best choice if you cherish the full sensory experience
 
-Filter
-For drip or pour-over coffee methods such as V60 or Aeropress
+                            <div class="collapse" id="quantity">
+                                <div class="g-coffee-preferences">
+                                    <div class="g-coffee-preferences-item">
+                                        <h3>250g</h3>
+                                        <p> Perfect for the solo drinker. Yields about 12 delicious cups.</p>
+                                    </div>
 
-Cafetiére
-Course ground beans specially suited for french press coffee
+                                    <div class="g-coffee-preferences-item">
+                                        <h3>500g</h3>
+                                        <p>Perfect option for a couple. Yields about 40 delectable cups.
+                                        </p>
+                                    </div>
 
-How often should we deliver?
+                                    <div class="g-coffee-preferences-item">
+                                        <h3>1000g</h3>
+                                        <p>Perfect for offices and events. Yields about 90 delightful cups.</p>
+                                    </div>
 
-Every week
-$14.00 per shipment. Includes free first-class shipping.
+                                </div>
+                            </div>
+                        </div>
 
-Every 2 weeks
-$17.25 per shipment. Includes free priority shipping.
 
-Every month
-$22.50 per shipment. Includes free priority shipping.
+                        <!--Plan Four-->
+                        <div class="g-single-plan">
+                            <a class="g-plan-title" data-bs-toggle="collapse" href="#grind-option"
+                               aria-expanded="false" aria-controls="collapse-grind-option">
+                                Want us to grind them?
+                            </a>
 
-Order Summary
-“I drink coffee _____, with a _____ type of bean. _____ ground ala _____,
-sent to me _____.”
+                            <div class="collapse" id="grind-option">
+                                <div class="g-coffee-preferences">
+                                    <div class="g-coffee-preferences-item">
+                                        <h3>Wholebean</h3>
+                                        <p>Best choice if you cherish the full sensory experience</p>
+                                    </div>
 
-Create my plan!
+                                    <div class="g-coffee-preferences-item">
+                                        <h3>Filter</h3>
+                                        <p>For drip or pour-over coffee methods such as V60 or Aeropress
+                                        </p>
+                                    </div>
+
+                                    <div class="g-coffee-preferences-item">
+                                        <h3>Cafetiére</h3>
+                                        <p>Course ground beans specially suited for french press coffee</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--Plan Five-->
+                        <div class="g-single-plan">
+                            <a class="g-plan-title" data-bs-toggle="collapse" href="#delivery"
+                               aria-expanded="false" aria-controls="collapse-grind-option">
+                                How often should we deliver?
+                            </a>
+
+
+                            <div class="collapse" id="delivery">
+                                <div class="g-coffee-preferences">
+                                    <div class="g-coffee-preferences-item">
+                                        <h3>Every week</h3>
+                                        <p>$14.00 per shipment. Includes free first-class shipping.</p>
+                                    </div>
+
+                                    <div class="g-coffee-preferences-item">
+                                        <h3>Every 2 weeks</h3>
+                                        <p>$17.25 per shipment. Includes free priority shipping.
+                                        </p>
+                                    </div>
+
+                                    <div class="g-coffee-preferences-item">
+                                        <h3>Every month</h3>
+                                        <p>$22.50 per shipment. Includes free priority shipping.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="g-order-summary">
+                            <p>Order Summary</p>
+                            <blockquote>“I drink coffee _____, with a _____ type of bean. _____ ground ala _____,
+                                sent to me _____.”
+                            </blockquote>
+                        </div>
+
+                        <div class="text-end mb-5">
+                            <button class="btn btn-primary btn-lg text-white">
+                                Create my plan!
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <!-- Modal -->
-Order Summary
+<!--Order Summary
 
 “I drink coffee _____, with a _____ type of bean. _____ ground ala _____,
 sent to me _____.”
@@ -229,7 +353,7 @@ is off. Subscription discount codes can also be redeemed at the checkout.
 
 $_____/month
 
-Checkout
+Checkout-->
 <!-- End modal -->
 
 <!--**********************************
@@ -274,6 +398,9 @@ Checkout
     </div>
 
 </footer>
+
+<script src="assets/js/bootstrap.bundle.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 
 </html>
