@@ -13728,6 +13728,43 @@ textarea.form-control-lg {
   /* 166.667% */
 }
 
+/*============================
+         Modal Checkout
+  ============================*/
+#modal-checkout .modal-header {
+  background-image: url("../../assets/plan/desktop/bg-modal-top.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#modal-checkout .modal-header h1#modal-checkoutLabel, #modal-checkout .modal-header #modal-checkoutLabel.h1 {
+  color: #ffffff;
+  font-family: "Fraunces", sans-serif;
+  font-size: 40px !important;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 48px;
+  /* 120% */
+}
+
+.g-modal-order-summary blockquote {
+  color: #83888F;
+  font-family: "Fraunces", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 40px;
+  /* 166.667% */
+}
+.g-modal-order-summary small, .g-modal-order-summary .small {
+  color: #333D4B;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  /* 162.5% */
+}
+
 html, body {
   font-family: "Barlow", sans-serif;
 }

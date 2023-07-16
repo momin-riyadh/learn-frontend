@@ -233,7 +233,7 @@
                         <div class="g-single-plan">
                             <a class="g-plan-title" data-bs-toggle="collapse" href="#quantity"
                                aria-expanded="false" aria-controls="collapse-quantity">
-                                How much would you like?  <i class="bi bi-chevron-down text-primary"></i>
+                                How much would you like? <i class="bi bi-chevron-down text-primary"></i>
                             </a>
 
 
@@ -264,7 +264,7 @@
                         <div class="g-single-plan">
                             <a class="g-plan-title" data-bs-toggle="collapse" href="#grind-option"
                                aria-expanded="false" aria-controls="collapse-grind-option">
-                                Want us to grind them?  <i class="bi bi-chevron-down text-primary"></i>
+                                Want us to grind them? <i class="bi bi-chevron-down text-primary"></i>
                             </a>
 
                             <div class="collapse" id="grind-option">
@@ -294,7 +294,7 @@
                         <div class="g-single-plan">
                             <a class="g-plan-title" data-bs-toggle="collapse" href="#delivery"
                                aria-expanded="false" aria-controls="collapse-grind-option">
-                                How often should we deliver?   <i class="bi bi-chevron-down text-primary"></i>
+                                How often should we deliver? <i class="bi bi-chevron-down text-primary"></i>
                             </a>
 
 
@@ -329,7 +329,8 @@
                         </div>
 
                         <div class="text-end mb-5">
-                            <button class="btn btn-primary btn-lg text-white">
+                            <button class="btn btn-primary btn-lg text-white" data-bs-toggle="modal"
+                                    data-bs-target="#modal-checkout" aria-expanded="false">
                                 Create my plan!
                             </button>
                         </div>
@@ -344,19 +345,37 @@
 
 
 <!-- Modal -->
-<!--Order Summary
+<div class="modal fade" id="modal-checkout" tabindex="-1" aria-labelledby="modal-checkout" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header p-4">
+                <h1 class="modal-title fs-5" id="modal-checkoutLabel">Order Summary</h1>
+            </div>
+            <div class="modal-body p-4">
 
-“I drink coffee _____, with a _____ type of bean. _____ ground ala _____,
-sent to me _____.”
+                <div class="g-modal-order-summary">
+                    <blockquote>“I drink coffee _____, with a _____ type of bean. _____ ground ala _____,
+                        sent to me _____.”
 
-Is this correct? You can proceed to checkout or go back to plan selection if something
-is off. Subscription discount codes can also be redeemed at the checkout.
+                    </blockquote>
+                    <small> Is this correct? You can proceed to checkout or go back to plan selection if something
+                        is off. Subscription discount codes can also be redeemed at the checkout.</small>
+                </div>
 
-$_____/month
 
-Checkout-->
-<!-- End modal -->
+            </div>
 
+            <div class="modal-footer border-0 p-4">
+                <div class="d-flex gap-4">
+                    <h2>$14.00/mo</h2>
+                    <button type="button" class="btn btn-primary btn-sm text-white px-5" data-bs-dismiss="modal">
+                        Checkout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!--**********************************
              Main Footer
  ***********************************-->
@@ -403,7 +422,33 @@ Checkout-->
 <script src="assets/js/bootstrap.bundle.js"></script>
 <script src="assets/js/main.js"></script>
 <script>
+    // document.addEventListener("DOMContentLoaded", function () {
+    //     let gPlanTitle = document.querySelectorAll(".g-plan-title");
+    //     gPlanTitle.forEach((title) => {
+    //         title.addEventListener("click", function () {
+    //             let icon = document.querySelector('.bi-chevron-down');
+    //             if (title.classList.contains('collapsed')) {
+    //                 icon.classList.replace('bi-chevron-down', 'bi-chevron-up');
+    //             } else if (!title.classList.contains('collapsed')) {
+    //                 icon.classList.replace('bi-chevron-up', 'bi-chevron-down');
+    //             }
+    //         })
+    //     })
+    // gPlanTitle.addEventListener("click", function() {
+    //     // Toggle the "collapsed" class on the anchor element
+    //     this.classList.toggle("collapsed");
+    //
+    //     // Toggle the "bi-chevron-down" and "bi-chevron-up" classes on the icon element
+    //     let icon = this.querySelector("i");
+    //     icon.classList.toggle("bi-chevron-down");
+    //     icon.classList.toggle("bi-chevron-up");
 
+    // You might also need to handle the collapse here, depending on your use case
+    // For example, you can use the data-bs-target attribute to select the collapse element and toggle it.
+    // var collapseTarget = document.querySelector(this.getAttribute("data-bs-target"));
+    // collapseTarget.classList.toggle("show");
+    // });
+    // });
 </script>
 </body>
 </html>
