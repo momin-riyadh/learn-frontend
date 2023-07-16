@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
 
     <title>Frontend Mentor | Coffeeroasters subscription site</title>
+    <link rel="stylesheet" href="assets/scss/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/scss/main.css">
 </head>
 <body>
@@ -22,7 +23,7 @@
 
                 <!--Main Logo-->
                 <div class="g-logo">
-                    <a href="">
+                    <a href="index.html">
                         <img src="./assets/shared/desktop/logo.svg" alt="">
                     </a>
                 </div>
@@ -61,7 +62,7 @@
                         <source srcset="assets/plan/mobile/iimage-hero-whitecup.jpg" media="(min-width:576px)">
                         <img class="img-fluid" src="assets/plan/desktop/image-hero-blackcup.jpg" alt="mominriyadh">
                     </picture>
-                    <figcaption>
+                    <figcaption class="plan-banner-text">
                         <h1 class="plan">Create plan</h1>
                         <p> Coffee the way you wanted it to be. For coffee delivered tomorrow, or next week. For
                             whatever brew method you use. For choice, for convenience, for quality.
@@ -175,7 +176,7 @@
                         <div class="g-single-plan">
                             <a class="g-plan-title" data-bs-toggle="collapse" href="#coffee-preferences"
                                aria-expanded="false" aria-controls="collapse-preferences">
-                                How do you drink your coffee?
+                                How do you drink your coffee? <i class="bi bi-chevron-down text-primary"></i>
                             </a>
                             <div class="tab-pane show active collapse" id="coffee-preferences">
                                 <div class="g-coffee-preferences">
@@ -204,7 +205,7 @@
                         <div class="g-single-plan">
                             <a class="g-plan-title" data-bs-toggle="collapse" href="#bean-type"
                                aria-expanded="false" aria-controls="collapse-bean-type">
-                                What type of coffee?
+                                What type of coffee? <i class="bi bi-chevron-down text-primary"></i>
                             </a>
                             <div class="tab-pane collapse" id="bean-type">
                                 <div class="g-coffee-preferences">
@@ -232,7 +233,7 @@
                         <div class="g-single-plan">
                             <a class="g-plan-title" data-bs-toggle="collapse" href="#quantity"
                                aria-expanded="false" aria-controls="collapse-quantity">
-                                How much would you like?
+                                How much would you like? <i class="bi bi-chevron-down text-primary"></i>
                             </a>
 
 
@@ -263,7 +264,7 @@
                         <div class="g-single-plan">
                             <a class="g-plan-title" data-bs-toggle="collapse" href="#grind-option"
                                aria-expanded="false" aria-controls="collapse-grind-option">
-                                Want us to grind them?
+                                Want us to grind them? <i class="bi bi-chevron-down text-primary"></i>
                             </a>
 
                             <div class="collapse" id="grind-option">
@@ -293,7 +294,7 @@
                         <div class="g-single-plan">
                             <a class="g-plan-title" data-bs-toggle="collapse" href="#delivery"
                                aria-expanded="false" aria-controls="collapse-grind-option">
-                                How often should we deliver?
+                                How often should we deliver? <i class="bi bi-chevron-down text-primary"></i>
                             </a>
 
 
@@ -328,7 +329,8 @@
                         </div>
 
                         <div class="text-end mb-5">
-                            <button class="btn btn-primary btn-lg text-white">
+                            <button class="btn btn-primary btn-lg text-white" data-bs-toggle="modal"
+                                    data-bs-target="#modal-checkout" aria-expanded="false">
                                 Create my plan!
                             </button>
                         </div>
@@ -343,18 +345,38 @@
 
 
 <!-- Modal -->
-<!--Order Summary
+<div class="modal fade" id="modal-checkout" tabindex="-1" aria-labelledby="modal-checkout" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header p-4">
+                <h1 class="modal-title fs-5" id="modal-checkoutLabel">Order Summary</h1>
+            </div>
+            <div class="modal-body p-4">
 
-“I drink coffee _____, with a _____ type of bean. _____ ground ala _____,
-sent to me _____.”
+                <div class="g-modal-order-summary">
+                    <blockquote>“I drink coffee _____, with a _____ type of bean. _____ ground ala _____,
+                        sent to me _____.”
 
-Is this correct? You can proceed to checkout or go back to plan selection if something
-is off. Subscription discount codes can also be redeemed at the checkout.
+                    </blockquote>
+                    <small> Is this correct? You can proceed to checkout or go back to plan selection if something
+                        is off. Subscription discount codes can also be redeemed at the checkout.</small>
+                </div>
+            </div>
 
-$_____/month
+            <div class="modal-footer border-0 p-4 justify-content-center">
+                <div class="d-flex gap-4 checkout-price-area">
+                    <h2>$14.00/mo</h2>
+                    <button type="button" class="btn btn-primary btn-sm text-white px-5" data-bs-dismiss="modal">
+                        Checkout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-Checkout-->
-<!-- End modal -->
+
+
 
 <!--**********************************
              Main Footer
@@ -400,7 +422,36 @@ Checkout-->
 </footer>
 
 <script src="assets/js/bootstrap.bundle.js"></script>
+<script src="assets/js/gsap.js"></script>
 <script src="assets/js/main.js"></script>
-</body>
+<script>
+    // document.addEventListener("DOMContentLoaded", function () {
+    //     let gPlanTitle = document.querySelectorAll(".g-plan-title");
+    //     gPlanTitle.forEach((title) => {
+    //         title.addEventListener("click", function () {
+    //             let icon = document.querySelector('.bi-chevron-down');
+    //             if (title.classList.contains('collapsed')) {
+    //                 icon.classList.replace('bi-chevron-down', 'bi-chevron-up');
+    //             } else if (!title.classList.contains('collapsed')) {
+    //                 icon.classList.replace('bi-chevron-up', 'bi-chevron-down');
+    //             }
+    //         })
+    //     })
+    // gPlanTitle.addEventListener("click", function() {
+    //     // Toggle the "collapsed" class on the anchor element
+    //     this.classList.toggle("collapsed");
+    //
+    //     // Toggle the "bi-chevron-down" and "bi-chevron-up" classes on the icon element
+    //     let icon = this.querySelector("i");
+    //     icon.classList.toggle("bi-chevron-down");
+    //     icon.classList.toggle("bi-chevron-up");
 
+    // You might also need to handle the collapse here, depending on your use case
+    // For example, you can use the data-bs-target attribute to select the collapse element and toggle it.
+    // var collapseTarget = document.querySelector(this.getAttribute("data-bs-target"));
+    // collapseTarget.classList.toggle("show");
+    // });
+    // });
+</script>
+</body>
 </html>

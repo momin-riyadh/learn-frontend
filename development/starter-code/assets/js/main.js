@@ -1,14 +1,17 @@
-// import gsap from "./gsap-core";
+document.addEventListener('DOMContentLoaded', function () {
+    gsap.fromTo(".banner-text", {
+            opacity: 0,
+            duration: 5,
 
-document.addEventListener("DOMContentLoaded", function () {
-    // Select the text banner element
-    const textBanner = document.querySelector(".text-banner");
+        },
+        {
+            opacity: 1,
+            duration: 5
+        });
 
-    // GSAP animation
-    gsap.to(textBanner, {
-        opacity: 1, // Target opacity (1 means fully opaque)
-        duration: 1.5, // Animation duration in seconds
-        ease: "power4.out", // Easing function (optional, you can experiment with different values)
-        delay: 0.5 // Delay before the animation starts in seconds
-    });
-});
+    gsap.fromTo(".banner-about-text, .plan-banner-text", {
+        opacity: 0,
+        duration: 5,
+
+    }, {opacity: 1, duration: 5})
+})
