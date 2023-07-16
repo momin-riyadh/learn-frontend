@@ -13650,6 +13650,13 @@ textarea.form-control-lg {
   font-weight: 900;
   text-decoration: none;
   margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.g-plan-title i {
+  font-size: 24px;
+  font-weight: bold;
   display: inline-block;
 }
 
