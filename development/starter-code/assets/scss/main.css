@@ -13271,12 +13271,12 @@ textarea.form-control-lg {
 
 .g-horizontal-line ul {
   margin: 80px 0;
-  padding: 0;
   display: flex;
   align-items: center;
   list-style: none;
   position: relative;
-  gap: calc(33.333333% + 30px);
+  gap: calc(33.333333% + 20px);
+  padding: 0;
 }
 .g-horizontal-line li {
   width: 30px;
@@ -13286,19 +13286,29 @@ textarea.form-control-lg {
   display: inline-block;
   background-color: #FEFCF7;
   align-self: flex-start;
-  z-index: 3;
-  position: static;
+  z-index: 1;
+  position: relative;
 }
-.g-horizontal-line li:not(:first-child)::before {
+.g-horizontal-line li:last-child::before {
   content: "";
   background-color: #FDD6BA;
   height: 2px;
   position: absolute;
-  width: 100%;
+  width: 395px;
   top: 50%;
   transform: translateY(-50%);
-  left: 0;
-  right: 0;
+  left: -380px;
+  z-index: 1;
+}
+.g-horizontal-line li:first-child::before {
+  content: "";
+  background-color: #FDD6BA;
+  height: 2px;
+  position: absolute;
+  width: 395px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
   z-index: 1;
 }
 
