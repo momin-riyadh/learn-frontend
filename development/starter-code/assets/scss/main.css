@@ -13081,6 +13081,7 @@ textarea.form-control-lg {
   left: 85px;
   top: 50%;
   transform: translateY(-50%);
+  opacity: 0;
 }
 .g-h-banner-main figure figcaption h1, .g-h-banner-main figure figcaption .h1 {
   color: #FEFCF7;
@@ -13424,6 +13425,7 @@ textarea.form-control-lg {
   left: 85px;
   top: 50%;
   transform: translateY(-50%);
+  opacity: 0;
 }
 .g-common-banner-main figure figcaption h1, .g-common-banner-main figure figcaption .h1 {
   color: #FEFCF7;
