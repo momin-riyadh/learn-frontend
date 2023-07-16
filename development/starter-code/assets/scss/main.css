@@ -13128,6 +13128,21 @@ textarea.form-control-lg {
   flex-direction: column;
   text-align: center;
 }
+.g-coffee-collection-single figure {
+  background: transparent;
+  display: inline-block;
+}
+.g-coffee-collection-single figure > img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.g-coffee-collection-single figure:hover img {
+  transition: 0.9s;
+  transform: rotateY(180deg);
+}
 
 .g-coffee-collection-single figure {
   min-height: 370px;

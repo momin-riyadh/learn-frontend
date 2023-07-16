@@ -114,7 +114,26 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
+
+  figure {
+    background: transparent;
+    display: inline-block;
+
+    & > img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+
+    &:hover img {
+      transition: 0.9s;
+      transform: rotateY(180deg);
+    }
+  }
 }
+
 
 .g-coffee-collection-single {
   figure {
