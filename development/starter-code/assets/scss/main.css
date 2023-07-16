@@ -13198,6 +13198,7 @@ textarea.form-control-lg {
   gap: 30px;
   position: relative;
   bottom: 250px;
+  margin-bottom: -170px;
 }
 .g-choose-benefits > * {
   flex: 1;
