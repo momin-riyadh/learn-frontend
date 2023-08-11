@@ -21,3 +21,13 @@
     margin: 0 auto;
   }
 }
+
+.back-button-wrapper{
+  margin: 79px 0 56px 0;
+
+  & .back-button {
+    text-transform: capitalize;
+    color: hsla(0, 0%, 0%, 0.5);
+    text-decoration: none;
+  }
+}

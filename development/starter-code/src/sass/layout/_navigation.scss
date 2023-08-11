@@ -1,6 +1,6 @@
 #main-nav {
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
-  height: 100px;
+  height: 97px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -80,7 +80,7 @@
 
     @include respond(tab-port) {
       position: absolute;
-      top: 100px;
+      top: 97px;
       left: 0;
       height: calc(100vh - 100px);
       width: 70%;

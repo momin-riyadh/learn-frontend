@@ -13,35 +13,34 @@
   // }
 
   position: relative;
-  & picture {
+
+  & img {
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
     z-index: -1;
-
-    & img,
-    & source {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-    }
+    object-fit: cover;
   }
 
   & #hero-section {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 97px);
     width: 100%;
 
-    display: flex;
-    align-items: center;
+    & .wrapper {
+      height: inherit;
+      display: flex;
+      align-items: center;
 
-    @include respond(tab-port) {
-      justify-content: center;
+      @include respond(tab-port) {
+        justify-content: center;
+      }
     }
 
-    & .wrapper {
+    & .content {
       max-width: 398px;
+
       @include respond(tab-port) {
         display: flex;
         flex-direction: column;
@@ -109,10 +108,14 @@
   gap: 48px;
 
   @include respond(tab-port) {
+    padding-top: 120px;
+
     gap: 32px;
   }
 
   @include respond(phone) {
+    padding-top: 88px;
+
     gap: 24px;
   }
 
@@ -146,19 +149,21 @@
         background-position: center -140px;
       }
 
-      & .image {
+      & .image-container {
         display: flex;
         height: 100%;
         overflow: hidden;
+
         width: fit-content;
         margin: 0 auto;
 
         & picture {
           margin: auto 0 0;
 
-          & img,
-          & source {
+          & img {
             width: 100%;
+            display: block;
+
             @include respond(tab-port) {
               width: 180px;
             }
@@ -171,7 +176,6 @@
       }
 
       & .content {
-        margin: 0 auto;
         display: flex;
         flex-direction: column;
         gap: 17px;
@@ -247,20 +251,15 @@
       // background-repeat: no-repeat;
 
       position: relative;
-      & picture {
+
+      & img {
         position: absolute;
         height: 100%;
         width: 100%;
         top: 0;
         left: 0;
         z-index: -1;
-
-        & img,
-        & source {
-          height: 100%;
-          width: 100%;
-          object-fit: cover;
-        }
+        object-fit: cover;
       }
 
       & h2 {
@@ -311,17 +310,14 @@
         display: block;
       }
 
-      & picture {
-        & img,
-        & source {
-          width: 100%;
-          height: 100%;
-          border-radius: 5px;
-          object-fit: cover;
+      & img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        object-fit: cover;
 
-          @include respond(phone) {
-            height: 200px;
-          }
+        @include respond(phone) {
+          height: 200px;
         }
       }
 

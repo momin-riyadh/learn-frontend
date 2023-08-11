@@ -4,7 +4,13 @@
   display: flex;
   gap: 30px;
 
+  @include respond(tab-port) {
+    padding-top: 120px;
+  }
+
   @include respond(phone) {
+    padding-top: 88px;
+
     flex-direction: column;
   }
 
