@@ -15,7 +15,7 @@ const users = [
 // HTML for login page with styles
 app.get('/', (req, res) => {
     res.send(`
-  <html>
+  <html lang="en">
     <head>
       <title>JWTLogin</title>
       <style>
