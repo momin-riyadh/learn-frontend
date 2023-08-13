@@ -104,7 +104,7 @@ app.get('/', (req, res) => {
     </head>
     <body>
       <div class="login-container">
-        <h1>Login Page</h1>
+        <h1>Login</h1>
         <form method="POST" action="/login">
           <div>
             <label for="username">Username:</label>
