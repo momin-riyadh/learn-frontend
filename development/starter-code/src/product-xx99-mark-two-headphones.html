@@ -11,6 +11,9 @@
       href="./assets/favicon-32x32.png"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script defer src="./js/utils.js"></script>
+    <script defer src="./js/script.js"></script>
+    <script defer src="./js/product.js"></script>
 
     <title>Frontend Mentor | Audiophile e-commerce website</title>
   </head>
@@ -37,7 +40,7 @@
             </a>
           </div>
 
-          <ul>
+          <ul data-nav_list>
             <li>
               <a href="index.html">Home</a>
             </li>
@@ -68,11 +71,55 @@
           </button>
         </nav>
       </div>
+
+      <!-- Cart  -->
+      <div data-cart-overly class="overly">
+        <div class="container">
+          <div class="wrapper">
+            <div data-cart class="cart">
+              <div class="cart-content">
+                <div class="header">
+                  <span data-cart-total-qty></span>
+                  <button data-btn-remove-all-items>remove all</button>
+                </div>
+                <div class="body">
+                  <ul data-cart-list>
+                    <!--
+                    <li>
+                      <img
+                        src="./assets/product-xx99-mark-two-headphones/mobile/image-product.jpg"
+                        alt="XX99 Mark II Headphones"
+                      />
+                      
+                      <div class="cart-item-info">
+                        <h4>Mark II</h4>
+                        <span>5</span>
+                      </div>
+                      <div class="cart-item-action">
+                        <button>&#8722;</button>
+                        <span>2</span>
+                        <button>&#43;</button>
+                      </div>
+                    </li>
+                    -->
+                  </ul>
+                </div>
+                <div class="footer">
+                  <div class="total-price">
+                    <span>total</span>
+                    <span data-cart-total-price></span>
+                  </div>
+                  <a href="checkout.html">checkcout</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main>
       <div class="container">
-
         <div class="back-button-wrapper">
           <a class="back-button" href="..">go back</a>
         </div>
@@ -117,10 +164,14 @@
 
             <div class="product-buttons">
               <div class="quantity-section">
-                <button>&#8722;</button>1<button>&#43;</button>
+                <button data-btn-decrement-qty>&#8722;</button>
+                <span data-product-qty>1</span>
+                <button data-btn-increment-qty>&#43;</button>
               </div>
 
-              <button>add to cart</button>
+              <button data-product-id="4" data-btn-add-to-cart>
+                add to cart
+              </button>
             </div>
           </div>
         </section>
@@ -169,7 +220,7 @@
           </div>
         </section>
         <section id="section-product-gallery">
-          <div class="gallery-item gallery-item-1">
+          <div class="gallery-item">
             <picture>
               <source
                 srcset="
@@ -193,7 +244,7 @@
             </picture>
           </div>
 
-          <div class="gallery-item gallery-item-2">
+          <div class="gallery-item">
             <picture>
               <source
                 srcset="
@@ -217,7 +268,7 @@
             </picture>
           </div>
 
-          <div class="gallery-item gallery-item-3">
+          <div class="gallery-item">
             <picture>
               <source
                 srcset="
@@ -271,7 +322,7 @@
 
               <h3>XX99 Mark I</h3>
 
-              <a href="#">see product</a>
+              <a href="product-xx99-mark-one-headphones.html">see product</a>
             </div>
             <div class="related-products-item">
               <picture>
@@ -292,7 +343,7 @@
 
               <h3>XX59</h3>
 
-              <a href="#">see product</a>
+              <a href="product-xx59-headphones.html">see product</a>
             </div>
             <div class="related-products-item">
               <picture>
@@ -313,7 +364,7 @@
 
               <h3>ZX9 Speaker</h3>
 
-              <a href="#">see product</a>
+              <a href="product-zx9-speaker.html">see product</a>
             </div>
           </div>
         </section>
@@ -325,9 +376,9 @@
               alt=""
             />
 
-            <a href="#">
-              <label>SPEAKERS</label>
-              <div>
+            <div class="catagory-content">
+              <label>HEADPHONES</label>
+              <a href="headphones.html">
                 <span>Shop</span>
                 <svg width="8" height="12" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -338,8 +389,8 @@
                     fill-rule="evenodd"
                   />
                 </svg>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
 
           <div class="catagory-item">
@@ -348,9 +399,9 @@
               alt=""
             />
 
-            <a href="#">
+            <div class="catagory-content">
               <label>SPEAKERS</label>
-              <div>
+              <a href="speakers.html">
                 <span>Shop</span>
                 <svg width="8" height="12" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -361,8 +412,8 @@
                     fill-rule="evenodd"
                   />
                 </svg>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
 
           <div class="catagory-item">
@@ -371,9 +422,9 @@
               alt=""
             />
 
-            <a href="#">
+            <div class="catagory-content">
               <label>EARPHONES</label>
-              <div>
+              <a href="earphones.html">
                 <span>Shop</span>
                 <svg width="8" height="12" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -384,8 +435,8 @@
                     fill-rule="evenodd"
                   />
                 </svg>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
         </section>
 
@@ -435,18 +486,18 @@
             </svg>
           </a>
 
-          <ul>
+          <ul data-nav_list>
             <li>
-              <a href="#">Home</a>
+              <a href="index.html">Home</a>
             </li>
             <li>
-              <a href="#">Headphones</a>
+              <a href="headphones.html">Headphones</a>
             </li>
             <li>
-              <a href="#">Speakers</a>
+              <a href="speakers.html">Speakers</a>
             </li>
             <li>
-              <a href="#">Earphones</a>
+              <a href="earphones.html">Earphones</a>
             </li>
           </ul>
         </nav>

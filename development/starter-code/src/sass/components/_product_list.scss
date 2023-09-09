@@ -111,7 +111,7 @@
           color: hsla(0, 0%, 0%, 0.5);
         }
 
-        & button {
+        & a {
           height: 48px;
           width: 160px;
           display: flex;
@@ -124,9 +124,8 @@
           color: #ffffff;
           letter-spacing: 1px;
           text-transform: uppercase;
-          cursor: pointer;
+          text-decoration: none;
 
-          border: none;
           background-color: hsl(22, 65%, 57%);
           transition: all 0.03s;
 

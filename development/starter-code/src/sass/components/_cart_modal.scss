@@ -17,7 +17,7 @@
 }
 
 .cart {
-  margin-top: 129px;
+  margin-top: 97px;
   margin-left: auto;
   height: 488px;
   width: 100%;
@@ -29,6 +29,7 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  z-index: 10;
 
   & .cart-content {
     flex-grow: 1;
@@ -102,15 +103,19 @@
           & .cart-item-info {
             flex-grow: 1;
 
+            & .not-available {
+              text-decoration: line-through;
+            }
+
             & h4 {
               text-transform: uppercase;
 
               // cut off text
               --max-lines: 1;
               display: -webkit-box;
-              overflow: hidden;
-              -webkit-box-orient: vertical;
               -webkit-line-clamp: var(--max-lines);
+              -webkit-box-orient: vertical;
+              overflow: hidden;
             }
 
             & span {
@@ -155,41 +160,47 @@
 
     & .footer {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      flex-direction: column;
+      gap: 32px;
 
-      & span:first-child {
-        color: hsla(0, 0%, 0%, 0.5);
-        text-transform: uppercase;
+      & .total-price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & span:first-child {
+          color: hsla(0, 0%, 0%, 0.5);
+          text-transform: uppercase;
+        }
+
+        & span:last-child {
+          font-size: 18px;
+          font-weight: 700;
+        }
       }
 
-      & span:last-child {
-        font-size: 18px;
+      & a {
+        height: 48px;
+        width: 100%;
+        background-color: hsl(22, 65%, 57%);
+        color: hsl(0, 0%, 100%);
+        letter-spacing: 1px;
+        font-size: 13px;
         font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition: all 0.03s;
+
+        &:hover,
+        &:active {
+          background-color: hsl(21, 94%, 75%);
+        }
       }
-    }
-  }
-
-  & a {
-    height: 48px;
-    width: 100%;
-    background-color: hsl(22, 65%, 57%);
-    color: hsl(0, 0%, 100%);
-    letter-spacing: 1px;
-    font-size: 13px;
-    font-weight: 700;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    transition: all 0.03s;
-
-    &:hover,
-    &:active {
-      background-color: hsl(21, 94%, 75%);
     }
   }
 }

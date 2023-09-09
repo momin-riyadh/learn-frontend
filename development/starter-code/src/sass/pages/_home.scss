@@ -14,14 +14,18 @@
 
   position: relative;
 
-  & img {
+  & .image {
     position: absolute;
+    inset: 0;
+    z-index: -1;
     height: 100%;
     width: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    object-fit: cover;
+
+    & img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
   }
 
   & #hero-section {
@@ -69,7 +73,7 @@
         color: hsla(0, 0%, 100%, 0.75);
       }
 
-      & button {
+      & a {
         height: 48px;
         width: 160px;
         display: flex;
@@ -83,9 +87,8 @@
         color: #ffffff;
         letter-spacing: 1px;
         text-transform: uppercase;
-        cursor: pointer;
+        text-decoration: none;
 
-        border: none;
         background-color: hsl(22, 65%, 57%);
         transition: all 0.03s;
 

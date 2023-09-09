@@ -1,6 +1,9 @@
 #header-checkout-page {
   background-color: hsl(0, 0%, 6%);
 }
+.main {
+  background-color: hsl(0, 0%, 95%);
+}
 
 .checkout-form {
   display: flex;
@@ -98,6 +101,10 @@
 
               & label {
                 font-weight: 700;
+
+                &.invalid {
+                  color: hsl(0, 65%, 49%);
+                }
               }
               & span {
                 color: hsl(0, 65%, 49%);
@@ -137,6 +144,10 @@
               &:hover {
                 border: 1px solid hsl(22, 65%, 57%);
               }
+
+              &.invalid {
+                border: 2px solid hsl(0, 65%, 49%);
+              }
             }
           }
 
@@ -169,6 +180,10 @@
               transition: all 0.03s;
 
               &:hover {
+                border: 1px solid hsl(22, 65%, 57%);
+              }
+
+              &:has(input:checked) {
                 border: 1px solid hsl(22, 65%, 57%);
               }
 
@@ -271,7 +286,7 @@
               object-position: center;
             }
 
-            & .cart-item-info {
+            & .checkout-item-info {
               flex-grow: 1;
 
               & h4 {
@@ -292,7 +307,7 @@
               }
             }
 
-            & .cart-item-qty {
+            & .checkout-item-qty {
               color: hsla(0, 0%, 0%, 0.5);
               font-weight: 700;
             }

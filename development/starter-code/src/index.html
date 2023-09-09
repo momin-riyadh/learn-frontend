@@ -10,29 +10,35 @@
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="css/style.css" />
 
     <title>Frontend Mentor | Audiophile e-commerce website</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="./js/utils.js"></script>
+    <script defer src="./js/script.js"></script>
   </head>
   <body>
     <header class="header-homepage">
-      <picture>
-        <source
-          srcset="./assets/home/mobile/image-header.jpg"
-          media="(max-width: 30em)"
-        />
-        <source
-          srcset="./assets/home/tablet/image-header.jpg"
-          media="(max-width: 48em)"
-        />
+      <div class="image">
+        <picture>
+          <source
+            srcset="./assets/home/mobile/image-header.jpg"
+            media="(max-width: 30em)"
+          />
+          <source
+            srcset="./assets/home/tablet/image-header.jpg"
+            media="(max-width: 48em)"
+          />
 
-        <img
-          srcset="./assets/home/desktop/image-hero.jpg"
-          alt="New Product Hero image"
-        />
-      </picture>
+          <img
+            srcset="./assets/home/desktop/image-hero.jpg"
+            alt="New Product Hero image"
+          />
+        </picture>
+      </div>
 
       <div class="container">
+        <!-- navigation -->
         <nav id="main-nav">
           <input type="checkbox" class="nav-checkbox" id="nav-toggle" />
 
@@ -52,7 +58,7 @@
             </a>
           </div>
 
-          <ul>
+          <ul data-nav_list>
             <li>
               <a href="index.html">Home</a>
             </li>
@@ -67,7 +73,7 @@
             </li>
           </ul>
 
-          <button class="cart-btn">
+          <button data-btn-cart class="cart-btn">
             <svg
               class="cart-icon"
               width="23"
@@ -83,6 +89,7 @@
           </button>
         </nav>
 
+        <!-- hero section -->
         <section id="hero-section">
           <div class="wrapper">
             <div class="content">
@@ -92,15 +99,61 @@
                 Experience natural, lifelike audio and exceptional build quality
                 made for the passionate music enthusiast.
               </p>
-              <button>See product</button>
+              <a href="product-xx99-mark-two-headphones.html">See product</a>
             </div>
           </div>
         </section>
+      </div>
+
+      <!-- Cart  -->
+      <div data-cart-overly class="overly">
+        <div class="container">
+          <div class="wrapper">
+            <div data-cart class="cart">
+              <div class="cart-content">
+                <div class="header">
+                  <span data-cart-total-qty></span>
+                  <button data-btn-remove-all-items>remove all</button>
+                </div>
+                <div class="body">
+                  <ul data-cart-list>
+                    <!--
+                    <li>
+                      <img
+                        src="./assets/product-xx99-mark-two-headphones/mobile/image-product.jpg"
+                        alt="XX99 Mark II Headphones"
+                      />
+                      
+                      <div class="cart-item-info">
+                        <h4>Mark II</h4>
+                        <span>5</span>
+                      </div>
+                      <div class="cart-item-action">
+                        <button>&#8722;</button>
+                        <span>2</span>
+                        <button>&#43;</button>
+                      </div>
+                    </li>
+                    -->
+                  </ul>
+                </div>
+                <div class="footer">
+                  <div class="total-price">
+                    <span>total</span>
+                    <span data-cart-total-price></span>
+                  </div>
+                  <a href="checkout.html">checkcout</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
     <main>
       <div class="container">
+        <!-- section categogy -->
         <section id="section-catagories">
           <div class="catagory-item">
             <img
@@ -108,9 +161,9 @@
               alt=""
             />
 
-            <a href="#">
-              <label>SPEAKERS</label>
-              <div>
+            <div class="catagory-content">
+              <label>HEADPHONES</label>
+              <a href="headphones.html">
                 <span>Shop</span>
                 <svg width="8" height="12" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -121,8 +174,8 @@
                     fill-rule="evenodd"
                   />
                 </svg>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
 
           <div class="catagory-item">
@@ -131,9 +184,9 @@
               alt=""
             />
 
-            <a href="#">
+            <div class="catagory-content">
               <label>SPEAKERS</label>
-              <div>
+              <a href="speakers.html">
                 <span>Shop</span>
                 <svg width="8" height="12" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -144,8 +197,8 @@
                     fill-rule="evenodd"
                   />
                 </svg>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
 
           <div class="catagory-item">
@@ -154,9 +207,9 @@
               alt=""
             />
 
-            <a href="#">
+            <div class="catagory-content">
               <label>EARPHONES</label>
-              <div>
+              <a href="earphones.html">
                 <span>Shop</span>
                 <svg width="8" height="12" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -167,11 +220,12 @@
                     fill-rule="evenodd"
                   />
                 </svg>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
         </section>
 
+        <!-- section products -->
         <section id="section-products">
           <div class="product-item_one">
             <div class="image-container">
@@ -197,7 +251,7 @@
                 Upgrade to premium speakers that are phenomenally built to
                 deliver truly remarkable sound.
               </p>
-              <a href="#">see product</a>
+              <a href="product-zx9-speaker.html">see product</a>
             </div>
           </div>
 
@@ -218,7 +272,7 @@
               />
             </picture>
             <h2>ZX7 Speaker</h2>
-            <a href="#">See Product</a>
+            <a href="product-zx7-speaker.html">See Product</a>
           </div>
 
           <div class="product-item_three">
@@ -240,11 +294,12 @@
 
             <div class="content">
               <h2>YX1 Earphones</h2>
-              <a href="#">See Product</a>
+              <a href="product-earphones.html">See Product</a>
             </div>
           </div>
         </section>
 
+        <!-- section best audio -->
         <section id="section-best-audio">
           <picture>
             <source
@@ -292,18 +347,18 @@
             </svg>
           </a>
 
-          <ul>
+          <ul data-nav_list>
             <li>
-              <a href="#">Home</a>
+              <a href="index.html">Home</a>
             </li>
             <li>
-              <a href="#">Headphones</a>
+              <a href="headphones.html">Headphones</a>
             </li>
             <li>
-              <a href="#">Speakers</a>
+              <a href="speakers.html">Speakers</a>
             </li>
             <li>
-              <a href="#">Earphones</a>
+              <a href="earphones.html">Earphones</a>
             </li>
           </ul>
         </nav>

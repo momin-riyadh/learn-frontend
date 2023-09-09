@@ -27,11 +27,10 @@
       transform: translate(-50%, -8%);
     }
 
-    & a {
-      text-decoration: none;
-      padding: 115px 0 30px 0;
-      border-radius: 8px;
+    & .catagory-content {
       background-color: hsl(0, 0%, 95%);
+      padding: 116px 0 30px 0;
+      border-radius: 8px;
 
       display: flex;
       flex-direction: column;
@@ -39,8 +38,9 @@
       align-items: center;
       gap: 15px;
 
-      &:hover span {
-        color: hsl(22, 65%, 57%);
+      @include respond(tab-port) {
+        padding: 88px 0 22px 0;
+        gap: 17px;
       }
 
       & label {
@@ -50,16 +50,24 @@
         line-height: auto;
         letter-spacing: 1.3px;
         color: hsl(0, 0%, 0%);
+
+        @include respond(tab-port) {
+          font-size: 15px;
+          letter-spacing: 1.071px;
+        }
       }
 
-      & div {
+      & a {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 13px;
 
-        text-decoration: none;
+        @include respond(tab-port) {
+          gap: 13.32px;
+        }
 
+        text-decoration: none;
         & span {
           font-size: 13px;
           font-weight: 700;
@@ -69,6 +77,10 @@
           color: hsla(0, 0%, 0%, 0.502);
 
           transition: all 0.3s;
+        }
+
+        &:hover span {
+          color: hsl(22, 65%, 57%);
         }
       }
     }
