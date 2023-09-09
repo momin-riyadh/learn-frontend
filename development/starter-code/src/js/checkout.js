@@ -397,6 +397,8 @@ form.addEventListener("submit", (event) => {
       (eMoneyPin !== "") || paymentMethod === "cash")
   ) {
     // if success order, show modal
+    console.log(formData);
+    console.log(checkout.getCheckoutItems);
     modal.showModal();
   }
 });
