@@ -22,6 +22,13 @@ class Checkout extends Cart {
     return this.#checkoutItems;
   }
 
+  clearChecout = () => {
+    this.#checkoutItems = [];
+
+    this.#renderCheckoutItems(this.#checkoutItems);
+    this.#updateCheckoutSummary(this.#checkoutItems, this.#vat);
+  };
+
   #updateCheckoutSummary = async (checkoutItems, tax) => {
     const totalPrice = await this.#totalPrice(checkoutItems);
 
@@ -397,6 +404,21 @@ form.addEventListener("submit", (event) => {
       (eMoneyPin !== "") || paymentMethod === "cash")
   ) {
     // if success order, show modal
+    //form reset
+    nameInput.value = "";
+    emailInput.value = "";
+    phoneInput.value = "";
+    addressInput.value = "";
+    zip_codeInput.value = "";
+    cityInput.value = "";
+    countryInput.value = "";
+    eMoneyNumberInput.value = "";
+    eMoneyPinInput.value = "";
+
+    // clear cart and checout
+    checkout.clearCart();
+    checkout.clearChecout();
+
     console.log(formData);
     console.log(checkout.getCheckoutItems);
     modal.showModal();
