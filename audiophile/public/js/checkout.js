@@ -1,5 +1,5 @@
 const modal = $("[data-modal]");
-const orderInfoElement = $("[data-order-info");
+const orderInfoElement = $("[data-order-info]");
 
 class Checkout extends Cart {
   #CheckoutListElement = $("[data-checkout-list]");

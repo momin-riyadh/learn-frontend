@@ -236,8 +236,8 @@
 
   & .summary {
     min-width: 350px;
-
     padding: 30px 32px;
+    flex-shrink: 0;
 
     @include respond(tab-port) {
       width: 100%;
