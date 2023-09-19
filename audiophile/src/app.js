@@ -57,7 +57,7 @@ app.get("/speakers", (req, res) => {
 
   res.render("product-list", {
     pageTitle: "Speakers | Audiophile e-commerce website",
-    headerContent: "SPEAKERS",
+    headerContent: "Speakers",
     products: products.slice().reverse(),
   });
 });
@@ -69,7 +69,7 @@ app.get("/earphones", (req, res) => {
 
   res.render("product-list", {
     pageTitle: "Earphones | Audiophile e-commerce website",
-    headerContent: "Earphones",
+    headerContent: "earphones",
     products: products.slice().reverse(),
   });
 });
